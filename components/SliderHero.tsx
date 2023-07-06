@@ -15,7 +15,8 @@ const SliderHero = () => {
         <SwiperSlide>
           <div className="lg:h-[650px]">
             <Image
-              src="/images/sample-1.jpg"
+              priority
+              src="/images/sample-1.webp"
               alt="Hero"
               width={1200}
               height={600}
@@ -26,7 +27,8 @@ const SliderHero = () => {
         <SwiperSlide>
           <div className="lg:h-[650px]">
             <Image
-              src="/images/sample-2.jpg"
+              priority
+              src="/images/sample-2.webp"
               alt="Hero"
               width={1200}
               height={600}
@@ -37,7 +39,8 @@ const SliderHero = () => {
         <SwiperSlide>
           <div className="lg:h-[650px]">
             <Image
-              src="/images/sample-3.jpeg"
+              priority
+              src="/images/sample-3.webp"
               alt="Hero"
               width={1200}
               height={600}
@@ -48,7 +51,8 @@ const SliderHero = () => {
         <SwiperSlide>
           <div className="lg:h-[650px]">
             <Image
-              src="/images/sample-4.jpg"
+              priority
+              src="/images/sample-4.webp"
               alt="Hero"
               width={1200}
               height={600}
@@ -59,7 +63,8 @@ const SliderHero = () => {
         <SwiperSlide>
           <div className="lg:h-[650px]">
             <Image
-              src="/images/sample.jpg"
+              priority
+              src="/images/sample.webp"
               alt="Hero"
               width={1200}
               height={600}

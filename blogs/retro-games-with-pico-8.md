@@ -2,7 +2,7 @@
 title: "Create retro games with PICO-8"
 subtitle: "8-bit games are a great way to learn and expand your portfolio."
 date: "2020-12-19"
-heroImage: "/images/sample-3.jpeg"
+heroImage: "/images/sample-3.webp"
 cr: ["https://www.artstation.com/shizuorin"]
 ---
 

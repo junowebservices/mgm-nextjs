@@ -2,7 +2,7 @@
 title: "Portrait of a Lady"
 subtitle: "One of the leading portrait artists of the late 19th and early 20th centuries,"
 date: "2021-08-14"
-heroImage: "/images/sample-3.jpeg"
+heroImage: "/images/sample-3.webp"
 ---
 
 John Singer Sargent was one of the leading portrait artists of the late 19th and early 20th centuries, and "Portrait of a Lady" is considered one of his greatest works. The painting, which was created around 1888, features an elegantly dressed woman seated in a plush armchair, with a serene expression on her face.
