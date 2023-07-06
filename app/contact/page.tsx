@@ -39,7 +39,13 @@ const Contact = () => {
     <section className="full-bleed">
       <div className="grid lg:grid-cols-2">
         <div>
-          <Image src="/ncaa.png" width={1000} height={1000} alt="Address Map" />
+          <Image
+            src="/ncaa.png"
+            width={1000}
+            height={1000}
+            alt="Address Map"
+            priority
+          />
         </div>
         <div className="w-full mx-auto grid lg:place-content-center bg-primary py-8 lg:py-4">
           <div className="w-full px-6 max-w-[400px] lg:w-[400px]">

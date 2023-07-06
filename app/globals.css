@@ -87,7 +87,7 @@
     @apply text-base lg:text-lg;
   }
   .inside {
-    @apply w-full max-w-[1600px] mx-auto px-4 md:px-6 lg:px-12;
+    @apply w-full max-w-[1440px] mx-auto px-4 md:px-6 lg:px-12;
   }
   .full-bleed {
     @apply max-w-[1600px] w-full mx-auto;

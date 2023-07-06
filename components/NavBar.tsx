@@ -35,51 +35,54 @@ import { Separator } from "./ui/separator";
 const NavBar = () => {
   return (
     <div className="full-bleed">
-      <div className="flex justify-between pl-4 md:px-10 bg-gray-100 items-center text-sm font-Arial text-gray-600">
-        <p className="text-xs md:text-sm">GOV.PH</p>
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-xs md:text-sm bg-transparent">
-                Accessibility Statement
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="z-10 bg-white">
-                <ul className="grid gap-3 py-2 px-4 md:w-[300px] lg:w-[300px] z-10 bg-white">
-                  <Link href="/docs" title="Introduction">
-                    Re-usable
-                  </Link>
-                  <Link href="/docs/installation" title="Installation">
-                    How to
-                  </Link>
-                  <Link href="/docs/primitives/typography" title="Typography">
-                    Styles
-                  </Link>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem className="hidden md:block">
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact Us
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem className="hidden md:block">
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Input
-                    className="bg-transparent h-7 text-mainTextColor"
-                    placeholder="Search"
-                  />
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+      <div className="bg-gray-100">
+        <div className="flex justify-between inside items-center text-sm font-Arial text-gray-600">
+          <p className="text-xs md:text-sm">GOV.PH</p>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-xs md:text-sm bg-transparent">
+                  Accessibility Statement
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="z-10 bg-white">
+                  <ul className="grid gap-3 py-2 px-4 md:w-[300px] lg:w-[300px] z-10 bg-white">
+                    <Link href="/docs" title="Introduction">
+                      Re-usable
+                    </Link>
+                    <Link href="/docs/installation" title="Installation">
+                      How to
+                    </Link>
+                    <Link href="/docs/primitives/typography" title="Typography">
+                      Styles
+                    </Link>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem className="hidden md:block">
+                <Link href="/contact" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Contact Us
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem className="hidden md:block">
+                <Link href="/contact" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Input
+                      className="bg-transparent h-7 text-mainTextColor"
+                      placeholder="Search"
+                    />
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
       </div>
-      <div className="flex justify-between px-4 md:px-10 mt-2 md:mt-10 items-center py-2">
+      <div className="flex justify-between px-4 md:px-10 mt-2 md:mt-10 items-center py-2 inside">
         <Link href="/">
           <Image
+            priority
             src="/logo.png"
             alt="logo"
             width={150}
