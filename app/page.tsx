@@ -5,6 +5,7 @@ import getPostMetadata from "@/components/getPostMetadata";
 import PostPreview from "@/components/PostPreview";
 import SliderHero from "@/components/SliderHero";
 import Link from "next/link";
+import EventsTabs from "@/components/EventsTabs";
 
 export default function Home() {
   const postMetadata = getPostMetadata();
@@ -16,10 +17,10 @@ export default function Home() {
       <SliderHero />
       {/* Grid */}
       <section className="mt-4 lg:mt-16 inside">
-        <h2 className="font-bold text-3xl lg:text-6xl my-6">Latest Update</h2>
+        <h2 className="font-bold text-2xl lg:text-5xl my-6">Latest Update</h2>
         <div className="grid md:grid-cols-2">
           <div className="bg-primary w-full aspect-square lg:aspect-[4/3] hidden lg:grid place-items-center text-center" />
-          <div className="bg-white w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+          <div className="bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-2">
               <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
               <p className="text-secondaryTextColor lg:text-lg">
@@ -30,7 +31,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="bg-white w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+          <div className="bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-2">
               <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
               <p className="text-secondaryTextColor lg:text-lg">
@@ -45,11 +46,12 @@ export default function Home() {
         </div>
       </section>
       {/* Blogs */}
-      <section className="my-12 inside">
+      <section className="my-12 lg:my-32 inside">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {postPreviews}
         </div>
       </section>
+      <EventsTabs />
 
       <section className="bg-primary text-white full-bleed">
         <div className="grid md:grid-cols-5 pt-24 pb-56 md:pb-72 inside">
@@ -70,9 +72,70 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="-mt-32 inside">
+        <div className="grid md:grid-cols-2">
+          <div className="bg-mainYellow w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+            <div className="px-12 space-y-5">
+              <h2 className="font-bold text-2xl lg:text-4xl">
+                Events & Activities
+              </h2>
+              <div className="space-y-3">
+                <p className="lg:text-lg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  explicabo similique molestiae incidunt non placeat? Eaque.
+                </p>
+                <Button variant={"secondary"} size={"lg"}>
+                  See more
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white border-2 border-black w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+            <div className="px-12 space-y-5">
+              <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
+              <p className="lg:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Temporibus laborum architecto esse facilis cupiditate ex?
+                Voluptatum et quod at, dolorum cumque inventore, perspiciatis
+                explicabo similique molestiae incidunt non placeat? Eaque.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white border-2 border-black w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+            <div className="px-12 space-y-5">
+              <h2 className="font-bold text-2xl lg:text-4xl">Come Visit</h2>
+              <div className="space-y-3">
+                <p className="lg:text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  explicabo similique molestiae incidunt non placeat? Eaque.
+                </p>
+                <Button variant={"secondary"} size={"lg"}>
+                  Find us
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="bg-mainBlue w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
+            <div className="px-12 space-y-5">
+              <h2 className="font-bold text-2xl lg:text-4xl text-white">
+                Get in touch
+              </h2>
+              <div className="space-y-3">
+                <p className="text-primary-foreground lg:text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  explicabo similique molestiae incidunt non placeat? Eaque.
+                </p>
+                <Button variant={"secondary"} size={"lg"}>
+                  See more
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="inside my-16">
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4 h-[300px] place-content-center">
           <h2 className="text-4xl font-bold">Celebrate with us</h2>
           <div className="">
             <p>

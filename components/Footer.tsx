@@ -89,7 +89,9 @@ const Footer = () => {
         </div>
 
         <p className="bg-mainBg text-center block py-3 font-Roboto text-xs text-secondaryTextColor">
-          &copy; 2023 Musems and Galleries Month. All rights reserved. |
+          &copy; 2023 Musems and Galleries Month. All rights reserved.{" "}
+          <span className="hidden md:inline">|</span>{" "}
+          <br className="block md:hidden" />
           Developed by <Link href="/">Juno</Link>
         </p>
       </div>

@@ -15,6 +15,7 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <Card className="justify-around flex flex-col">
       <Image
+        priority
         src={props.heroImage}
         alt="card-image"
         width={500}

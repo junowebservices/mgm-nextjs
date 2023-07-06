@@ -23,7 +23,7 @@ const About = () => {
         </div>
       </section>
       <section className="inside my-16">
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4 h-[300px] place-content-center">
           <div className="space-y-3">
             <h2 className="text-5xl">Our goals</h2>
             <p className="max-w-lg">
@@ -115,7 +115,7 @@ const About = () => {
       </section>
 
       <section className="inside my-16">
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4 h-[300px] place-content-center">
           <h2 className="text-5xl">Partners/ Organizations</h2>
           <div className="space-y-3">
             <p>
