@@ -5,35 +5,35 @@ import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import { useState } from "react";
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+// function encode(data) {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//     .join("&");
+// }
 
 const Contact = () => {
-  const [data, setData] = useState({});
+  // const [data, setData] = useState({});
 
-  const handleChange = (e) => {
-    console.log({ [e.target.name]: e.target.value });
-    // setData({ [e.target.name]: e.target.value });
-    // setState({ [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   console.log({ [e.target.name]: e.target.value });
+  //   // setData({ [e.target.name]: e.target.value });
+  //   // setState({ [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...data,
-      }),
-    });
-    // .then(() => navigate(form.getAttribute("action")))
-    // .catch((error) => alert(error));
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const form = e.target;
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": form.getAttribute("name"),
+  //       ...data,
+  //     }),
+  //   });
+  //   // .then(() => navigate(form.getAttribute("action")))
+  //   // .catch((error) => alert(error));
+  // };
 
   return (
     <section className="full-bleed">
@@ -53,14 +53,14 @@ const Contact = () => {
               action="/contact/thanks/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={(e) => handleSubmit(e)}
+              // onSubmit={(e) => handleSubmit(e)}
             >
               {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
               <input type="hidden" name="form-name" value="contact" />
               <div hidden>
                 <label>
                   Don't fill this out:{" "}
-                  <input name="bot-field" onChange={(e) => handleChange(e)} />
+                  {/* <input name="bot-field" onChange={(e) => handleChange(e)} /> */}
                 </label>
               </div>
               <div className="grid gap-4 w-full">
@@ -70,7 +70,7 @@ const Contact = () => {
                     placeholder="Name*"
                     required={true}
                     type={"text"}
-                    onChange={(e) => handleChange(e)}
+                    // onChange={(e) => handleChange(e)}
                     name={"name"}
                   />
                   {/* <input
@@ -88,7 +88,7 @@ const Contact = () => {
                       placeholder="Department/Agency"
                       type={"text"}
                       name={"agency"}
-                      onChange={(e) => handleChange(e)}
+                      // onChange={(e) => handleChange(e)}
                       id={"agency"}
                     />
                     {/* <input
@@ -104,7 +104,7 @@ const Contact = () => {
                       placeholder="Email Address*"
                       type={"email"}
                       name={"email"}
-                      onChange={(e) => handleChange(e)}
+                      // onChange={(e) => handleChange(e)}
                       id={"email"}
                       required={true}
                     />
@@ -123,7 +123,7 @@ const Contact = () => {
                   <Textarea
                     className="h-full bg-primary-foreground"
                     placeholder="Message*"
-                    onChange={(e) => handleChange(e)}
+                    // onChange={(e) => handleChange(e)}
                     id={"message"}
                     name={"message"}
                     required={true}
