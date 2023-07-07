@@ -9,8 +9,8 @@ const Blogs = () => {
       <Image
         src={post.featuredImage}
         alt="Featured Image"
-        width={1000}
-        height={500}
+        width={150}
+        height={150}
         className="object-contain"
       />
       <div key={post.slug}>
