@@ -6,6 +6,19 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* Netlify Widget */}
+          <link
+            rel="stylesheet"
+            precedence="default"
+            type="text/css"
+            charSet="UTF-8"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            precedence="default"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
           <script
             async
             src="https://identity.netlify.com/v1/netlify-identity-widget.js"
