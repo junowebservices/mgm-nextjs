@@ -16,7 +16,7 @@ const PostPreview = (props: PostMetadata) => {
     <Card>
       <Image
         priority
-        src={props.heroImage}
+        src={props.featuredImage}
         alt="card-image"
         width={500}
         height={50}

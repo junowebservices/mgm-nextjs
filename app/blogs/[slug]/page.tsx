@@ -26,7 +26,7 @@ const PostPage = (props: any) => {
     <div className="inside mt-2 md:mt-10">
       <div className="my-12">
         <Image
-          src={post.data.heroImage}
+          src={post.data.featuredImage}
           width={1500}
           height={200}
           className="object-cover w-full lg:h-[500px]"
