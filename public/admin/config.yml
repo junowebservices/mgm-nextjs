@@ -25,7 +25,7 @@ collections:
           format: "LLL",
         }
       - { label: "Body", name: "body", widget: "markdown" }
-   - name: "event" # Used in routes, e.g., /admin/collections/blog
+  - name: "event" # Used in routes, e.g., /admin/collections/blog
     label: "Event" # Used in the UI
     folder: "events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
