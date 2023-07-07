@@ -84,9 +84,6 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   explicabo similique molestiae incidunt non placeat? Eaque.
                 </p>
-                <Button variant={"secondary"} size={"lg"}>
-                  See more
-                </Button>
               </div>
             </div>
           </div>
@@ -96,7 +93,6 @@ export default function Home() {
               <p className="lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Temporibus laborum architecto esse facilis cupiditate ex?
-                Voluptatum et quod at, dolorum cumque inventore, perspiciatis
                 explicabo similique molestiae incidunt non placeat? Eaque.
               </p>
             </div>
@@ -109,9 +105,6 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   explicabo similique molestiae incidunt non placeat? Eaque.
                 </p>
-                <Button variant={"secondary"} size={"lg"}>
-                  Find us
-                </Button>
               </div>
             </div>
           </div>
@@ -125,9 +118,6 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   explicabo similique molestiae incidunt non placeat? Eaque.
                 </p>
-                <Button variant={"secondary"} size={"lg"}>
-                  See more
-                </Button>
               </div>
             </div>
           </div>

@@ -93,8 +93,8 @@ const NavBar = () => {
         {/* Mobile Only */}
         <div className="flex md:hidden">
           <Sheet>
-            <SheetTrigger>
-              <HiOutlineMenuAlt3 className="w-8 h-8" />
+            <SheetTrigger name="menu">
+              <HiOutlineMenuAlt3 className="w-8 h-8" name="menu" />
             </SheetTrigger>
             <SheetContent className="pt-12">
               <ul className="space-y-2">
@@ -123,27 +123,52 @@ const NavBar = () => {
           <NavigationMenu className="z-1">
             <NavigationMenuList>
               <NavigationMenuItem className="space-x-3 flex text-primary text-lg">
-                <Link href="/facebook" legacyBehavior passHref>
+                <Link
+                  href="https://www.facebook.com"
+                  legacyBehavior
+                  passHref
+                  target="_blank"
+                >
                   <NavigationMenuLink>
                     <BsFacebook />
                   </NavigationMenuLink>
                 </Link>
-                <Link href="/facebook" legacyBehavior passHref>
+                <Link
+                  href="https://www.twitter.com"
+                  legacyBehavior
+                  passHref
+                  target="_blank"
+                >
                   <NavigationMenuLink>
                     <AiFillTwitterCircle />
                   </NavigationMenuLink>
                 </Link>
-                <Link href="/facebook" legacyBehavior passHref>
+                <Link
+                  href="https://www.instagram.com"
+                  legacyBehavior
+                  passHref
+                  target="_blank"
+                >
                   <NavigationMenuLink>
                     <AiFillInstagram />
                   </NavigationMenuLink>
                 </Link>
-                <Link href="/facebook" legacyBehavior passHref>
+                <Link
+                  href="https://www.gmail.com"
+                  legacyBehavior
+                  passHref
+                  target="_blank"
+                >
                   <NavigationMenuLink>
                     <MdAlternateEmail />
                   </NavigationMenuLink>
                 </Link>
-                <Link href="/facebook" legacyBehavior passHref>
+                <Link
+                  href="https://www.junowebservices.com"
+                  legacyBehavior
+                  passHref
+                  target="_blank"
+                >
                   <NavigationMenuLink>
                     <BiGlobe />
                   </NavigationMenuLink>

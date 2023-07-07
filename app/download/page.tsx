@@ -2,8 +2,6 @@
 
 import Slider from "react-slick";
 
-
-
 const Download = () => {
   const settings = {
     dots: true,
@@ -191,11 +189,11 @@ const Download = () => {
       </section>
       {/* Archives */}
       <section className="bg-mainBlue text-white mt-6 widest">
-        <div className="inside py-24">
+        <div className="inside py-24 px-8 lg:px-16">
           <div className="text-center mb-4">
             <h2 className="text-2xl md:text-4xl font-bold">Archives</h2>
           </div>
-          <Slider {...settings} className="">
+          <Slider {...settings}>
             <div className="border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
             <div className="border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
             <div className="border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
