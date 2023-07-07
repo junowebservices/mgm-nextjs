@@ -3,7 +3,6 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import Image from "next/image";
 import getEventMetadata from "@/components/getEventMetadata";
-import { format, parseISO } from "date-fns";
 
 const getEventContent = (slug: string) => {
   const folder = "events/";
@@ -24,7 +23,6 @@ export const generateStaticParams = async () => {
 const EventPage = (props: any) => {
   const slug = props.params.slug;
   const event = getEventContent(slug);
-  const formattedDate = format(parseISO(event.data.date), "MMMM dd, yyyy");
   return (
     <div className="inside mt-2 md:mt-10">
       <div className="my-12">
@@ -39,7 +37,7 @@ const EventPage = (props: any) => {
           <h1 className="text-3xl lg:text-5xl text-black mt-8">
             {event.data.title}
           </h1>
-          <p className="text-slate-800 mt-2 lg:mt-4">{formattedDate}</p>
+          <p className="text-slate-800 mt-2 lg:mt-4">{event.data.date}</p>
         </div>
       </div>
 
