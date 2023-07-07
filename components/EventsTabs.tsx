@@ -1,9 +1,6 @@
 import { format, parseISO } from "date-fns";
 
-import { Activity } from "../constants/types";
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { activities } from "@/constants";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 import getEventMetadata from "./getEventMetadata";
@@ -27,10 +24,6 @@ const EventsTabs = () => {
           </h2>
           <div className="space-y-5">
             {eventMetadata.slice(0, 2).map((activity) => {
-              const formattedDate = format(
-                parseISO(activity.date),
-                "MMMM dd, yyyy"
-              );
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
@@ -39,7 +32,7 @@ const EventsTabs = () => {
                     </h3>
                   </Link>
                   <p className="my-2 text-secondaryTextColor text-xs lg:text-sm">
-                    {formattedDate}
+                    {activity.date}
                   </p>
                   <Separator />
                 </div>
@@ -53,10 +46,6 @@ const EventsTabs = () => {
           </h2>
           <div className="space-y-5">
             {eventMetadata.slice(1, 3).map((activity) => {
-              const formattedDate = format(
-                parseISO(activity.date),
-                "MMMM dd, yyyy"
-              );
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
@@ -65,7 +54,7 @@ const EventsTabs = () => {
                     </h3>
                   </Link>
                   <p className="my-2 text-secondaryTextColor text-xs lg:text-sm">
-                    {formattedDate}
+                    {activity.date}
                   </p>
                   <Separator />
                 </div>
@@ -79,10 +68,6 @@ const EventsTabs = () => {
           </h2>
           <div className="space-y-5">
             {eventMetadata.slice(2, 3).map((activity) => {
-              const formattedDate = format(
-                parseISO(activity.date),
-                "MMMM dd, yyyy"
-              );
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
@@ -91,7 +76,7 @@ const EventsTabs = () => {
                     </h3>
                   </Link>
                   <p className="my-2 text-secondaryTextColor text-xs lg:text-sm">
-                    {formattedDate}
+                    {activity.date}
                   </p>
                   <Separator />
                 </div>
