@@ -16,7 +16,7 @@ const PostPreview = (props: PostMetadata) => {
         src={props.featuredImage}
         alt="card-image"
         width={500}
-        height={50}
+        height={500}
         className="object-contain mx-auto"
       />
       <CardHeader className="">

@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="w-full col-span-3">
               {footerLinks.map((item) => (
                 <div key={item.title}>
-                  <p className="text-base font-bold text-secondaryTextColor mb-3">
+                  <p className="text-base font-bold text-secondaryTextColor mb-3 w-3/4">
                     {item.title}
                   </p>
                   {item.links.map((footerLink) => (
