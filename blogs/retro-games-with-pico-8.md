@@ -1,9 +1,10 @@
 ---
-title: "Create retro games with PICO-8"
-subtitle: "8-bit games are a great way to learn and expand your portfolio."
-date: "2020-12-19"
-heroImage: "/images/sample-3.webp"
-cr: ["https://www.artstation.com/shizuorin"]
+title: Sample MD from Netlify CMS
+subtitle: 8-bit games are a great way to learn and expand your portfolio.
+date: January 14, 2020 12:19 PM
+heroImage: /images/sample-3.webp
+cr:
+  - https://www.artstation.com/shizuorin
 ---
 
 After watching [High Score](https://www.youtube.com/watch?v=B4jopG1wX88) on Netflix, I was suddenly inspired to develop a retro-style game. I think it was a combination of the aesthetics and nostalgia that motivated me.
