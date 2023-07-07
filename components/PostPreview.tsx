@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { PostMetadata } from "./PostMetadata";
 import {
   Card,
   CardDescription,
@@ -7,6 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { PostMetadata } from "@/constants/types";
 
 const PostPreview = (props: PostMetadata) => {
   return (
