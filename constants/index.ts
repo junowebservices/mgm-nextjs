@@ -87,8 +87,8 @@ export const headerLink = [
     url: "/about",
   },
   {
-    title: "Calendar",
-    url: "/calendar",
+    title: "Blogs",
+    url: "/blogs",
   },
   {
     title: "Download+",

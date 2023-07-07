@@ -14,9 +14,9 @@ export default function Home() {
     .map((post) => <PostPreview key={post.slug} {...post} />);
   return (
     <main className="flex flex-col w-full">
-      <SliderHero />
+      {/* <SliderHero /> */}
       {/* Grid */}
-      <section className="mt-4 lg:mt-16 inside">
+      {/* <section className="mt-4 lg:mt-16 inside">
         <h2 className="font-bold text-2xl lg:text-5xl my-6">Latest Update</h2>
         <div className="grid md:grid-cols-2">
           <div className="bg-primary w-full aspect-square lg:aspect-[4/3] hidden lg:grid place-items-center text-center" />
@@ -44,16 +44,19 @@ export default function Home() {
           </div>
           <div className="bg-primary w-full aspect-square lg:aspect-[4/3] hidden lg:grid place-items-center text-center" />
         </div>
-      </section>
+      </section> */}
       {/* Blogs */}
-      <section className="my-12 lg:my-32 inside">
+      {/* <section className="my-12 lg:my-32 inside">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {postPreviews}
         </div>
-      </section>
+        <Link href="/blogs" className="w-full text-center block mt-8">
+          <Button size={"lg"}>View All</Button>
+        </Link>
+      </section> */}
       <EventsTabs />
 
-      <section className="bg-primary text-white full-bleed">
+      {/* <section className="bg-primary text-white full-bleed">
         <div className="grid md:grid-cols-5 pt-24 pb-56 md:pb-72 inside">
           <h2 className="text-4xl text-white col-span-2 md:w-4/5 font-bold">
             dit? Molestias, blanditiis voluptate.
@@ -144,7 +147,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -1,12 +1,12 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import getPostMetadata from "../../../components/getPostMetadata";
 import Image from "next/image";
+import getEventMetadata from "@/components/getEventMetadata";
 import { format, parseISO } from "date-fns";
 
-const getPostContent = (slug: string) => {
-  const folder = "blogs/";
+const getEventContent = (slug: string) => {
+  const folder = "events/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -14,22 +14,22 @@ const getPostContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata();
+  const events = getEventMetadata();
 
-  return posts.map((post) => ({
-    slug: post.slug,
+  return events.map((event) => ({
+    slug: event.slug,
   }));
 };
 
-const PostPage = (props: any) => {
+const EventPage = (props: any) => {
   const slug = props.params.slug;
-  const post = getPostContent(slug);
-  const formattedDate = format(parseISO(post.data.date), "MMMM dd, yyyy");
+  const event = getEventContent(slug);
+  const formattedDate = format(parseISO(event.data.date), "MMMM dd, yyyy");
   return (
     <div className="inside mt-2 md:mt-10">
       <div className="my-12">
         <Image
-          src={post.data.featuredImage}
+          src={event.data.featuredImage}
           width={1500}
           height={200}
           className="object-cover w-full lg:h-[500px]"
@@ -37,17 +37,17 @@ const PostPage = (props: any) => {
         />
         <div className="max-w-[800px] mx-auto">
           <h1 className="text-3xl lg:text-5xl text-black mt-8">
-            {post.data.title}
+            {event.data.title}
           </h1>
           <p className="text-slate-800 mt-2 lg:mt-4">{formattedDate}</p>
         </div>
       </div>
 
       <article className="text-lg max-w-[800px] mx-auto">
-        <Markdown>{post.content}</Markdown>
+        <Markdown>{event.content}</Markdown>
       </article>
     </div>
   );
 };
 
-export default PostPage;
+export default EventPage;
