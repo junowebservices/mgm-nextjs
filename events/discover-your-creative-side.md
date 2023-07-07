@@ -1,11 +1,15 @@
 ---
+featuredImage: /images/hero.webp
 title: "Artistic Expression Workshop: Discover Your Creative Side"
-subtitle: "Explore your artistic abilities through a guided workshop where you'll experiment with various mediums and techniques."
-date: "2023-10-12T00:00:00Z"
-featuredImage: "/images/hero.webp"
+subtitle: Explore your artistic abilities through a guided workshop where you'll
+  experiment with various mediums and techniques.
+date: July 7, 2023 12:46 PM
 ---
-
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+
+
+
+![Image](https://images.pexels.com/photos/4039155/pexels-photo-4039155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "Arit")
 
 ### sample
 
