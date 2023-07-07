@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <Card className="justify-around flex flex-col">
+    <Card>
       <Image
         priority
         src={props.heroImage}
@@ -24,20 +24,17 @@ const PostPreview = (props: PostMetadata) => {
       />
       <CardHeader className="">
         <CardTitle className="pt-4 line-clamp-3 leading-8">
-          {props.title}
+          <Link
+            href={`/blogs/${props.slug}`}
+            className="text-primary hover:underline underline-offset-2"
+          >
+            {props.title}
+          </Link>
         </CardTitle>
         <CardDescription className="line-clamp-2">
           {props.subtitle}
         </CardDescription>
       </CardHeader>
-      <CardFooter className="">
-        <Link
-          href={`/blogs/${props.slug}`}
-          className="text-primary hover:underline underline-offset-2"
-        >
-          Read more
-        </Link>
-      </CardFooter>
     </Card>
 
     // <div
