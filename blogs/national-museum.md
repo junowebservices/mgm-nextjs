@@ -2,7 +2,7 @@
 title: "The National Museum of the Philippines"
 subtitle: "The national museum of the Philippines and is the largest museum in the country."
 date: "2020-12-27"
-heroImage: "/images/sample-2.webp"
+featuredImage: "/images/sample-2.webp"
 ---
 
 The National Museum of the Philippines is the national museum of the Philippines and is the largest museum in the country. It is located in Manila and has several branches across the country. It was established in 1901 and is responsible for preserving the country's rich cultural and historical heritage.

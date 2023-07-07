@@ -2,7 +2,7 @@
 title: Sample MD from Netlify CMS
 subtitle: 8-bit games are a great way to learn and expand your portfolio.
 date: January 14, 2020 12:19 PM
-heroImage: /images/sample-3.webp
+featuredImage: /images/sample-3.webp
 cr:
   - https://www.artstation.com/shizuorin
 ---

@@ -3,5 +3,5 @@ export interface PostMetadata {
   date: string;
   subtitle: string;
   slug: string;
-  heroImage: string;
+  featuredImage: string;
 }
