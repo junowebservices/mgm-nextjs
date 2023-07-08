@@ -93,6 +93,11 @@
     @apply max-w-[1440px] w-full mx-auto;
   }
 }
+#download .slick-next:before,
+#download .slick-prev:before {
+  color: #fff !important;
+}
+
 .slick-next:before,
 .slick-prev:before {
   color: #e0630e !important;

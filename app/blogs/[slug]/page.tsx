@@ -24,8 +24,8 @@ const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div className="inside mt-2 md:mt-10">
-      <div className="my-12">
+    <div className="inside">
+      <div className="mb-12">
         <Image
           src={post.data.featuredImage}
           width={1500}
@@ -37,7 +37,9 @@ const PostPage = (props: any) => {
           <h1 className="text-3xl lg:text-5xl text-black mt-8">
             {post.data.title}
           </h1>
-          <p className="text-slate-800 mt-2 lg:mt-4">{post.data.date}</p>
+          <p className="text-secondaryTextColor text-sm mt-2 lg:mt-4">
+            {post.data.date}
+          </p>
         </div>
       </div>
 
