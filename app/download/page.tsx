@@ -1,6 +1,7 @@
 "use client";
 
 import Slider from "react-slick";
+import { CgSoftwareDownload } from "react-icons/cg";
 
 const Download = () => {
   const settings = {
@@ -54,7 +55,7 @@ const Download = () => {
                 <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
                   MGM Banner
                 </h2>
-                <p className="text-secondaryTextColor line-clamp-4">
+                <p className="text-mainTextColor line-clamp-4">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Temporibus laborum architecto esse facilis cupiditate ex?
                   Voluptatum et quod at, dolorum cumque inventore, perspiciatis
@@ -69,7 +70,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -84,7 +85,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -99,7 +100,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -114,7 +115,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -166,6 +167,7 @@ const Download = () => {
                 </p>
               </div>
               <div className="flex gap-2">
+                <CgSoftwareDownload className="w-8 h-8" />
                 {/* <ArrowDownTrayIcon className="w-6 h-6" /> Download */}
               </div>
             </div>
@@ -189,7 +191,7 @@ const Download = () => {
       </section>
       {/* Archives */}
       <section className="bg-mainBlue text-white mt-6 widest">
-        <div className="inside py-24 px-8 lg:px-16">
+        <div className="inside py-24 px-8 lg:px-16" id="download">
           <div className="text-center mb-4">
             <h2 className="text-2xl md:text-4xl font-bold">Archives</h2>
           </div>

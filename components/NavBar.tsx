@@ -31,8 +31,11 @@ import Image from "next/image";
 
 import Link from "next/link";
 import { Separator } from "./ui/separator";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="full-bleed">
       <div className="bg-gray-100">
@@ -186,7 +189,13 @@ const NavBar = () => {
                     passHref
                     key={item.title}
                   >
-                    <NavigationMenuLink className="text-secondaryTextColor hover:text-primary">
+                    <NavigationMenuLink
+                      className={
+                        pathname === item.url
+                          ? `text-primary hover:text-primary`
+                          : `text-secondaryTextColor hover:text-primary hover:underline`
+                      }
+                    >
                       {item.title}
                     </NavigationMenuLink>
                   </Link>
