@@ -99,26 +99,22 @@ const NavBar = () => {
             <SheetTrigger name="menu">
               <HiOutlineMenuAlt3 className="w-8 h-8" name="menu" />
             </SheetTrigger>
-            <SheetContent className="pt-12">
-              <ul className="space-y-2">
-                {headerLink.map((item) => (
-                  <div key={item.title}>
-                    <Link href={item.url} legacyBehavior passHref>
-                      <li className="text-secondaryTextColor hover:text-primary">
-                        {item.title}
-                      </li>
+            <SheetContent className="pt-12 bg-primary">
+              {headerLink.map((item) => (
+                <div className="space-y-4">
+                  <div
+                    key={item.title}
+                    className={`p-4 text-white uppercase ${
+                      pathname === item.url &&
+                      "font-bold underline underline-white underline-offset-2"
+                    }`}
+                  >
+                    <Link href={item.url} legacyBehavior passHref className="">
+                      <h2>{item.title}</h2>
                     </Link>
-                    <Separator />
                   </div>
-                ))}
-              </ul>
-              {/* <SheetHeader>
-                <SheetTitle>Are you sure absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
-                </SheetDescription>
-              </SheetHeader> */}
+                </div>
+              ))}
             </SheetContent>
           </Sheet>
         </div>

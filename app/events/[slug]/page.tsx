@@ -24,8 +24,8 @@ const EventPage = (props: any) => {
   const slug = props.params.slug;
   const event = getEventContent(slug);
   return (
-    <div className="inside mt-2 md:mt-10">
-      <div className="my-12">
+    <div className="inside">
+      <div className="mb-12">
         <Image
           src={event.data.featuredImage}
           width={1500}
