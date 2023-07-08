@@ -6,19 +6,17 @@ import PostPreview from "@/components/PostPreview";
 import SliderHero from "@/components/SliderHero";
 import Link from "next/link";
 import EventsTabs from "@/components/EventsTabs";
+import BlogSlider from "@/components/BlogSlider";
 
 export default function Home() {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata
-    .slice(0, 3)
-    .map((post) => <PostPreview key={post.slug} {...post} />);
   return (
     <main className="flex flex-col w-full">
       <SliderHero />
       {/* Grid */}
       <section className="mt-4 lg:mt-16 inside">
-        <h2 className="font-bold text-2xl lg:text-5xl my-6">Latest Update</h2>
-        <div className="grid md:grid-cols-2">
+        <h2 className="font-bold text-2xl lg:text-4xl my-6">Latest Update</h2>
+        <div className="grid sm:grid-cols-2">
           <div className="bg-primary w-full aspect-square lg:aspect-[4/3] hidden lg:grid place-items-center text-center" />
           <div className="bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-2">
@@ -46,14 +44,31 @@ export default function Home() {
         </div>
       </section>
       {/* Blogs */}
-      <section className="my-12 lg:my-32 inside">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <BlogSlider {...postMetadata} />
+
+      {/* <section className="py-12 lg:py-32 inside">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {postPreviews}
         </div>
         <Link href="/blogs" className="w-full text-center block mt-8">
           <Button size={"lg"}>View All</Button>
         </Link>
-      </section>
+      </section> */}
+
+      {/* <section className="mt-6 widest">
+        <div className="inside py-24 px-8 lg:px-16">
+          <div className="mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold">Blogs</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {postPreviews}
+          </div>
+          <Link href="/blogs" className="w-full text-center block mt-8">
+            <Button size={"lg"}>View All</Button>
+          </Link>
+        </div>
+      </section> */}
+
       <EventsTabs />
 
       <section className="bg-primary text-white full-bleed">

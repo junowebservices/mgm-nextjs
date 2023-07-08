@@ -20,7 +20,7 @@ const PostPreview = (props: PostMetadata) => {
         className="object-contain mx-auto"
       />
       <CardHeader className="">
-        <CardTitle className="pt-4 line-clamp-3 leading-8">
+        <CardTitle className="pt-4 line-clamp-2 leading-8">
           <Link
             href={`/blogs/${props.slug}`}
             className="text-primary hover:underline underline-offset-2"

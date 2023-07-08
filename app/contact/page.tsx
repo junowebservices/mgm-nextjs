@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
@@ -144,13 +145,16 @@ const Contact = () => {
                 /> */}
                 </div>
               </div>
-              <div className="text-right">
-                <button
+              <div className="text-right mt-4">
+                <Button type="submit" variant={"secondary"}>
+                  Send Message
+                </Button>
+                {/* <button
                   className="bg-mainOrange hover:text-mainOrange border-mainOrange text-white mt-3 mb-5 border-2  hover:bg-white focus:ring-4 focus:outline-none focus:ring-mainOrange-dark font-medium text-sm px-5 py-1.5 text-center uppercase transition-all ease-in-out duration-300"
                   type="submit"
                 >
                   Send
-                </button>
+                </button> */}
               </div>
             </form>
           </div>
@@ -188,10 +192,13 @@ const Contact = () => {
           <div className="col-span-2 space-y-3 order-first md:order-last">
             <h3 className="ext-base font-bold">Search MGM</h3>
             <div className="relative">
-              <input className="w-full bg-mainBg text-sm lg:text-base py-1 !pr-8 pl-3 " />
-              <div className="absolute top-2 right-2 cursor-pointer">
-                {/* <SearchIcon /> */}
-              </div>
+              <Input
+                placeholder="Search"
+                type={"text"}
+                name={"search"}
+                // onChange={(e) => handleChange(e)}
+                required={true}
+              />
             </div>
           </div>
         </div>
