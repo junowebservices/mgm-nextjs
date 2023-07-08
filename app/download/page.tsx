@@ -44,7 +44,7 @@ const Download = () => {
   };
   return (
     <div>
-      <section className="inside my-12">
+      <section className="inside mb-12">
         <div className="text-center mb-4">
           <h2 className="text-2xl md:text-4xl font-bold">Agency Kit</h2>
         </div>
