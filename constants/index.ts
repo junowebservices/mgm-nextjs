@@ -79,10 +79,6 @@ export const activities = [
 ];
 export const headerLink = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "About",
     url: "/about",
   },

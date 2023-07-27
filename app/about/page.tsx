@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </section>
       {/* Grid */}
-      <section className="mt-4 lg:mt-16 inside">
+      {/* <section className="mt-4 lg:mt-16 inside">
         <div className="grid md:grid-cols-2">
           <div className="bg-white w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center border-[10px] border-primary">
             <div className="px-12 space-y-5">
@@ -112,11 +112,11 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="inside my-16">
         <div className="grid lg:grid-cols-2 gap-4 h-[300px] place-content-center">
-          <h2 className="text-5xl">Partners/ Organizations</h2>
+          <h2 className="text-5xl">Partner Exhibitions</h2>
           <div className="space-y-3">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor

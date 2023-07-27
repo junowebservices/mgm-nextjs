@@ -11,7 +11,7 @@ import BlogSlider from "@/components/BlogSlider";
 export default function Home() {
   const postMetadata = getPostMetadata();
   return (
-    <main className="flex flex-col w-full">
+   <>
       <SliderHero />
       {/* Grid */}
       <section className="mt-4 lg:mt-16 inside">
@@ -163,6 +163,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

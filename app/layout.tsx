@@ -27,9 +27,11 @@ export default function RootLayout({
         precedence="default"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      <body className="">
+      <body>
         <NavBar />
+        <main className="flex flex-col w-full mt-32">
         {children}
+        </main>
         <Footer />
       </body>
     </html>
