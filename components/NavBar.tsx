@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     <div className="full-bleed">
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 fixed z-50 w-full top-0">
         <div className="flex justify-between inside items-center text-sm font-Arial text-gray-600">
           <p className="text-xs md:text-sm">GOV.PH</p>
           <NavigationMenu>
@@ -82,7 +82,7 @@ const NavBar = () => {
           </NavigationMenu>
         </div>
       </div>
-      <div className="flex justify-between px-4 md:px-10 mt-2 md:mt-10 items-center py-2 inside">
+      <div className="flex justify-between px-4 md:px-10  md:pt-4 items-center py-2 inside fixed z-50 bg-white top-10">
         <Link href="/">
           <Image
             priority
@@ -110,7 +110,7 @@ const NavBar = () => {
                     }`}
                   >
                     <Link href={item.url} legacyBehavior passHref className="">
-                      <h2>{item.title}</h2>
+                      <h2 className="uppercase">{item.title}</h2>
                     </Link>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const NavBar = () => {
         <div className="md:flex flex-col items-end hidden">
           <NavigationMenu className="z-1">
             <NavigationMenuList>
-              <NavigationMenuItem className="space-x-3 flex text-primary text-lg">
+              <NavigationMenuItem className="space-x-4 flex text-primary text-lg">
                 <Link
                   href="https://www.facebook.com"
                   legacyBehavior
@@ -129,7 +129,7 @@ const NavBar = () => {
                   target="_blank"
                 >
                   <NavigationMenuLink>
-                    <BsFacebook />
+                    <BsFacebook className="w-6 h-6"/>
                   </NavigationMenuLink>
                 </Link>
                 <Link
@@ -139,7 +139,7 @@ const NavBar = () => {
                   target="_blank"
                 >
                   <NavigationMenuLink>
-                    <AiFillTwitterCircle />
+                    <AiFillTwitterCircle className="w-6 h-6"/>
                   </NavigationMenuLink>
                 </Link>
                 <Link
@@ -149,7 +149,7 @@ const NavBar = () => {
                   target="_blank"
                 >
                   <NavigationMenuLink>
-                    <AiFillInstagram />
+                    <AiFillInstagram className="w-6 h-6"/>
                   </NavigationMenuLink>
                 </Link>
                 <Link
@@ -159,7 +159,7 @@ const NavBar = () => {
                   target="_blank"
                 >
                   <NavigationMenuLink>
-                    <MdAlternateEmail />
+                    <MdAlternateEmail className="w-6 h-6"/>
                   </NavigationMenuLink>
                 </Link>
                 <Link
@@ -169,7 +169,7 @@ const NavBar = () => {
                   target="_blank"
                 >
                   <NavigationMenuLink>
-                    <BiGlobe />
+                    <BiGlobe className="w-6 h-6"/>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -189,7 +189,7 @@ const NavBar = () => {
                       className={
                         pathname === item.url
                           ? `text-primary hover:text-primary`
-                          : `text-secondaryTextColor hover:text-primary hover:underline`
+                          : `text-secondaryTextColor hover:text-primary hover:underline uppercase`
                       }
                     >
                       {item.title}
