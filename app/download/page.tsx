@@ -46,13 +46,13 @@ const Download = () => {
     <div>
       <section className="inside mb-12">
         <div className="text-center mb-4">
-          <h2 className="text-2xl md:text-4xl font-bold">Agency Kit</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">Agency Kit</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 place-content-center">
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-[4/3] hover:opacity-80 cursor-pointer">
             <div className="w-[85%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextColor line-clamp-1">
                   MGM Banner
                 </h2>
                 <p className="text-mainTextColor line-clamp-4">
@@ -70,7 +70,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -85,7 +85,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -100,7 +100,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -115,7 +115,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextCololine-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextCololine-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -130,7 +130,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow-dark aspect-[4/3]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-2xl lg:text-4xl font-medium my-3 text-mainTextColor line-clamp-1">
+                <h2 className="text-xl lg:text-3xl font-medium my-3 text-mainTextColor line-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="text-secondaryTextColor line-clamp-4">
@@ -150,13 +150,13 @@ const Download = () => {
       {/* Social Media Kit */}
       <section className="inside my-12">
         <div className="text-center mb-4">
-          <h2 className="text-2xl md:text-4xl font-bold">Social Media Kit</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">Social Media Kit</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 place-content-center">
           <div className="grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square md:aspect-[2/1] hover:opacity-80 cursor-pointer">
             <div className="w-[85%] mx-auto space-y-4">
               <div>
-                <h2 className="text-xl lg:text-2xl font-medium my-3 line-clamp-1">
+                <h2 className="text-xl   font-medium my-3 line-clamp-1">
                   MGM Banner
                 </h2>
                 <p className="line-clamp-4">
@@ -175,7 +175,7 @@ const Download = () => {
           <div className="grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue-dark aspect-square md:aspect-[2/1]">
             <div className="w-[90%] mx-auto space-y-4">
               <div>
-                <h2 className="text-xl lg:text-2xl font-medium my-3 line-clamp-1">
+                <h2 className="text-xl   font-medium my-3 line-clamp-1">
                   MGM 2023 Banner
                 </h2>
                 <p className="line-clamp-4">
@@ -193,7 +193,7 @@ const Download = () => {
       <section className="bg-mainBlue text-white mt-6 widest">
         <div className="inside py-24 px-8 lg:px-16" id="download">
           <div className="text-center mb-4">
-            <h2 className="text-2xl md:text-4xl font-bold">Archives</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Archives</h2>
           </div>
           <Slider {...settings}>
             <div className="border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />

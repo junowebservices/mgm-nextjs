@@ -15,13 +15,13 @@ export default function Home() {
       <SliderHero />
       {/* Grid */}
       <section className="mt-4 lg:mt-16 inside">
-        <h2 className="font-bold text-2xl lg:text-4xl my-6">Latest Update</h2>
+        <h2 className="font-bold text-2xl lg:text-3xl my-6">Latest Update</h2>
         <div className="grid sm:grid-cols-2">
           <div className="bg-primary w-full aspect-square lg:aspect-[4/3] hidden lg:grid place-items-center text-center" />
           <div className="bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-2">
-              <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
-              <p className="text-secondaryTextColor lg:text-lg">
+              <h2 className="font-bold text-2xl ">Featured</h2>
+              <p className="text-secondaryTextColor">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Temporibus laborum architecto esse facilis cupiditate ex?
                 Voluptatum et quod at, dolorum cumque inventore, perspiciatis
@@ -31,8 +31,8 @@ export default function Home() {
           </div>
           <div className="bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-2">
-              <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
-              <p className="text-secondaryTextColor lg:text-lg">
+              <h2 className="font-bold text-2xl  ">Featured</h2>
+              <p className="text-secondaryTextColor">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Temporibus laborum architecto esse facilis cupiditate ex?
                 Voluptatum et quod at, dolorum cumque inventore, perspiciatis
@@ -58,7 +58,7 @@ export default function Home() {
       {/* <section className="mt-6 widest">
         <div className="inside py-24 px-8 lg:px-16">
           <div className="mb-4">
-            <h2 className="text-2xl md:text-4xl font-bold">Blogs</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Blogs</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {postPreviews}
@@ -73,7 +73,7 @@ export default function Home() {
 
       <section className="bg-primary text-white full-bleed">
         <div className="grid md:grid-cols-5 pt-24 pb-56 md:pb-72 inside">
-          <h2 className="text-4xl text-white col-span-2 md:w-4/5 font-bold">
+          <h2 className="text-3xl text-white col-span-2 md:w-4/5 font-bold">
             dit? Molestias, blanditiis voluptate.
           </h2>
 
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2">
           <div className="bg-mainYellow w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-5">
-              <h2 className="font-bold text-2xl lg:text-4xl">
+              <h2 className="font-bold text-2xl  ">
                 Events & Activities
               </h2>
               <div className="space-y-3">
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
           <div className="bg-white border-2 border-black w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-5">
-              <h2 className="font-bold text-2xl lg:text-4xl">Featured</h2>
+              <h2 className="font-bold text-2xl  ">Featured</h2>
               <p className="lg:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Temporibus laborum architecto esse facilis cupiditate ex?
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
           <div className="bg-white border-2 border-black w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-5">
-              <h2 className="font-bold text-2xl lg:text-4xl">Come Visit</h2>
+              <h2 className="font-bold text-2xl  ">Come Visit</h2>
               <div className="space-y-3">
                 <p className="lg:text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="bg-mainBlue w-full aspect-square lg:aspect-[4/3] grid place-items-center text-center">
             <div className="px-12 space-y-5">
-              <h2 className="font-bold text-2xl lg:text-4xl text-white">
+              <h2 className="font-bold text-2xl   text-white">
                 Get in touch
               </h2>
               <div className="space-y-3">
@@ -144,7 +144,7 @@ export default function Home() {
 
       <section className="inside my-16">
         <div className="grid lg:grid-cols-2 gap-4 h-[300px] place-content-center">
-          <h2 className="text-4xl font-bold">Celebrate with us</h2>
+          <h2 className="text-3xl font-bold">Celebrate with us</h2>
           <div className="">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor

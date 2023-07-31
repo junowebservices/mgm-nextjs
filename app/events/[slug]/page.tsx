@@ -34,7 +34,7 @@ const EventPage = (props: any) => {
           alt="image"
         />
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-3xl lg:text-5xl text-black mt-8">
+          <h1 className="text-3xl lg:text-3xl text-black mt-8">
             {event.data.title}
           </h1>
           <p className="text-slate-800 mt-2 lg:mt-4">{event.data.date}</p>
