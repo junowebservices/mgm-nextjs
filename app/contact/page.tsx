@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
         <div className="w-full mx-auto grid lg:place-content-center bg-primary py-8 lg:py-4">
           <div className="w-full px-6 max-w-[400px] lg:w-[400px]">
-            <h2 className="text-2xl lg:text-5xl font-bold mb-4 lg:mb-6 text-primary-foreground ">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-primary-foreground ">
               Contact Us
             </h2>
             <form

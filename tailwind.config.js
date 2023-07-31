@@ -8,6 +8,15 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '2rem',
+      '4xl': '3rem',
+      '5xl': '4rem',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -30,7 +39,7 @@ module.exports = {
           light: "#f7cf76",
         },
         mainBlue: {
-          DEFAULT: "#1589c2",
+          DEFAULT: "#2272C7",
           dark: "#0e587d",
           light: "#3ab0ea",
         },

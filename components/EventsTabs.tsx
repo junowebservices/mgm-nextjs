@@ -19,7 +19,7 @@ const EventsTabs = () => {
           <TabsTrigger value="trending">Trending</TabsTrigger>
         </TabsList>
         <TabsContent value="recent">
-          <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-8">
+          <h2 className="text-xl lg:text-3xl font-semibold mb-4 lg:mb-8">
             Calendar of Activities
           </h2>
           <div className="space-y-5">
@@ -27,7 +27,7 @@ const EventsTabs = () => {
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
-                    <h3 className="text-lg lg:text-2xl hover:underline underline-offset-2 hover:text-primary">
+                    <h3 className="text-lg   hover:underline underline-offset-2 hover:text-primary">
                       {activity.title}
                     </h3>
                   </Link>
@@ -41,7 +41,7 @@ const EventsTabs = () => {
           </div>
         </TabsContent>
         <TabsContent value="popular">
-          <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-8">
+          <h2 className="text-xl lg:text-3xl font-semibold mb-4 lg:mb-8">
             Calendar of Activities
           </h2>
           <div className="space-y-5">
@@ -49,7 +49,7 @@ const EventsTabs = () => {
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
-                    <h3 className="text-lg lg:text-2xl hover:underline underline-offset-2 hover:text-primary">
+                    <h3 className="text-lg   hover:underline underline-offset-2 hover:text-primary">
                       {activity.title}
                     </h3>
                   </Link>
@@ -63,7 +63,7 @@ const EventsTabs = () => {
           </div>
         </TabsContent>
         <TabsContent value="trending">
-          <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-8">
+          <h2 className="text-xl lg:text-3xl font-semibold mb-4 lg:mb-8">
             Calendar of Activities
           </h2>
           <div className="space-y-5">
@@ -71,7 +71,7 @@ const EventsTabs = () => {
               return (
                 <div key={activity.title}>
                   <Link href={`/events/${activity.slug}`}>
-                    <h3 className="text-lg lg:text-2xl hover:underline underline-offset-2 hover:text-primary">
+                    <h3 className="text-lg   hover:underline underline-offset-2 hover:text-primary">
                       {activity.title}
                     </h3>
                   </Link>

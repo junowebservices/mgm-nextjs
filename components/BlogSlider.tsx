@@ -48,7 +48,7 @@ const BlogSlider: React.FC<PostMetadata[]> = (postMetadata) => {
     <section className="mt-6 widest">
       <div className="inside py-24 px-8 lg:px-16">
         <div className="mb-4">
-          <h2 className="text-2xl md:text-4xl font-bold">Blogs</h2>
+          <h2 className="text-xl md:text-3xl font-bold">Articles</h2>
         </div>
         <Slider {...settings}>
           {Object.values(postMetadata).map((blog) => (

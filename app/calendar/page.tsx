@@ -1,7 +1,7 @@
 const Calendar = () => {
   return (
     <div className="inside space-y-8 lg:w-7/12 my-24">
-      <h2 className="text-4xl">Calendar Coming Soon!</h2>
+      <h2 className="text-3xl">Calendar Coming Soon!</h2>
       <p className="text-lg text-secondaryTextColor">
         We are in the process of finalizing the calendar of events for National
         Museum Month. Our team is working tirelessly to bring you an exceptional
