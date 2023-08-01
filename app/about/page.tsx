@@ -115,7 +115,7 @@ const About = () => {
 			<section className='inside my-16'>
 				<div className='grid lg:grid-cols-4 gap-4 place-content-center'>
 					<div className='col-span-1'>
-						<h2 className='text-3xl'>Objectives</h2>
+						<h2 className='text-3xl mb-2'>Objectives</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 					<div className='space-y-3 col-span-3'>
