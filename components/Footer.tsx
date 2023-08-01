@@ -69,7 +69,7 @@ const Footer = () => {
 								<div key={item.title}>
 									<Link
 										href={item.url}
-										className='text-base font-bold text-secondaryTextColor mb-3 w-3/4 hover:text-primary'
+										className='text-base font-bold text-secondaryTextColor mb-3 w-3/4 hover:text-primary hover:underline'
 									>
 										{item.title}
 									</Link>
@@ -78,7 +78,7 @@ const Footer = () => {
 											<Link
 												href={footerLink.url}
 												target='_blank'
-												className='text-sm text-secondaryTextColor hover:text-primary'
+												className='text-sm text-secondaryTextColor hover:text-primary hover:underline'
 											>
 												{footerLink.title}
 											</Link>
@@ -105,7 +105,10 @@ const Footer = () => {
 					&copy; 2023 Musems and Galleries Month. All rights reserved.{' '}
 					<span className='hidden md:inline'>|</span>{' '}
 					<br className='block md:hidden' />
-					Developed by <Link href='/'>Juno</Link>
+					Developed by{' '}
+					<Link href='/' className='hover:underline'>
+						Juno
+					</Link>
 				</p>
 			</div>
 		</footer>

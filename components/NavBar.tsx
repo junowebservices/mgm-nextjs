@@ -90,7 +90,15 @@ const NavBar = () => {
 						alt='logo'
 						width={125}
 						height={50}
-						className='object-contain'
+						className='object-contain md:hidden'
+					/>
+					<Image
+						priority
+						src='/logo.png'
+						alt='logo'
+						width={150}
+						height={50}
+						className='object-contain hidden md:block'
 					/>
 				</Link>
 				{/* Mobile Only */}
