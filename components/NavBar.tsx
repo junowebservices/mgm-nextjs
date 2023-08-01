@@ -1,8 +1,8 @@
 'use client';
 
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { BiGlobe } from 'react-icons/bi';
-import { MdAlternateEmail } from 'react-icons/md';
+import { FaGlobeAsia } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
@@ -26,7 +26,7 @@ import {
 } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 
-import { headerLink } from '@/constants';
+import { headerLink, socialmedia } from '@/constants';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -127,62 +127,15 @@ const NavBar = () => {
 					</Sheet>
 				</div>
 				<div className='md:flex flex-col items-end hidden'>
-					<NavigationMenu className='z-1'>
-						<NavigationMenuList>
-							<NavigationMenuItem className='space-x-4 flex text-primary text-lg'>
-								<Link
-									href='https://www.facebook.com'
-									legacyBehavior
-									passHref
-									target='_blank'
-								>
-									<NavigationMenuLink>
-										<BsFacebook className='w-6 h-6' />
-									</NavigationMenuLink>
+					<ul className='grid grid-cols-5 gap-4 place-content-center text-center'>
+						{socialmedia.map(social => (
+							<li>
+								<Link href={social.url} target='_blank'>
+									<social.icon className='w-6 h-6 text-primary' />
 								</Link>
-								<Link
-									href='https://www.twitter.com'
-									legacyBehavior
-									passHref
-									target='_blank'
-								>
-									<NavigationMenuLink>
-										<AiFillTwitterCircle className='w-6 h-6' />
-									</NavigationMenuLink>
-								</Link>
-								<Link
-									href='https://www.instagram.com'
-									legacyBehavior
-									passHref
-									target='_blank'
-								>
-									<NavigationMenuLink>
-										<AiFillInstagram className='w-6 h-6' />
-									</NavigationMenuLink>
-								</Link>
-								<Link
-									href='https://www.gmail.com'
-									legacyBehavior
-									passHref
-									target='_blank'
-								>
-									<NavigationMenuLink>
-										<MdAlternateEmail className='w-6 h-6' />
-									</NavigationMenuLink>
-								</Link>
-								<Link
-									href='https://www.junowebservices.com'
-									legacyBehavior
-									passHref
-									target='_blank'
-								>
-									<NavigationMenuLink>
-										<BiGlobe className='w-6 h-6' />
-									</NavigationMenuLink>
-								</Link>
-							</NavigationMenuItem>
-						</NavigationMenuList>
-					</NavigationMenu>
+							</li>
+						))}
+					</ul>
 					<NavigationMenu className='z-1 mt-4'>
 						<NavigationMenuList>
 							<NavigationMenuItem className='space-x-10'>
