@@ -191,12 +191,29 @@ export const fuels = [
 export const footerLinks = [
 	{
 		title: 'National Commission for Culture and the Arts',
+		url: 'https://ncca.gov.ph/',
 		links: [
-			{ title: 'National Arts Month', url: '/' },
-			{ title: 'National Literature Month', url: '/' },
-			{ title: 'National Culinary Month', url: '/' },
-			{ title: 'National Heritage Month', url: '/' },
-			{ title: 'Libraries and Information Services Month', url: '/' },
+			{
+				title: 'Cultural Center of the Philippines',
+				url: 'https://ncca.gov.ph/',
+			},
+			{ title: 'Komisyon sa Wikang Filipino', url: 'https://kwf.gov.ph/' },
+			{
+				title: 'National Archives of the Philippines',
+				url: 'https://nationalarchives.gov.ph/',
+			},
+			{
+				title: 'National Historical Commission of the Philippines',
+				url: 'https://nhcp.gov.ph/',
+			},
+			{
+				title: 'National Library of the Philippines',
+				url: 'http://web.nlp.gov.ph/nlp/',
+			},
+			{
+				title: 'National Museum of the Philippines',
+				url: 'https://www.nationalmuseum.gov.ph/',
+			},
 		],
 	},
 ];
