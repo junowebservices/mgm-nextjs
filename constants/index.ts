@@ -1,3 +1,8 @@
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
+import { BsFacebook } from 'react-icons/bs';
+import { FaGlobeAsia } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 export const activities = [
 	{
 		id: 1,
@@ -96,6 +101,34 @@ export const headerLink = [
 	},
 ];
 
+export const socialmedia = [
+	{
+		title: 'Facebook',
+		url: 'https://www.facebook.com',
+		icon: BsFacebook,
+	},
+	{
+		title: 'Twitter',
+		url: 'https://www.twitter.com',
+		icon: AiFillTwitterCircle,
+	},
+	{
+		title: 'Instagram',
+		url: 'https://www.instagram.com',
+		icon: AiFillInstagram,
+	},
+	{
+		title: 'Email',
+		url: 'https://www.gmail.com',
+		icon: MdEmail,
+	},
+	{
+		title: 'Website',
+		url: 'https://www.junowebservices.com',
+		icon: FaGlobeAsia,
+	},
+];
+
 export const partners = [
 	{
 		title: 'ManilArt',
@@ -147,29 +180,6 @@ export const memos = [
 	{
 		title: 'Pambansang Aklatan ng Pilipinas',
 		imageLink: '/images/memo/aklatan.png',
-	},
-];
-
-export const socialLinks = [
-	{
-		title: 'Facebook',
-		url: '/',
-	},
-	{
-		title: 'About',
-		url: '/about',
-	},
-	{
-		title: 'Calendar',
-		url: '/calendar',
-	},
-	{
-		title: 'Download+',
-		url: '/download',
-	},
-	{
-		title: 'Contact',
-		url: '/contact',
 	},
 ];
 
