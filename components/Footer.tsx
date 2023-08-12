@@ -11,8 +11,8 @@ const Footer = () => {
 						<Image
 							src={partner?.imageLink}
 							alt={partner?.title}
-							width={50}
-							height={50}
+							width={75}
+							height={75}
 							className='object-contain grayscale hover:grayscale-0'
 						/>
 					))}
@@ -106,7 +106,11 @@ const Footer = () => {
 					<span className='hidden md:inline'>|</span>{' '}
 					<br className='block md:hidden' />
 					Developed by{' '}
-					<Link href='/' className='hover:underline'>
+					<Link
+						href='https://junowebservices.com/'
+						target='_blank'
+						className='hover:text-primary underline'
+					>
 						Juno
 					</Link>
 				</p>
