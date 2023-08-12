@@ -37,17 +37,17 @@ const NavBar = () => {
 	const pathname = usePathname();
 
 	return (
-		<div className='full-bleed'>
-			<div className='bg-gray-100 fixed z-50 w-full top-0'>
+		<header className='full-bleed'>
+			<div className='bg-gray-100 fixed z-10 w-full top-0'>
 				<div className='flex justify-between inside items-center text-sm font-Arial text-gray-600'>
 					<p className='text-xs md:text-sm'>GOV.PH</p>
-					<NavigationMenu>
+					<NavigationMenu className='z-20'>
 						<NavigationMenuList>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger className='text-xs md:text-sm bg-transparent'>
 									Accessibility Statement
 								</NavigationMenuTrigger>
-								<NavigationMenuContent className='z-10 bg-white'>
+								<NavigationMenuContent className='bg-white'>
 									<ul className='grid gap-3 py-2 px-4 md:w-[300px] lg:w-[300px] z-10 bg-white'>
 										<Link href='/docs' title='Introduction'>
 											Re-usable
@@ -82,7 +82,7 @@ const NavBar = () => {
 					</NavigationMenu>
 				</div>
 			</div>
-			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-50 bg-white top-10'>
+			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-10'>
 				<Link href='/'>
 					<Image
 						priority
@@ -162,7 +162,7 @@ const NavBar = () => {
 					</NavigationMenu>
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 };
 
