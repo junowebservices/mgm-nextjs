@@ -1,7 +1,7 @@
 ---
 title: Historical Walking Tour Uncover the Secrets of Our City
 subtitle: Embark on a fascinating journey through the city's historic landmarks, led by knowledgeable guides who will reveal captivating stories and hidden tales.
-date: "2023-10-18T00:00:00Z"
+date: '2023-10-18T00:00:00Z'
 featuredImage: /images/sample-3.webp
 ---
 

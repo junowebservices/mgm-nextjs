@@ -8,18 +8,16 @@ const Footer = () => {
 			<div className='bg-gray-100'>
 				<div className='py-4 flex justify-center gap-2 lg:gap-6 px-4'>
 					{partners.map(partner => (
-						<Image
-							src={partner?.imageLink}
-							alt={partner?.title}
-							width={75}
-							height={75}
-							className='object-contain grayscale hover:grayscale-0'
-						/>
+						<div>
+							<Image
+								src={partner?.imageLink}
+								alt={partner?.title}
+								width={75}
+								height={75}
+								className='object-contain grayscale hover:grayscale-0'
+							/>
+						</div>
 					))}
-
-					{/* <div className="w-16 h-16 rounded-full bg-white"></div> */}
-					{/* <div className="w-16 h-16 rounded-full bg-white"></div> */}
-					{/* <div className="w-16 h-16 rounded-full bg-white"></div> */}
 				</div>
 				<div className='bg-[#f0f0f0] mx-3'>
 					<div className='grid lg:grid-cols-12 py-12 inside gap-8'>

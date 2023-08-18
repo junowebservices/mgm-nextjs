@@ -108,8 +108,8 @@ const NavBar = () => {
 							<HiOutlineMenuAlt3 className='w-8 h-8' name='menu' />
 						</SheetTrigger>
 						<SheetContent className='pt-12 bg-primary'>
-							{headerLink.map(item => (
-								<div className='space-y-4'>
+							{headerLink.map((item, index) => (
+								<div className='space-y-4' key={index}>
 									<div
 										key={item.title}
 										className={`p-4 text-white ${
@@ -128,8 +128,8 @@ const NavBar = () => {
 				</div>
 				<div className='md:flex flex-col items-end hidden'>
 					<ul className='grid grid-cols-5 gap-4 place-content-center text-center'>
-						{socialmedia.map(social => (
-							<li>
+						{socialmedia.map((social, index) => (
+							<li key={index}>
 								<Link href={social.url} target='_blank'>
 									<social.icon className='w-6 h-6 text-primary' />
 								</Link>
