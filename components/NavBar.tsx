@@ -113,7 +113,7 @@ const NavBar = () => {
 									<div
 										key={item.title}
 										className={`p-4 text-white ${
-											pathname === item.url &&
+											pathname.includes(item.url) &&
 											'font-bold underline underline-white underline-offset-2'
 										}`}
 									>
@@ -148,7 +148,7 @@ const NavBar = () => {
 									>
 										<NavigationMenuLink
 											className={
-												pathname === item.url
+												pathname.includes(item.url)
 													? `text-primary hover:text-primary`
 													: `text-secondaryTextColor hover:text-primary hover:underline`
 											}

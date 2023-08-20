@@ -1,23 +1,24 @@
 'use client';
 import { useEffect } from 'react';
 import { CalendarDayProps } from '@/constants/types';
+import Link from 'next/link';
 
-const CalendarDay: React.FC<CalendarDayProps> = ({
-	day,
-	events,
-	hasEvents,
-}) => {
+const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
+	const hasEvents = events.length > 0;
+	const dayClasses = `border p-2 h-[100px] ${
+		hasEvents ? 'bg-mainYellow' : 'bg-white hidden md:block'
+	}`;
+
 	return (
-		<div
-			className={`${
-				hasEvents
-					? 'w-full bg-mainYellow hover:bg-mainYellow-light cursor-pointer'
-					: 'hidden md:block'
-			} border min-h-[120px] p-2`}
-		>
-			<p className='mb-1'>{day}</p>
+		<div className={dayClasses}>
+			<div className='font-bold mb-1'>{day}</div>
 			{events.map((event, index) => (
-				<h2 key={index}>{event.title}</h2>
+				<div key={index}>
+					<div className='text-lg font-semibold line-clamp-1 cursor-pointer hover:underline'>
+						<Link href={`/events/${event.slug}`}>{event.title}</Link>
+					</div>
+					<div className='text-xs line-clamp-2'>{event.subtitle}</div>
+				</div>
 			))}
 		</div>
 	);
