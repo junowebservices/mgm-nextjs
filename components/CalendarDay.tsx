@@ -6,7 +6,7 @@ import Link from 'next/link';
 const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 	const hasEvents = events.length > 0;
 	const dayClasses = `border p-2 h-[100px] ${
-		hasEvents ? 'bg-mainYellow' : 'bg-white hidden md:block'
+		hasEvents ? 'bg-mainYellow' : 'bg-white'
 	}`;
 
 	return (

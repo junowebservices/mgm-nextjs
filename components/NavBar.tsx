@@ -20,6 +20,7 @@ import {
 	Sheet,
 	SheetContent,
 	SheetDescription,
+	SheetFooter,
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
@@ -44,7 +45,7 @@ const NavBar = () => {
 					<NavigationMenu className='z-20'>
 						<NavigationMenuList>
 							<NavigationMenuItem>
-								<NavigationMenuTrigger className='text-xs md:text-sm bg-transparent'>
+								<NavigationMenuTrigger className='text-xs md:text-sm bg-transparent !pr-0'>
 									Accessibility Statement
 								</NavigationMenuTrigger>
 								<NavigationMenuContent className='bg-white'>
@@ -108,6 +109,18 @@ const NavBar = () => {
 							<HiOutlineMenuAlt3 className='w-8 h-8' name='menu' />
 						</SheetTrigger>
 						<SheetContent className='pt-12 bg-primary'>
+							{/* <div className='space-y-4'>
+								<div
+									className={`p-4 text-white ${
+										pathname === '/' &&
+										'font-bold underline underline-white underline-offset-2'
+									}`}
+								>
+									<Link href='/' legacyBehavior passHref className=''>
+										<h2 className=''>Home</h2>
+									</Link>
+								</div>
+							</div> */}
 							{headerLink.map((item, index) => (
 								<div className='space-y-4' key={index}>
 									<div
@@ -123,6 +136,17 @@ const NavBar = () => {
 									</div>
 								</div>
 							))}
+							<SheetFooter className='absolute left-10 bottom-8'>
+								<ul className='grid grid-cols-5 gap-4 place-content-center text-center'>
+									{socialmedia.map((social, index) => (
+										<li key={index}>
+											<Link href={social.url} target='_blank'>
+												<social.icon className='w-6 h-6 text-white' />
+											</Link>
+										</li>
+									))}
+								</ul>
+							</SheetFooter>
 						</SheetContent>
 					</Sheet>
 				</div>
@@ -131,7 +155,7 @@ const NavBar = () => {
 						{socialmedia.map((social, index) => (
 							<li key={index}>
 								<Link href={social.url} target='_blank'>
-									<social.icon className='w-6 h-6 text-primary' />
+									<social.icon className='w-5 h-5 text-primary' />
 								</Link>
 							</li>
 						))}

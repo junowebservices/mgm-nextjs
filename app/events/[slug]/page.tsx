@@ -13,9 +13,10 @@ const getEventContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-	const events = getEventMetadata();
+	const { all } = getEventMetadata();
+	const allEvents = all;
 
-	return events.map(event => ({
+	return allEvents.map(event => ({
 		slug: event.slug,
 	}));
 };

@@ -29,7 +29,7 @@ export default function RootLayout({
 			/>
 			<body>
 				<NavBar />
-				<main className='flex flex-col w-full lg:mt-32 xl:mt-36'>
+				<main className='flex flex-col w-full mt-28 lg:mt-32 xl:mt-36'>
 					{children}
 				</main>
 				<Footer />
