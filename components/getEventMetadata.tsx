@@ -2,12 +2,6 @@ import { EventMetadata } from '@/constants/types';
 import fs from 'fs';
 import matter from 'gray-matter';
 
-interface CategorizedEvents {
-	pastEvents: EventMetadata[];
-	happeningNowEvents: EventMetadata[];
-	futureEvents: EventMetadata[];
-}
-
 const getEventMetadata = (): {
 	categorized: CategorizedEvents;
 	all: EventMetadata[];

@@ -5,6 +5,12 @@ export interface Activity {
 	date: string;
 }
 
+interface CategorizedEvents {
+	pastEvents: EventMetadata[];
+	happeningNowEvents: EventMetadata[];
+	futureEvents: EventMetadata[];
+}
+
 export interface PostMetadata {
 	title: string;
 	date: string;
