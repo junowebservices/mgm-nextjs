@@ -92,6 +92,10 @@ export const headerLink = [
 		url: '/articles',
 	},
 	{
+		title: 'Events',
+		url: '/events',
+	},
+	{
 		title: 'Download+',
 		url: '/download',
 	},

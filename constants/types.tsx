@@ -21,17 +21,11 @@ export interface EventMetadata {
 	featuredImage: string;
 }
 
-export interface Event {
-	date: number;
-	title: string;
-}
-
 export interface MonthCalendarProps {
-	events: Event[];
+	events: EventMetadata[];
 }
 
 export interface CalendarDayProps {
 	day: number;
-	events: Event[];
-	hasEvents: boolean;
+	events: EventMetadata[];
 }

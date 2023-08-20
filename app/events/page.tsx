@@ -1,17 +1,15 @@
-import getEventMetadata from "@/components/getEventMetadata";
-import PostPreview from "@/components/PostPreview";
+import getEventMetadata from '@/components/getEventMetadata';
+import MonthCalendar from '@/components/MonthCalendar';
 
 const Events = () => {
-  const postMetadata = getEventMetadata();
-  const Events = postMetadata.map((event) => (
-    <PostPreview key={event.slug} {...event} />
-  ));
+	const postMetadata = getEventMetadata();
 
-  return (
-    <section className="inside mt-4 mb-12">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{Events}</div>
-    </section>
-  );
+	return (
+		<div className='py-8 px-4'>
+			<h1 className='text-xl font-semibold mb-4'>October 2023 Calendar</h1>
+			<MonthCalendar events={postMetadata} />
+		</div>
+	);
 };
 
 export default Events;
