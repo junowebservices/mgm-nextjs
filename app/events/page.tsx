@@ -7,15 +7,17 @@ const Events = () => {
 	const allEvents = all;
 
 	return (
-		<div className='py-8 px-4'>
-			<h1 className='text-xl font-semibold mb-4'>October 2023 Calendar</h1>
-			<section className='hidden md:block'>
+		<section>
+			<h1 className='font-bold text-2xl lg:text-3xl my-6 text-center'>
+				October 2023 Calendar
+			</h1>
+			<div className='hidden md:block inside'>
 				<MonthCalendar events={allEvents} />
-			</section>
-			<section className='md:hidden'>
+			</div>
+			<div className='md:hidden inside'>
 				<EventsTabs />
-			</section>
-		</div>
+			</div>
+		</section>
 	);
 };
 

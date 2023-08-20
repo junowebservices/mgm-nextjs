@@ -1,9 +1,8 @@
-import { format, parseISO } from 'date-fns';
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from './ui/separator';
 import Link from 'next/link';
 import getEventMetadata from './getEventMetadata';
+import { EventMetadata } from '@/constants/types';
 
 const EventsTabs = () => {
 	// Call the getEventMetadata function
@@ -26,7 +25,7 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{pastEvents.map(activity => {
+						{pastEvents.map((activity: EventMetadata) => {
 							return (
 								<div key={activity.title}>
 									<Link href={`/events/${activity.slug}`}>
@@ -48,7 +47,7 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{happeningNowEvents.map(activity => {
+						{happeningNowEvents.map((activity: EventMetadata) => {
 							return (
 								<div key={activity.title}>
 									<Link href={`/events/${activity.slug}`}>
@@ -70,7 +69,7 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{futureEvents.map(activity => {
+						{futureEvents.map((activity: EventMetadata) => {
 							return (
 								<div key={activity.title}>
 									<Link href={`/events/${activity.slug}`}>

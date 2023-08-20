@@ -39,8 +39,8 @@ const NavBar = () => {
 
 	return (
 		<header className='full-bleed'>
-			<div className='bg-gray-100 fixed z-10 w-full top-0'>
-				<div className='flex justify-between inside items-center text-sm font-Arial text-gray-600'>
+			<div className='bg-gray-100 fixed z-10 w-full top-0 inside'>
+				<div className='flex justify-between items-center font-Arial'>
 					<p className='text-xs md:text-sm'>GOV.PH</p>
 					<NavigationMenu className='z-20'>
 						<NavigationMenuList>
