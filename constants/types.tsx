@@ -5,7 +5,7 @@ export interface Activity {
 	date: string;
 }
 
-interface CategorizedEvents {
+export interface CategorizedEvents {
 	pastEvents: EventMetadata[];
 	happeningNowEvents: EventMetadata[];
 	futureEvents: EventMetadata[];

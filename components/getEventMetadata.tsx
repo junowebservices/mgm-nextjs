@@ -1,4 +1,4 @@
-import { EventMetadata } from '@/constants/types';
+import { EventMetadata, CategorizedEvents } from '@/constants/types';
 import fs from 'fs';
 import matter from 'gray-matter';
 
