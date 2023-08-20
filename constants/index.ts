@@ -1,5 +1,11 @@
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
-import { BsFacebook } from 'react-icons/bs';
+import {
+	BsFacebook,
+	BsFillEnvelopeAtFill,
+	BsGlobeAsiaAustralia,
+	BsInstagram,
+	BsTwitter,
+} from 'react-icons/bs';
 import { FaGlobeAsia } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
@@ -114,22 +120,22 @@ export const socialmedia = [
 	{
 		title: 'Twitter',
 		url: 'https://www.twitter.com',
-		icon: AiFillTwitterCircle,
+		icon: BsTwitter,
 	},
 	{
 		title: 'Instagram',
 		url: 'https://www.instagram.com',
-		icon: AiFillInstagram,
+		icon: BsInstagram,
 	},
 	{
 		title: 'Email',
 		url: 'https://www.gmail.com',
-		icon: MdEmail,
+		icon: BsFillEnvelopeAtFill,
 	},
 	{
 		title: 'Website',
 		url: 'https://www.junowebservices.com',
-		icon: FaGlobeAsia,
+		icon: BsGlobeAsiaAustralia,
 	},
 ];
 

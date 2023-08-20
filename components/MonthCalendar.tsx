@@ -21,7 +21,7 @@ const MonthCalendar: React.FC<MonthCalendarProps> = ({ events }) => {
 		return days;
 	};
 	return (
-		<div className='grid sm:grid-cols-2 md:grid-cols-7 gap-2'>
+		<div className='grid grid-cols-7 gap-2'>
 			{/* {Array.from({ length: 31 }).map((_, index) => (
 				<div key={`empty-${index}`} />
 			))} */}
