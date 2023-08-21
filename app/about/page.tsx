@@ -9,7 +9,7 @@ const About = () => {
 			<section className='full-bleed bg-mainBlue aspect-square md:aspect-[3/1]'>
 				<div className='grid lg:grid-cols-2 gap-4 place-content-center h-full inside text-white'>
 					<div className='space-y-3'>
-						<h2 className='text-4xl'>
+						<h2 className='text-2xl lg:text-4xl'>
 							<strong>"Exhibits and Reflections:</strong> Creating Opportunities
 							for the New World"
 						</h2>

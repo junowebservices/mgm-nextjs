@@ -23,8 +23,13 @@ export const generateStaticParams = async () => {
 const PostPage = (props: any) => {
 	const slug = props.params.slug;
 	const post = getPostContent(slug);
+	const formattedMarkdown = post.content
+		.replace(/\s\s$/gm, '<br/><br/>') // Replace double spaces at end of line
+		.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
+
+	console.log(post.content, 'post');
 	return (
-		<div className='inside'>
+		<div className='inside article'>
 			<div className='mb-12'>
 				<Image
 					src={post.data.featuredImage}
@@ -34,7 +39,7 @@ const PostPage = (props: any) => {
 					alt='image'
 				/>
 				<div className='mx-auto'>
-					<h1 className='text-3xl lg:text-5xl text-black mt-8'>
+					<h1 className='text-3xl lg:text-5xl text-black mt-8 !font-Playfair'>
 						{post.data.title}
 					</h1>
 					<p className='text-secondaryTextColor text-sm mt-2 lg:mt-4'>
@@ -44,7 +49,7 @@ const PostPage = (props: any) => {
 			</div>
 
 			<article className='text-lg mx-auto'>
-				<Markdown>{post.content}</Markdown>
+				<Markdown>{formattedMarkdown}</Markdown>
 			</article>
 		</div>
 	);
