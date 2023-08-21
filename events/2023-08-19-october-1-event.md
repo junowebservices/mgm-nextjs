@@ -1,5 +1,5 @@
 ---
-featuredImage: https://images.pexels.com/photos/2348182/pexels-photo-2348182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+featuredImage: /uploads/picture1.png
 title: "Within the Walls S2EP1: Museum Researcher"
 subtitle: Following its successful debut last year, Within the Walls will be
   hosting its second installation for Museums and Galleries Month 2023. Produced
