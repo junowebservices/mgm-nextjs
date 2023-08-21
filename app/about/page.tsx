@@ -6,10 +6,13 @@ import Link from 'next/link';
 const About = () => {
 	return (
 		<>
-			<section className='full-bleed bg-mainBlue h-[50vh]'>
+			<section className='full-bleed bg-mainBlue aspect-square md:aspect-[3/1]'>
 				<div className='grid lg:grid-cols-2 gap-4 place-content-center h-full inside text-white'>
 					<div className='space-y-3'>
-						<h2 className='text-4xl'>Embracing Uncertainly</h2>
+						<h2 className='text-4xl'>
+							<strong>"Exhibits and Reflections:</strong> Creating Opportunities
+							for the New World"
+						</h2>
 					</div>
 					{/* <div className="">
             <p>
@@ -25,26 +28,60 @@ const About = () => {
 				<div className='grid place-content-center'>
 					<div className='space-y-3'>
 						<h2 className='text-3xl'>About Museums and Galleries Month</h2>
-						<p className=''>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-							quae ab illo inventore veritatis et quasi architecto beatae vitae
-							dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-							aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-							eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-							est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-							velit, sed quia non numquam eius modi tempora incidunt ut labore
-							et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-							veniam, quis nostrum exercitationem ullam corporis suscipit
-							laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-							vel eum iure reprehenderit qui in ea voluptate velit esse quam
-							nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-							voluptas nulla pariatur?
+						<p>
+							The Museums and Galleries Month (MGM) of the National Commission
+							for Culture and the Arts (NCCA) annually celebrates the rich
+							culture and heritage of the Philippines. Based on the Proclamation
+							No. 798 s.1991 signed by the late former President Corazon Aquino,
+							MGM acts an innovative instrument to arouse the national
+							consciousness and pride in the Philippines' rich culture and
+							national identity, embracing all forms of art and culture,
+							historical and religious artifacts.
+						</p>
+						<p>
+							Every October, the MGM offers fresh theme that provides awareness
+							to all regarding the promising heritage of the Philippines.
+						</p>
+						<p>
+							MGM is committed to promote and celebrate the diversed culture of
+							the country.
 						</p>
 					</div>
 				</div>
 			</section>
+			<section className='inside my-16'>
+				<div className='grid place-content-center'>
+					<div className='space-y-3'>
+						<h2 className='text-3xl'>About the MGM 2023 Theme </h2>
+						<p>
+							<strong>
+								“Exhibits and Reflections: Creating Opportunities for the New
+								World”
+							</strong>{' '}
+							encompasses the role of museums and galleries in showcasing art
+							forms as an avenue to interpret various facets of humanity that
+							have always been discussed for years. From intrapersonal to global
+							issues, museums and galleries have been the host to various
+							microcosms that serve as catalysts for human beings from all walks
+							of life, providing chances to reflect, restart, and redirect
+							themselves to a better future.
+						</p>
 
+						<p>
+							The said theme aligns with the celebration of 2023 International
+							Museum Day: “Museums, Sustainability, and Wellbeing” which aims to
+							achieve the United Nations' (UN) Sustainable Development Goals,
+							focusing on regulating climate, fostering inclusivity, and
+							tackling socio-personal issues. It also integrates the narrative
+							of the theme of 125th Celebration of Philippine Independence:
+							“Kalayaan, Kinabukasan, Kasaysayan” which aims to highlight the
+							opportunities made by our ancestors to attain the freedom we
+							achieve right now, and how shall the present preserve and pass it
+							on for more generations to come.
+						</p>
+					</div>
+				</div>
+			</section>
 			{/* Grid */}
 			{/* <section className="mt-4 lg:mt-16 inside">
         <div className="grid md:grid-cols-2">
@@ -112,7 +149,7 @@ const About = () => {
         </div>
       </section> */}
 
-			<section className='inside my-16'>
+			{/* <section className='inside my-16'>
 				<div className='grid lg:grid-cols-4 gap-4 place-content-center'>
 					<div className='col-span-1'>
 						<h2 className='text-3xl mb-2'>Objectives</h2>
@@ -127,7 +164,7 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<section className='inside my-16'>
 				<div className='grid gap-12'>
 					<h2 className='text-3xl text-center'>Partner Programs</h2>
