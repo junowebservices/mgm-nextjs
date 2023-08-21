@@ -10,7 +10,7 @@ Go visit while it lasts!
 
 # 1. National Museum of the Philippines
 
-<img src="uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg" alt="Alt Text" class="align-left-half">
+<img src="public/uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg" class="align-left-half">
 
 Various activities within National and Regional Museums are launched in celebration with the Museums and Galleries Month. You may visit their [website](nationalmuseum.gov.ph) for the full list of activities and locations of their museums all over the Philippines.
 
