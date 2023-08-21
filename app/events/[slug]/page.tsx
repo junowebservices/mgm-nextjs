@@ -30,7 +30,7 @@ const EventPage = (props: any) => {
 				<Image
 					src={event.data.featuredImage}
 					width={1500}
-					height={200}
+					height={500}
 					className='object-cover w-full lg:h-[500px]'
 					alt='image'
 				/>

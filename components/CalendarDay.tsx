@@ -17,7 +17,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 					<div className='text-lg font-semibold line-clamp-1 cursor-pointer hover:underline'>
 						<Link href={`/events/${event.slug}`}>{event.title}</Link>
 					</div>
-					<div className='text-xs line-clamp-2'>{event.subtitle}</div>
+					{/* <div className='text-xs line-clamp-2'>{event.subtitle}</div> */}
 				</div>
 			))}
 		</div>

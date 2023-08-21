@@ -78,6 +78,12 @@
 	body {
 		@apply text-base bg-background text-foreground font-Roboto;
 	}
+	blockquote {
+		@apply ml-6;
+	}
+	ol {
+		@apply list-decimal ml-4;
+	}
 	h1,
 	h2,
 	h3 {
@@ -88,6 +94,18 @@
 	}
 	.full-bleed {
 		@apply max-w-[1440px] w-full mx-auto;
+	}
+	.article h1 {
+		@apply text-2xl font-Roboto font-bold;
+	}
+	.article h2 {
+		@apply text-xl font-Roboto font-bold;
+	}
+	.article .align-left-half {
+		@apply w-full md:w-1/2 float-left mr-8;
+	}
+	.article .align-right-half {
+		@apply w-full md:w-1/2 float-right ml-8;
 	}
 }
 #download .slick-next:before,

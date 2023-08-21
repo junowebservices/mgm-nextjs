@@ -17,7 +17,16 @@ export default function Home() {
 			<section className='mt-4 lg:mt-16 inside'>
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
 				<div className='grid sm:grid-cols-2'>
-					<div className='bg-primary w-full aspect-square lg:aspect-[16/9] hidden lg:grid place-items-center text-center' />
+					<div className='w-full '>
+						<Image
+							priority
+							src='/images/HP4.jpg'
+							alt='Featured Image'
+							width={800}
+							height={800}
+							className='object-cover aspect-square lg:aspect-[16/9]'
+						/>
+					</div>
 					<div className='bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
 						<div className='px-12 space-y-2'>
 							<h2 className='font-bold text-2xl '>
@@ -42,7 +51,16 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className='bg-primary w-full aspect-square lg:aspect-[16/9] hidden lg:grid place-items-center text-center' />
+					<div className='w-full grid place-content-center'>
+						<Image
+							priority
+							src='/images/HP5.jpg'
+							alt='Featured Image'
+							width={800}
+							height={800}
+							className='object-cover aspect-square lg:aspect-[16/9]'
+						/>
+					</div>
 				</div>
 			</section>
 			{/* Blogs */}
@@ -96,21 +114,20 @@ export default function Home() {
 			</section>
 			<section className='-mt-44 inside'>
 				<div className='grid md:grid-cols-2'>
-					<div className='bg-mainYellow w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						{/* <div className='px-12 space-y-5'>
-							<h2 className='font-bold text-2xl  '>Events & Activities</h2>
-							<div className='space-y-3'>
-								<p className='lg:text-lg'>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									explicabo similique molestiae incidunt non placeat? Eaque.
-								</p>
-							</div>
-						</div> */}
+					<div className='w-full'>
+						<Image
+							priority
+							src='/images/HP6.jpg'
+							alt='Featured Image'
+							width={800}
+							height={800}
+							className='object-cover aspect-square lg:aspect-[16/9]'
+						/>
 					</div>
 					<div className='bg-white border-2 border-black w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
 						<div className='px-12 space-y-5'>
 							<h2 className='font-bold text-2xl  '>About 2023 Theme</h2>
-							<p className='lg:text-xl'>
+							<p className=''>
 								“Exhibits and Reflections: Creating Opportunities for the New
 								World” encompasses the role of museums and galleries in
 								showcasing art forms as an avenue to interpret various facets of
@@ -132,7 +149,7 @@ export default function Home() {
 					<div className='bg-white border-2 border-black w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
 						<div className='px-12 space-y-5'>
 							<div className='space-y-3'>
-								<p className='lg:text-xl'>
+								<p className=''>
 									Check out other awesome events prepared by various agencies
 									around the country and across the globe
 								</p>
@@ -150,16 +167,15 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='bg-mainBlue w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						{/* <div className='px-12 space-y-5'>
-							<h2 className='font-bold text-2xl   text-white'>Get in touch</h2>
-							<div className='space-y-3'>
-								<p className='text-primary-foreground lg:text-xl'>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									explicabo similique molestiae incidunt non placeat? Eaque.
-								</p>
-							</div>
-						</div> */}
+					<div className='w-full'>
+						<Image
+							priority
+							src='/images/HP7.jpg'
+							alt='Featured Image'
+							width={800}
+							height={800}
+							className='object-cover aspect-square lg:aspect-[16/9]'
+						/>
 					</div>
 				</div>
 			</section>
@@ -169,12 +185,12 @@ export default function Home() {
 					<h2 className='text-2xl lg:text-3xl font-bold'>Celebrate with us</h2>
 					<div className=''>
 						<p>
-							7. “Allow yourself to be involved in these amazing activities and
+							Allow yourself to be involved in these amazing activities and
 							initiatives to celebrate the rich culture and history of our
 							country. Join forums, workshops, competitions, and other
 							activities of the NCCA - MGM that are full of fun and learnings!
 						</p>
-						<div className='block mt-6 space-x-5'>
+						<div className='block mt-6 space-y-2 md:space-x-5'>
 							<Button variant={'secondary'} size={'lg'}>
 								Submit Your Activities
 							</Button>
