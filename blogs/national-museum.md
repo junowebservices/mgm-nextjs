@@ -1,14 +1,24 @@
 ---
-title: "The National Museum of the Philippines"
-subtitle: "The national museum of the Philippines and is the largest museum in the country."
-date: "2020-12-27"
-featuredImage: "/images/sample-2.webp"
+featuredImage: /uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg
+title: A Beginner's Guide to Museums with Free Admission in the Philippines
+subtitle: Know more where to spend your October, free of charge!
+date: August 21, 2023 7:42 PM
 ---
+Planning to go to some events like Oktoberfest or Halloween costume parties this month? If you have free time, why don’t you go to these museums that are free of charge before October ends?
 
-The National Museum of the Philippines is the national museum of the Philippines and is the largest museum in the country. It is located in Manila and has several branches across the country. It was established in 1901 and is responsible for preserving the country's rich cultural and historical heritage.
+Go visit while it lasts!
 
-The museum has a vast collection of artifacts and specimens from the Philippines, including prehistoric fossils, pottery, weapons, textiles, religious images, and contemporary art. Some of the most notable items in its collection include the famous Tabon Man, a nearly 22,000-year-old human fossil, and the Spoliarium, a painting by Juan Luna, considered one of the masterpieces of Philippine art.
 
-## The National Museum of the Philippines
 
-plays an important role in promoting Philippine culture and history, both domestically and internationally. It offers a variety of educational programs and exhibitions, as well as research opportunities for scholars and students. Whether you're a history buff, an art lover, or just interested in learning more about the Philippines, a visit to the National Museum is a must.
+## 1. National Museum of the Philippines
+
+![](/uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg "The National Museum of Fine Arts, located in Manila")
+
+Various activities within National and Regional Museums are launched in celebration with the Museums and Galleries Month. You may visit their [website](nationalmuseum.gov.ph) for the full list of activities and locations of their museums all over the Philippines.
+
+## 2﻿. National Historical Commission of the Philippines (NHCP) Museums
+
+![](/uploads/nhcp-museum-of-philippine-economic-histroy.jpg "NHCP Museum of Philippine Economic History")
+
+Do you want to learn about history? NHCP Museums are the best fit for you!\
+The museums welcomes all guests and is open for free. To check which museum is nearby your location, visit their [website.](https://nhcp.gov.ph/history-museums/)
