@@ -10,16 +10,20 @@ Go visit while it lasts!
 
 # 1. National Museum of the Philippines
 
-<img src="public/uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg" class="align-left-half">
+<img src="/uploads/national-museum-of-fine-arts-facade-photo-banner-1-scaled.jpg" class="align-left-half">
 
 Various activities within National and Regional Museums are launched in celebration with the Museums and Galleries Month. You may visit their [website](nationalmuseum.gov.ph) for the full list of activities and locations of their museums all over the Philippines.
 
-# 2﻿. National Historical Commission of the Philippines (NHCP) Museums
+</br>
 
-![](/uploads/nhcp-museum-of-philippine-economic-histroy.jpg "NHCP Museum of Philippine Economic History")
+# 2﻿. National Historical Commission of the Philippines (NHCP) Museums
 
 Do you want to learn about history? NHCP Museums are the best fit for you!\
 The museums welcomes all guests and is open for free. To check which museum is nearby your location, visit their [website.](https://nhcp.gov.ph/history-museums/)
+
+<img src="/uploads/nhcp-museum-of-philippine-economic-histroy.jpg" class="align-left-right">
+
+</br>
 
 # 3﻿. Ayala Museum
 
