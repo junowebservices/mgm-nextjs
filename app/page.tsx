@@ -24,11 +24,11 @@ export default function Home() {
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-square lg:aspect-[16/9]'
+							className='object-cover aspect-video'
 						/>
 					</div>
-					<div className='bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						<div className='px-12 space-y-2'>
+					<div className='bg-white border-2 border-black lg:border-none w-full aspect-video grid place-items-center text-center'>
+						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl '>
 								Museums and Galleries Month (MGM)
 							</h2>
@@ -39,8 +39,8 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className='bg-white border-2 border-black lg:border-none w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						<div className='px-12 space-y-2'>
+					<div className='bg-white border-2 border-black lg:border-none w-full aspect-video grid place-items-center text-center'>
+						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl  '>Lead Agencies</h2>
 							<p className='text-secondaryTextColor'>
 								The National Commission for Culture and the Arts (NCCA) and the
@@ -58,7 +58,7 @@ export default function Home() {
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-square lg:aspect-[16/9]'
+							className='object-cover aspect-video'
 						/>
 					</div>
 				</div>
@@ -121,11 +121,11 @@ export default function Home() {
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-square lg:aspect-[16/9]'
+							className='object-cover aspect-video'
 						/>
 					</div>
-					<div className='bg-white border-2 border-black w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						<div className='px-12 space-y-5'>
+					<div className='bg-white border-2 border-black w-full aspect-video grid place-items-center text-center'>
+						<div className='p-4 space-y-5'>
 							<h2 className='font-bold text-2xl  '>About 2023 Theme</h2>
 							<p className=''>
 								“Exhibits and Reflections: Creating Opportunities for the New
@@ -146,8 +146,8 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='bg-white border-2 border-black w-full aspect-square lg:aspect-[16/9] grid place-items-center text-center'>
-						<div className='px-12 space-y-5'>
+					<div className='bg-white border-2 border-black w-full aspect-video grid place-items-center text-center'>
+						<div className='p-4 space-y-5'>
 							<div className='space-y-3'>
 								<p className=''>
 									Check out other awesome events prepared by various agencies
@@ -174,7 +174,7 @@ export default function Home() {
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-square lg:aspect-[16/9]'
+							className='object-cover aspect-video'
 						/>
 					</div>
 				</div>
