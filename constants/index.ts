@@ -2,6 +2,7 @@ import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import {
 	BsFacebook,
 	BsFillEnvelopeAtFill,
+	BsFillEnvelopeFill,
 	BsGlobeAsiaAustralia,
 	BsInstagram,
 	BsTwitter,
@@ -130,7 +131,7 @@ export const socialmedia = [
 	{
 		title: 'Email',
 		url: 'https://www.gmail.com',
-		icon: BsFillEnvelopeAtFill,
+		icon: BsFillEnvelopeFill,
 	},
 	{
 		title: 'Website',
@@ -235,5 +236,38 @@ export const footerLinks = [
 				url: 'https://www.nationalmuseum.gov.ph/',
 			},
 		],
+	},
+];
+
+export const agencyKit = [
+	{
+		title: '2023 MGM Logo Variations',
+		desc: "MGM Logo Variations represent the diverse visual adaptations of the official logo to celebrate this year's awesome theme.",
+		link: '#',
+	},
+	{
+		title: '2023 MGM Poster Pack',
+		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
+		link: '#',
+	},
+	{
+		title: '2023 MGM Banner and Banner Specs',
+		desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
+		link: '#',
+	},
+	{
+		title: '2023 MGM Branding Fonts',
+		desc: "To have the full experience of MGM 2023, branding fonts can be used to match the official font of this year's theme.",
+		link: '#',
+	},
+	{
+		title: '2023 MGM Digital Briefer',
+		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
+		link: '#',
+	},
+	{
+		title: '2023 MGM Sticker Pack',
+		desc: 'Awesome MGM 2023 stickers can be used for promoting your MGM-related content postings on Viber! The following sticker pack can be downloaded here.',
+		link: '#',
 	},
 ];
