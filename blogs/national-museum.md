@@ -16,7 +16,7 @@ Various activities within National and Regional Museums are launched in celebrat
 
 <br></br>
 
-<img src="/uploads/nhcp-museum-of-philippine-economic-histroy.jpg" class="align-left-right">
+<img src="/uploads/nhcp-museum-of-philippine-economic-histroy.jpg" class="align-right-half">
 
 # 2﻿. National Historical Commission of the Philippines (NHCP) Museums
 
