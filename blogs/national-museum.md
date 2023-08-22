@@ -16,9 +16,9 @@ Various activities within National and Regional Museums are launched in celebrat
 
 <br></br>
 
-# 2﻿. National Historical Commission of the Philippines (NHCP) Museums
-
 <img src="/uploads/nhcp-museum-of-philippine-economic-histroy.jpg" class="align-left-right">
+
+# 2﻿. National Historical Commission of the Philippines (NHCP) Museums
 
 Do you want to learn about history? NHCP Museums are the best fit for you!\
 The museums welcomes all guests and is open for free. To check which museum is nearby your location, visit their [website.](https://nhcp.gov.ph/history-museums/)
