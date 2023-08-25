@@ -1,10 +1,11 @@
 import NavBar from '@/components/NavBar';
 import './globals.css';
 import Footer from '@/components/Footer';
-import Head from 'next/head';
+import { Suspense } from 'react';
+import Analytics from '@/components/gtag/Analytics';
 export const metadata = {
-	title: 'MGM',
-	description: 'Museum and Gallery National Month',
+	title: 'Museum and Gallery National Month',
+	description: 'Museum and Gallery National Month 2023',
 };
 
 export default function RootLayout({
@@ -28,6 +29,9 @@ export default function RootLayout({
 				href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
 			/>
 			<body>
+				<Suspense>
+					<Analytics />
+				</Suspense>
 				<NavBar />
 				<main className='flex flex-col w-full mt-28 lg:mt-32 xl:mt-36'>
 					{children}
