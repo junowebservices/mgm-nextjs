@@ -162,15 +162,15 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className='border-t-2 border-secondaryTextColor mt-8 full-bleed'>
-				<div className='grid md:grid-cols-9 inside text-mainTextColor py-6 gap-2 gap-y-6'>
-					<div className='col-span-2 space-y-3'>
+				<div className='flex justify-between inside text-mainTextColor py-6 gap-6 gap-y-6'>
+					<div className=' space-y-3'>
 						<h3 className='text-base font-bold'>Telephone</h3>
 						<div>
 							<p className='text-base'>8527-2192 loc. 309</p>
 							<p className='text-base'>+63 943 505 4939</p>
 						</div>
 					</div>
-					<div className='col-span-2 space-y-3'>
+					<div className=' space-y-3'>
 						<h3 className='text-base font-bold'>Email</h3>
 						<a
 							className='text-base text-mainTextColor'
@@ -179,7 +179,7 @@ const Contact = () => {
 							mgmsecretariat@gmail.com
 						</a>
 					</div>
-					<div className='col-span-3 w-10/12'>
+					<div className='max-w-[300px]'>
 						<h3 className='text-base font-bold'>Address</h3>
 						<a
 							className='text-base text-mainTextColor'
@@ -190,10 +190,11 @@ const Contact = () => {
 							Luna St., Intramuros, Manila
 						</a>
 					</div>
-					<div className='col-span-2 space-y-3 order-first md:order-last'>
-						<h3 className='ext-base font-bold'>Search MGM</h3>
+					<div className=' space-y-3 order-first md:order-last'>
+						<h3 className='text-base font-bold'>Search MGM</h3>
 						<div className='relative'>
 							<Input
+								className='w-[200px]'
 								placeholder='Search'
 								type={'text'}
 								name={'search'}
