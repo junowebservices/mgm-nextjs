@@ -96,16 +96,19 @@
 		@apply max-w-[1440px] w-full mx-auto;
 	}
 	.article h1 {
-		@apply text-2xl font-Roboto font-bold;
+		@apply mb-4 mt-6 text-2xl font-Roboto font-bold;
 	}
 	.article h2 {
-		@apply text-xl font-Roboto font-bold;
+		@apply font-Roboto font-bold;
 	}
 	.article .align-left-half {
 		@apply w-full md:w-1/2 float-left mr-8;
 	}
 	.article .align-right-half {
 		@apply w-full md:w-1/2 float-right ml-8;
+	}
+	.article p {
+		@apply my-4;
 	}
 }
 #download .slick-next:before,

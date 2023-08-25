@@ -24,12 +24,10 @@ const PostPage = (props: any) => {
 	const slug = props.params.slug;
 	const post = getPostContent(slug);
 	const formattedMarkdown = post.content
-		.replace(/\s\s$/gm, '<br/><br/>') // Replace double spaces at end of line
+		.replace(/\s\s$/gm, '<br/>') // Replace double spaces at end of line
 		.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
-
-	console.log(post.content, 'post');
 	return (
-		<div className='inside article'>
+		<div className='inside'>
 			<div className='mb-12'>
 				<Image
 					src={post.data.featuredImage}
@@ -48,7 +46,7 @@ const PostPage = (props: any) => {
 				</div>
 			</div>
 
-			<article className='text-lg mx-auto'>
+			<article className='text-lg mx-auto article'>
 				<Markdown>{formattedMarkdown}</Markdown>
 			</article>
 		</div>
