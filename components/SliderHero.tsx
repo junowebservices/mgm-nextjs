@@ -23,30 +23,46 @@ const SliderHero = () => {
 				className='overflow-hidden'
 				// className="overflow-hidden min-h-[230px] h-[230px] sm:h-[450px] md:h-[580px] widest"
 			>
-				<Image
-					priority
-					src='/images/HP1.jpg'
-					alt='Hero'
-					width={1200}
-					height={600}
-					className='object-contain'
-				/>
-				<Image
-					priority
-					src='/images/HP2.jpg'
-					alt='Hero'
-					width={1200}
-					height={600}
-					className='object-contain'
-				/>
-				<Image
-					priority
-					src='/images/HP3.jpg'
-					alt='Hero'
-					width={1200}
-					height={600}
-					className='object-contain'
-				/>
+				<div className='w-full'>
+					<Image
+						priority
+						src='/images/HP0.jpg'
+						alt='Hero'
+						width={1600}
+						height={600}
+						className='object-contain aspect-[16/6]'
+					/>
+				</div>
+				<div className='w-full'>
+					<Image
+						priority
+						src='/images/HP1.jpg'
+						alt='Hero'
+						width={1600}
+						height={600}
+						className='object-contain aspect-[16/6]'
+					/>
+				</div>
+				<div className='w-full'>
+					<Image
+						priority
+						src='/images/HP2.jpg'
+						alt='Hero'
+						width={1600}
+						height={600}
+						className='object-contain aspect-[16/6]'
+					/>
+				</div>
+				<div className='w-full'>
+					<Image
+						priority
+						src='/images/HP3.jpg'
+						alt='Hero'
+						width={1600}
+						height={600}
+						className='object-contain aspect-[16/6]'
+					/>
+				</div>
 			</Slider>
 		</section>
 	);

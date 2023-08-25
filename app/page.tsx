@@ -16,7 +16,7 @@ export default function Home() {
 			{/* Grid */}
 			<section className='mt-4 lg:mt-16 inside'>
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
-				<div className='grid sm:grid-cols-2'>
+				<div className='grid md:grid-cols-2'>
 					<div className='w-full '>
 						<Image
 							priority
@@ -27,7 +27,7 @@ export default function Home() {
 							className='object-cover aspect-video'
 						/>
 					</div>
-					<div className='bg-white border-2 border-black lg:border-none w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl '>
 								Museums and Galleries Month (MGM)
@@ -39,7 +39,7 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className='bg-white border-2 border-black lg:border-none w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white w-full aspect-video grid place-items-center text-center order-last md:order-3'>
 						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl  '>Lead Agencies</h2>
 							<p className='text-secondaryTextColor'>
@@ -51,7 +51,7 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className='w-full grid place-content-center'>
+					<div className='w-full grid place-content-center md:order-4'>
 						<Image
 							priority
 							src='/images/HP5.jpg'
@@ -124,7 +124,7 @@ export default function Home() {
 							className='object-cover aspect-video'
 						/>
 					</div>
-					<div className='bg-white border-2 border-black w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-5'>
 							<h2 className='font-bold text-2xl  '>About 2023 Theme</h2>
 							<p className=''>
@@ -146,7 +146,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='bg-white border-2 border-black w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white w-full aspect-video grid place-items-center text-center order-last md:order-3'>
 						<div className='p-4 space-y-5'>
 							<div className='space-y-3'>
 								<p className=''>
@@ -167,7 +167,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='w-full'>
+					<div className='w-full md:order-4'>
 						<Image
 							priority
 							src='/images/HP7.jpg'
