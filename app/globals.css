@@ -101,13 +101,17 @@
 	.article h2 {
 		@apply font-Roboto font-bold;
 	}
+	.article p {
+		@apply my-4;
+	}
 	.article .align-left-half {
 		@apply w-full md:w-1/2 float-left mr-8;
 	}
 	.article .align-right-half {
 		@apply w-full md:w-1/2 float-right ml-8;
 	}
-	.article p {
+	.article .align-left-half,
+	.align-right-half {
 		@apply my-4;
 	}
 }

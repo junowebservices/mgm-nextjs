@@ -26,7 +26,7 @@ const SliderHero = () => {
 				<div className='w-full'>
 					<Image
 						priority
-						src='/images/HP0.jpg'
+						src='/images/HP0-1.jpg'
 						alt='Hero'
 						width={1600}
 						height={600}
@@ -36,7 +36,7 @@ const SliderHero = () => {
 				<div className='w-full'>
 					<Image
 						priority
-						src='/images/HP1.jpg'
+						src='/images/HP1-1.jpg'
 						alt='Hero'
 						width={1600}
 						height={600}
@@ -46,7 +46,7 @@ const SliderHero = () => {
 				<div className='w-full'>
 					<Image
 						priority
-						src='/images/HP2.jpg'
+						src='/images/HP2-1.jpg'
 						alt='Hero'
 						width={1600}
 						height={600}
@@ -56,7 +56,7 @@ const SliderHero = () => {
 				<div className='w-full'>
 					<Image
 						priority
-						src='/images/HP3.jpg'
+						src='/images/HP3-1.jpg'
 						alt='Hero'
 						width={1600}
 						height={600}
