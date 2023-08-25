@@ -1,16 +1,7 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
-import { useState } from 'react';
-
-// function encode(data) {
-//   return Object.keys(data)
-//     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//     .join("&");
-// }
 
 const Contact = () => {
 	// const [data, setData] = useState({});
