@@ -153,8 +153,8 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className='border-t-2 border-secondaryTextColor mt-8 full-bleed'>
-				<div className='flex justify-between inside text-mainTextColor py-6 gap-6 gap-y-6'>
-					<div className=' space-y-3'>
+				<div className='flex flex-col lg:flex-row justify-between inside text-mainTextColor py-6 gap-6 gap-y-6'>
+					<div className='space-y-3'>
 						<h3 className='text-base font-bold'>Telephone</h3>
 						<div>
 							<p className='text-base'>8527-2192 loc. 309</p>

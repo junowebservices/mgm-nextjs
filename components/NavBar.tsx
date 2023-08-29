@@ -75,22 +75,26 @@ const NavBar = () => {
 			</div>
 			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-10'>
 				<Link href='/'>
-					<Image
-						priority
-						src='/logo.png'
-						alt='logo'
-						width={125}
-						height={50}
-						className='object-contain md:hidden'
-					/>
-					<Image
-						priority
-						src='/logo.png'
-						alt='logo'
-						width={150}
-						height={50}
-						className='object-contain hidden md:block'
-					/>
+					<div className='w-[125px]'>
+						<Image
+							priority
+							src='/logo.png'
+							alt='logo'
+							width={500}
+							height={150}
+							className='object-contain md:hidden'
+						/>
+					</div>
+					<div className='w-[150px]'>
+						<Image
+							priority
+							src='/logo.png'
+							alt='logo'
+							width={500}
+							height={150}
+							className='object-contain hidden md:block'
+						/>
+					</div>
 				</Link>
 				{/* Mobile Only */}
 				<div className='flex md:hidden'>
@@ -121,7 +125,7 @@ const NavBar = () => {
 										}`}
 									>
 										<Link href={item.url} legacyBehavior passHref className=''>
-											<h2 className=''>{item.title}</h2>
+											<h2 className='cursor-pointer'>{item.title}</h2>
 										</Link>
 									</div>
 								</div>

@@ -7,8 +7,8 @@ import NavBar from '@/components/NavBar';
 import Providers from '@/lib/providers';
 
 export const metadata = {
-	title: 'Museum and Gallery National Month',
-	description: 'Museum and Gallery National Month 2023',
+	title: 'Museums and Galleries Month',
+	description: 'Museums and Galleries Month 2023',
 };
 
 export default function RootLayout({
