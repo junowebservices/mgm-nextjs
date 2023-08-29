@@ -1,8 +1,11 @@
-import NavBar from '@/components/NavBar';
 import './globals.css';
-import Footer from '@/components/Footer';
 import { Suspense } from 'react';
+
+import Footer from '@/components/Footer';
 import Analytics from '@/components/gtag/Analytics';
+import NavBar from '@/components/NavBar';
+import Providers from '@/lib/providers';
+
 export const metadata = {
 	title: 'Museum and Gallery National Month',
 	description: 'Museum and Gallery National Month 2023',
@@ -34,7 +37,7 @@ export default function RootLayout({
 				</Suspense>
 				<NavBar />
 				<main className='flex flex-col w-full mt-28 lg:mt-32 xl:mt-36'>
-					{children}
+					<Providers>{children}</Providers>
 				</main>
 				<Footer />
 			</body>

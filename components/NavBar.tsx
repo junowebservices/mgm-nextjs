@@ -1,12 +1,5 @@
 'use client';
-
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { FaGlobeAsia } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import { AiFillInstagram } from 'react-icons/ai';
-import { AiFillTwitterCircle } from 'react-icons/ai';
-import { BsFacebook } from 'react-icons/bs';
-
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -26,12 +19,9 @@ import {
 	SheetTrigger,
 } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
-
 import { headerLink, socialmedia } from '@/constants';
 import Image from 'next/image';
-
 import Link from 'next/link';
-import { Separator } from './ui/separator';
 import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
