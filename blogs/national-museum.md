@@ -27,8 +27,6 @@ The museums welcomes all guests and is open for free. To check which museum is n
 
 # 3﻿. Ayala Museum
 
-![](/uploads/ayala_museum_2022.jpg 'Ayala Museum')
-
 To avail of the promo for the museum tickets, book your tickets on their website and select ‘Free for Teachers, Librarians, and Museum Workers’, then choose your preferred date and time within the 10AM - 2PM timeslot. Just wait for the confirmation email and completion of your registration process.\
 \
 To get the library pass for Filipinas Heritage Library, you must book on the library’s website and then type ‘MGMonth2022’ in the discount code box. After this process, expect a confirmation email from the librarian to confirm your passes.
