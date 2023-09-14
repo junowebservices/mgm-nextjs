@@ -6,17 +6,12 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<>
 			{children}
-			return (
-			<>
-				{children}
-				<Next13ProgressBar
-					height='4px'
-					color='#c98d0c'
-					options={{ showSpinner: true }}
-					showOnShallow
-				/>
-			</>
-			);
+			<Next13ProgressBar
+				height='4px'
+				color='#c98d0c'
+				options={{ showSpinner: true }}
+				showOnShallow
+			/>
 		</>
 	);
 };

@@ -12,14 +12,14 @@ const getEventContent = (slug: string) => {
 	return matterResult;
 };
 
-export const generateStaticParams = async () => {
-	const { all } = getEventMetadata();
-	const allEvents = all;
+// export const generateStaticParams = async () => {
+// 	const { all } = getEventMetadata();
+// 	const allEvents = all;
 
-	return allEvents.map(event => ({
-		slug: event.slug,
-	}));
-};
+// 	return allEvents.map(event => ({
+// 		slug: event.slug,
+// 	}));
+// };
 
 const EventPage = (props: any) => {
 	const slug = props.params.slug;
@@ -27,24 +27,24 @@ const EventPage = (props: any) => {
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
-				<Image
+				{/* <Image
 					src={event.data.featuredImage}
 					width={1500}
 					height={500}
 					className='object-cover w-full lg:h-[500px]'
 					alt='image'
-				/>
+				/> */}
 				<div className='max-w-[800px] mx-auto'>
 					<h1 className='text-3xl lg:text-3xl text-black mt-8'>
-						{event.data.title}
+						{event.data.title}xxxx
 					</h1>
 					<p className='text-slate-800 mt-2 lg:mt-4'>{event.data.date}</p>
 				</div>
 			</div>
 
-			<article className='text-lg max-w-[800px] mx-auto'>
+			{/* <article className='text-lg max-w-[800px] mx-auto'>
 				<Markdown>{event.content}</Markdown>
-			</article>
+			</article> */}
 		</div>
 	);
 };
