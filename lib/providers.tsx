@@ -1,16 +1,22 @@
 'use client';
-import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import React from 'react';
+import { Next13ProgressBar } from 'next13-progressbar';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<>
 			{children}
-			<ProgressBar
-				height='5px'
-				color='#e2620f'
-				options={{ showSpinner: false }}
-				shallowRouting
-			/>
+			return (
+			<>
+				{children}
+				<Next13ProgressBar
+					height='4px'
+					color='#c98d0c'
+					options={{ showSpinner: true }}
+					showOnShallow
+				/>
+			</>
+			);
 		</>
 	);
 };
