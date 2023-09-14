@@ -164,7 +164,7 @@ const Contact = () => {
 					<div className=' space-y-3'>
 						<h3 className='text-base font-bold'>Email</h3>
 						<a
-							className='text-base text-mainTextColor'
+							className='text-base text-mainTextColor hover:underline hover:text-primary underline-offset-4'
 							href={`mailto:mgmsecretariat@gmail.com`}
 						>
 							mgmsecretariat@gmail.com
@@ -173,7 +173,7 @@ const Contact = () => {
 					<div className='max-w-[300px]'>
 						<h3 className='text-base font-bold'>Address</h3>
 						<a
-							className='text-base text-mainTextColor'
+							className='text-base text-mainTextColor hover:underline hover:text-primary underline-offset-4'
 							href='https://goo.gl/maps/hLjq3q9nR4oDo22b8'
 							target='_blank'
 						>

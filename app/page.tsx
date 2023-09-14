@@ -190,19 +190,23 @@ export default function Home() {
 							country. Join forums, workshops, competitions, and other
 							activities of the NCCA - MGM that are full of fun and learnings!
 						</p>
-						<div className='block mt-6 space-y-2 md:space-x-5'>
-							<Button variant={'secondary'} size={'lg'}>
-								Submit Your Activities
-							</Button>
-							<Link
-								href='/download'
-								className={buttonVariants({
-									variant: 'secondary',
-									size: 'lg',
-								})}
-							>
-								Use the Agency Kit
-							</Link>
+						<div className='flex flex-col sm:flex-row mt-6 gap-2'>
+							<div>
+								<Button variant={'secondary'} size={'lg'}>
+									Submit Your Activities
+								</Button>
+							</div>
+							<div>
+								<Link
+									href='/download'
+									className={buttonVariants({
+										variant: 'secondary',
+										size: 'lg',
+									})}
+								>
+									Use the Agency Kit
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
