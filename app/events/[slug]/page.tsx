@@ -27,13 +27,13 @@ const EventPage = (props: any) => {
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
-				{/* <Image
+				<Image
 					src={event.data.featuredImage}
 					width={1500}
 					height={500}
 					className='object-cover w-full lg:h-[500px]'
 					alt='image'
-				/> */}
+				/>
 				<div className='max-w-[800px] mx-auto'>
 					<h1 className='text-3xl lg:text-3xl text-black mt-8'>
 						{event.data.title}xxxx
@@ -42,9 +42,9 @@ const EventPage = (props: any) => {
 				</div>
 			</div>
 
-			{/* <article className='text-lg max-w-[800px] mx-auto'>
+			<article className='text-lg max-w-[800px] mx-auto'>
 				<Markdown>{event.content}</Markdown>
-			</article> */}
+			</article>
 		</div>
 	);
 };
