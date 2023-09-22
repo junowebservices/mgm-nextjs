@@ -106,10 +106,10 @@ export const headerLink = [
 		title: 'Download+',
 		url: '/download',
 	},
-	// {
-	// 	title: 'Contact',
-	// 	url: '/contact',
-	// },
+	{
+		title: 'Contact',
+		url: '/contact',
+	},
 ];
 
 export const socialmedia = [
