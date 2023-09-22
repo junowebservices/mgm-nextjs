@@ -90,10 +90,10 @@ export const activities = [
 	},
 ];
 export const headerLink = [
-	{
-		title: 'About',
-		url: '/about',
-	},
+	// {
+	// 	title: 'About',
+	// 	url: '/about',
+	// },
 	{
 		title: 'Articles',
 		url: '/articles',
@@ -106,10 +106,10 @@ export const headerLink = [
 		title: 'Download+',
 		url: '/download',
 	},
-	{
-		title: 'Contact',
-		url: '/contact',
-	},
+	// {
+	// 	title: 'Contact',
+	// 	url: '/contact',
+	// },
 ];
 
 export const socialmedia = [
