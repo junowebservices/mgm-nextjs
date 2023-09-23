@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import { Button, buttonVariants } from '@/components/ui/button';
 
-import getPostMetadata from '@/components/getPostMetadata';
+// import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
 import SliderHero from '@/components/SliderHero';
 import Link from 'next/link';
 import EventsTabs from '@/components/EventsTabs';
-import BlogSlider from '@/components/BlogSlider';
+// import BlogSlider from '@/components/BlogSlider';
 
 export default function Home() {
-	const postMetadata = getPostMetadata();
+	// const postMetadata = getPostMetadata();
 	return (
 		<>
 			<SliderHero />

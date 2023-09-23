@@ -1,7 +1,7 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
-import getPostMetadata from '../../../components/getPostMetadata';
+// import getPostMetadata from '../../../components/.getPostMetadata';
 import Image from 'next/image';
 
 const getPostContent = (slug: string) => {
