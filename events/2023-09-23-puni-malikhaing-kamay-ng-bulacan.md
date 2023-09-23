@@ -16,7 +16,8 @@ embedded in traditional crafts like puni while contributing to the social and ec
 **V﻿enue:** Museo ni Marcelo H. Del Pilar, Bulakan, Bulacan
 
 **E﻿vent Coordinator**\
-Ahzel Miral mba@nhcp.gov.ph
+Alexander Aguinaldo
+mmhdp@nhcp.gov.ph
 
 **P﻿roponent:** National Historical Commission of the Philippines - Museo ni Marcelo H. Del Pilar
 
