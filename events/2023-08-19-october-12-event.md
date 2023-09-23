@@ -18,3 +18,5 @@ date: October 16, 2023 12:00 PM
 James Barbee A. Olaivar\
 09166083056\
 museum@hrvvmemcom.gov.ph
+
+**P﻿roponent:** Human Rights Violations Victims' Memorial Commission
