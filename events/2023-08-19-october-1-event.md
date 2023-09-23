@@ -12,3 +12,5 @@ date: October 2, 2023 8:00 AM
 Jesus Ferdinand C. Ordoñez\
 09175301447\
 isabelamuseumandlibrary@gmail.com
+
+**P﻿roponent:** Provincial Government of Isabela
