@@ -36,3 +36,5 @@ date: October 2, 2023 8:00 AM
 Mr. Arvin Jay B. Bongon and Mr. Bryan Neil Ladim\
 09290889056\
 bchato@binan.gov.ph
+
+**P﻿roponent:** Biñan City Culture, History, Arts and Tourism Office
