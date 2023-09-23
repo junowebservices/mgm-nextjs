@@ -26,10 +26,10 @@ const Contact = () => {
 							className='w-full'
 							data-netlify='true'
 							method='post'
-							name='Contact Form'
+							name='contact'
 							data-netlify-honeypot='bot-field'
 						>
-							<input type='hidden' name='contact-form' value='Contact Form' />
+							<input type='hidden' name='contact-form' value='contact' />
 							<div hidden>
 								<input name='bot-field' />
 							</div>

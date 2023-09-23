@@ -12,6 +12,10 @@ const EventsTabs = () => {
 	const happeningNowEvents = categorized.happeningNowEvents;
 	const futureEvents = categorized.futureEvents;
 
+	const sortedEvents = futureEvents
+		.sort((a, b) => new Date(a.date) - new Date(b.date))
+		.slice(0, 5);
+
 	return (
 		<div className='full-bleed'>
 			<Tabs defaultValue='futureEvents' className='w-full'>
@@ -69,7 +73,7 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{futureEvents.map((activity: EventMetadata) => {
+						{sortedEvents.map((activity: EventMetadata) => {
 							return (
 								<div key={activity.title}>
 									<Link href={`/events/${activity.slug}`}>

@@ -64,7 +64,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Blogs */}
-			<BlogSlider {...postMetadata} />
+			{/* <BlogSlider {...postMetadata} /> */}
 
 			{/* <section className="py-12 lg:py-32 inside">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -107,7 +107,15 @@ export default function Home() {
 							and religious artifacts.
 						</p>
 						<div>
-							<Button variant={'secondary'}>Know more</Button>
+							<Link
+								href='/about'
+								className={buttonVariants({
+									variant: 'secondary',
+									size: 'lg',
+								})}
+							>
+								Know More
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -191,11 +199,11 @@ export default function Home() {
 							activities of the NCCA - MGM that are full of fun and learnings!
 						</p>
 						<div className='flex flex-col sm:flex-row mt-6 gap-2'>
-							<div>
+							{/* <div>
 								<Button variant={'secondary'} size={'lg'}>
 									Submit Your Activities
 								</Button>
-							</div>
+							</div> */}
 							<div>
 								<Link
 									href='/download'

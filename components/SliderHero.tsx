@@ -1,6 +1,8 @@
 'use client';
 
+import { Sliders } from '@/constants';
 import Image from 'next/image';
+import Link from 'next/link';
 import Slider from 'react-slick';
 
 const SliderHero = () => {
@@ -23,46 +25,18 @@ const SliderHero = () => {
 				className='overflow-hidden'
 				// className="overflow-hidden min-h-[230px] h-[230px] sm:h-[450px] md:h-[580px] widest"
 			>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP0-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP1-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP2-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP3-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
+				{Sliders.map((slide, index) => (
+					<Link href={slide.url} className='w-full' key={index}>
+						<Image
+							priority
+							src={`/images/${slide.imageLink}`}
+							alt='Hero'
+							width={1600}
+							height={600}
+							className='object-contain aspect-[16/6]'
+						/>
+					</Link>
+				))}
 			</Slider>
 		</section>
 	);
