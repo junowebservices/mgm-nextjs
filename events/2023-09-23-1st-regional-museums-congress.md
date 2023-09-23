@@ -26,3 +26,5 @@ date: October 25, 2023 8:00 AM
 Ms. Vicky L. Pacris\
 09198656516\
 bchato@binan.gov.ph
+
+**P﻿roponent:** Southern Luzon Association of Museums Inc.
