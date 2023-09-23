@@ -15,3 +15,5 @@ date: October 19, 2023 7:30 AM
 Laurece Tanyag\
 495020229\
 lrtanyag@neda.gov.ph
+
+**P﻿roponent:** NEDA Region IV-A
