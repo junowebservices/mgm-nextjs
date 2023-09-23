@@ -25,7 +25,8 @@ date: October 25, 2023 2:00 PM
 * Vicente and Carmen Fabella Hall
 
 **E﻿vent Coordinator**\
-Anie Rose Mabag Administrative Officer V, Museum Services Division\
+Anie Rose Mabag \
+Administrative Officer V, Museum Services Division\
 (02) 8 298 – 1100 local 1032\
 educationandtraining@nationalmuseum.gov.ph
 
