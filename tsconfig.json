@@ -29,7 +29,9 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"components/.getPostMetadata.ts"
+		"components/.getPostMetadata.ts",
+		"components/getEventMetadata.tsx",
+		"components/.getEventdata.ts"
 	],
 	"exclude": ["node_modules"]
 }

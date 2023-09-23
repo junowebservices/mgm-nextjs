@@ -13,7 +13,6 @@ export default function Home() {
 	return (
 		<>
 			<SliderHero />
-			{/* Grid */}
 			<section className='mt-4 mb-12 lg:mt-16 inside'>
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
 				<div className='grid md:grid-cols-2'>
@@ -63,8 +62,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{/* Blogs */}
-			{/* <BlogSlider {...postMetadata} /> */}
 
 			{/* <section className="py-12 lg:py-32 inside">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
