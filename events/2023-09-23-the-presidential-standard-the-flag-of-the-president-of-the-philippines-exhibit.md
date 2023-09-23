@@ -13,7 +13,7 @@ subtitle: The Presidential Standard, even when depicted on presidential
   U.S. Governor-General’s flag, which was in turn, inspired by the flag of the
   U.S. President from 1912. The stars on the four corners held no particular
   meaning.
-date: September 23, 2023 5:14 PM
+date: October 7, 2023 2:00 PM
 ---
 <!--StartFragment-->
 
