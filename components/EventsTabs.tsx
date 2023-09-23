@@ -13,7 +13,7 @@ const EventsTabs = () => {
 	const futureEvents = categorized.futureEvents;
 
 	const sortedEvents = futureEvents
-		.sort((a, b) => new Date(a.date) - new Date(b.date))
+		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 		.slice(0, 5);
 
 	return (
