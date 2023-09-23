@@ -34,9 +34,7 @@ date: October 20, 2023 9:00 AM
 
 **E﻿vent Coordinator**\
 Jessica T. Marquinez, Senior Museum Researcher and Reann Clarisse A. Robes, Museum Researcher II Ethnology Division \
-Anie Rose Mabag\
-Administrative Officer V, Museum Services Division\
-(02) 8 298 – 1100 local 1032\
-educationandtraining@nationalmuseum.gov.ph
+(﻿02) 8 298 – 1100 local 2005\
+ethnology@nationalmuseum.gov.ph
 
-**ProJPrJPJponent:** National Museum of the Philippines
+**Proponent:** National Museum of the Philippines
