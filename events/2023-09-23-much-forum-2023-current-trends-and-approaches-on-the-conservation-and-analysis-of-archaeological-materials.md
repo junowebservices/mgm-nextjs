@@ -7,7 +7,7 @@ subtitle: This activity is a series of lectures on best practices in
   Archaeology are invited to share their acquired knowledge during their visit
   and participation to international trainings and workshops conducted in
   Thailand, Jordan, and France.
-date: September 23, 2023 2:30 PM
+date: October 19, 2023 9:00 AM
 ---
 <!--StartFragment-->
 
