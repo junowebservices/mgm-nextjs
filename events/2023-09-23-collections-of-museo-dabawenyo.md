@@ -12,3 +12,5 @@ date: October 10, 2023 10:00 AM
 Ms. Diane Montecillo\
 82251099\
 mindanao.dfa@dfa.gov.ph
+
+**P﻿roponent:** Department of Foreign Affairs Mindanao
