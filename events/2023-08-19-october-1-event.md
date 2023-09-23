@@ -1,17 +1,14 @@
 ---
-featuredImage: /uploads/picture1.png
-title: "Within the Walls S2EP1: Museum Researcher"
-subtitle: Following its successful debut last year, Within the Walls will be
-  hosting its second installation for Museums and Galleries Month 2023. Produced
-  by the National Commission for Culture and the Arts, this video series will
-  interview various people with careers and jobs that makes our museums and
-  galleries work.
-date: October 4, 2023 8:19 PM
+featuredImage: /uploads/hp6.jpg
+title: "Paglikom sa Kayamanan ng Lahi: Pamana at Kultura ng Isabela sa Bagong Normal"
+subtitle: Showcasing Isabela's Rich Cultural Heritage to promote and preserve
+  the material culture of Isabeleños thru an exhibit. The tangible-movable
+  cultural properties displayed at the museum are PRECUP compliant.
+date: October 2, 2023 8:00 AM
 ---
-<!--StartFragment-->
+**Venue:** Isabela Museum and Library 
 
-Following its successful debut last year, Within the Walls will be hosting its second installation for Museums and Galleries Month 2023. Produced by the National Commission for Culture and the Arts, this video series will interview various people with careers and jobs that makes our museums and galleries work.
-
-<!--EndFragment-->
-
-T﻿his episode, we are honored to have Ms. Carole Duque, a Researcher and Curator from the National Museum Fine Arts Division to let us know how do they come up with new exhibitions inside the National Museum of the Philippines.
+**Event Coordinator**\
+Jesus Ferdinand C. Ordoñez\
+09175301447\
+isabelamuseumandlibrary@gmail.com
