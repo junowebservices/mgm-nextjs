@@ -16,10 +16,10 @@ date: September 23, 2023 2:30 PM
 **V﻿enue:** Ayala Room, 2F, National Museum of Anthropology, Manila
 
 **E﻿vent Coordinator**\
-Anie Rose Mabag\
-Administrative Officer V, Museum Services Division\
-(02) 8 298 – 1100 local 1032\
-educationandtraining@nationalmuseum.gov.ph
+Nero Austero, Senior Museum Researcher,
+Maritime and Underwater Cultural Heritage Division\
+09669234478 \
+nero.austero@nationalmuseum.gov.ph
 
 **P﻿roponent:** National Museum of the Philippines
 
