@@ -138,17 +138,17 @@ export const headerLink = [
 export const socialmedia = [
 	{
 		title: 'Facebook',
-		url: 'https://www.facebook.com',
+		url: 'https://www.facebook.com/nccaofficial',
 		icon: BsFacebook,
 	},
 	{
 		title: 'Twitter',
-		url: 'https://www.twitter.com',
+		url: 'https://www.twitter.com/nccaofficial',
 		icon: BsTwitter,
 	},
 	{
 		title: 'Instagram',
-		url: 'https://www.instagram.com',
+		url: 'https://www.instagram.com/nccaofficial',
 		icon: BsInstagram,
 	},
 	{
@@ -158,7 +158,7 @@ export const socialmedia = [
 	},
 	{
 		title: 'Website',
-		url: 'https://www.junowebservices.com',
+		url: 'https://ncca.gov.ph/',
 		icon: BsGlobeAsiaAustralia,
 	},
 ];
@@ -200,26 +200,28 @@ export const memos = [
 	{
 		title: 'Commission on Higher Education',
 		imageLink: '/images/memo/ched.png',
+		url: '/docs/CHED.pdf',
 	},
-	{
-		title: 'Civil Service Commission',
-		imageLink: '/images/memo/csc.png',
-	},
-	{
-		title: 'Department of Education',
-		imageLink: '/images/memo/deped.png',
-	},
-	{
-		title: 'Department of Foreign Affairs',
-		imageLink: '/images/memo/dfa.png',
-	},
-	{
-		title: 'Department of the Interior and Local Government',
-		imageLink: '/images/memo/dilg.png',
-	},
+	// {
+	// 	title: 'Civil Service Commission',
+	// 	imageLink: '/images/memo/csc.png',
+	// },
+	// {
+	// 	title: 'Department of Education',
+	// 	imageLink: '/images/memo/deped.png',
+	// },
+	// {
+	// 	title: 'Department of Foreign Affairs',
+	// 	imageLink: '/images/memo/dfa.png',
+	// },
+	// {
+	// 	title: 'Department of the Interior and Local Government',
+	// 	imageLink: '/images/memo/dilg.png',
+	// },
 	{
 		title: 'Pambansang Aklatan ng Pilipinas',
 		imageLink: '/images/memo/aklatan.png',
+		url: '/docs/NLP.pdf',
 	},
 ];
 
@@ -268,35 +270,38 @@ export const footerLinks = [
 	},
 ];
 
-export const agencyKit = [
+export const agencyKits = [
 	{
 		title: '2023 MGM Logo Variations',
 		desc: "MGM Logo Variations represent the diverse visual adaptations of the official logo to celebrate this year's awesome theme.",
-		link: '#',
+		link: 'https://drive.google.com/drive/folders/18Q_BHiqZlWFlZwIX6DxZEtwMYI7OGLhI?usp=drive_link',
 	},
 	{
 		title: '2023 MGM Poster Pack',
 		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
-		link: '#',
+		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
-	{
-		title: '2023 MGM Banner and Banner Specs',
-		desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
-		link: '#',
-	},
-	{
 		title: '2023 MGM Branding Fonts',
 		desc: "To have the full experience of MGM 2023, branding fonts can be used to match the official font of this year's theme.",
-		link: '#',
+		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
 	{
 		title: '2023 MGM Digital Briefer',
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
-		link: '#',
+		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
+	},
+
+];
+
+export const socMedKits = [
+	{
+		title: '2023 MGM Banner and Banner Specs',
+		desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
+		link: 'https://drive.google.com/drive/folders/1r9WiZrKB-40q7ueyuDKOKPjePNAv0TTj?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Sticker Pack',
-		desc: 'Awesome MGM 2023 stickers can be used for promoting your MGM-related content postings on Viber! The following sticker pack can be downloaded here.',
-		link: '#',
+		title: '2023 MGM Profile Picture Frame',
+		desc: 'Celebrate with us by using the official Facebook Profile Picture frame of MGM for this year. Twibbonize your photo here!',
+		link: 'https://www.twibbonize.com/mgm-exhibits-and-reflections',
 	},
 ];

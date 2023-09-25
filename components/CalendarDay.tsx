@@ -2,6 +2,7 @@
 import { CalendarDayProps } from '@/constants/types';
 import Link from 'next/link';
 import { Popover, PopoverTrigger, PopoverContent } from './ui/popover';
+import { Button, buttonVariants } from './ui/button';
 
 const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 	const hasEvents = events.length > 0;
@@ -28,15 +29,20 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 									<p className='text-sm text-muted-foreground'>{event.date}</p>
 								</div>
 								<div className='space-y-3'>
-									<p className='text-sm line-clamp-4'>{event.subtitle}</p>
-									<div>
-										<Link
-											href={`/events/${event.slug}`}
-											className='text-sm text-mainYellow-dark'
+									<p className='text-sm line-clamp-4 mb-3'>{event.subtitle}</p>
+									<Link
+										href={`/events/${event.slug}`}
+										className='text-sm text-mainYellow-dark'
+									>
+										<Button
+											className={buttonVariants({
+												variant: 'secondary',
+												size: 'sm',
+											})}
 										>
-											Go to event
-										</Link>
-									</div>
+											See more
+										</Button>
+									</Link>
 								</div>
 							</div>
 						</PopoverContent>
