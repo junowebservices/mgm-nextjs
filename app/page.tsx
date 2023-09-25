@@ -1,20 +1,20 @@
 import Image from 'next/image';
 import { Button, buttonVariants } from '@/components/ui/button';
 
-import getPostMetadata from '@/components/getPostMetadata';
-import PostPreview from '@/components/PostPreview';
+// import getPostMetadata from '@/components/getPostMetadata';
+// import PostPreview from '@/components/PostPreview';
 import SliderHero from '@/components/SliderHero';
 import Link from 'next/link';
 import EventsTabs from '@/components/EventsTabs';
-import BlogSlider from '@/components/BlogSlider';
+// import BlogSlider from '@/components/BlogSlider';
 
 export default function Home() {
-	const postMetadata = getPostMetadata();
+	// const postMetadata = getPostMetadata();
 	return (
 		<>
 			<SliderHero />
 			{/* Grid */}
-			<section className='mt-4 lg:mt-16 inside'>
+			<section className='my-4 lg:my-16 inside'>
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full '>
@@ -64,7 +64,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Blogs */}
-			<BlogSlider {...postMetadata} />
+			{/* <BlogSlider {...postMetadata} /> */}
 
 			{/* <section className="py-12 lg:py-32 inside">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -107,7 +107,15 @@ export default function Home() {
 							and religious artifacts.
 						</p>
 						<div>
-							<Button variant={'secondary'}>Know more</Button>
+							<Link
+								href='/about'
+								className={buttonVariants({
+									variant: 'secondary',
+									size: 'lg',
+								})}
+							>
+								Know More
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -191,9 +199,9 @@ export default function Home() {
 							activities of the NCCA - MGM that are full of fun and learnings!
 						</p>
 						<div className='block mt-6 space-y-2 md:space-x-5'>
-							<Button variant={'secondary'} size={'lg'}>
+							{/* <Button variant={'secondary'} size={'lg'}>
 								Submit Your Activities
-							</Button>
+							</Button> */}
 							<Link
 								href='/download'
 								className={buttonVariants({

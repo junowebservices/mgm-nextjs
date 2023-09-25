@@ -12,6 +12,10 @@ const EventsTabs = () => {
 	const happeningNowEvents = categorized.happeningNowEvents;
 	const futureEvents = categorized.futureEvents;
 
+	const sortedEvents = futureEvents
+		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+		.slice(0, 5);
+
 	return (
 		<div className='full-bleed'>
 			<Tabs defaultValue='futureEvents' className='w-full'>
@@ -25,21 +29,22 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{pastEvents.map((activity: EventMetadata) => {
-							return (
-								<div key={activity.title}>
-									<Link href={`/events/${activity.slug}`}>
-										<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
-											{activity.title}
-										</h3>
-									</Link>
-									<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
-										{activity.date}
-									</p>
-									<Separator />
-								</div>
-							);
-						})}
+						{pastEvents &&
+							pastEvents.map((activity: EventMetadata) => {
+								return (
+									<div key={activity.title}>
+										<Link href={`/events/${activity.slug}`}>
+											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
+												{activity.title}
+											</h3>
+										</Link>
+										<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
+											{activity.date}
+										</p>
+										<Separator />
+									</div>
+								);
+							})}
 					</div>
 				</TabsContent>
 				<TabsContent value='happeningNow'>
@@ -47,21 +52,22 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{happeningNowEvents.map((activity: EventMetadata) => {
-							return (
-								<div key={activity.title}>
-									<Link href={`/events/${activity.slug}`}>
-										<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
-											{activity.title}
-										</h3>
-									</Link>
-									<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
-										{activity.date}
-									</p>
-									<Separator />
-								</div>
-							);
-						})}
+						{happeningNowEvents &&
+							happeningNowEvents.map((activity: EventMetadata) => {
+								return (
+									<div key={activity.title}>
+										<Link href={`/events/${activity.slug}`}>
+											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
+												{activity.title}
+											</h3>
+										</Link>
+										<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
+											{activity.date}
+										</p>
+										<Separator />
+									</div>
+								);
+							})}
 					</div>
 				</TabsContent>
 				<TabsContent value='futureEvents'>
@@ -69,21 +75,22 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{futureEvents.map((activity: EventMetadata) => {
-							return (
-								<div key={activity.title}>
-									<Link href={`/events/${activity.slug}`}>
-										<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
-											{activity.title}
-										</h3>
-									</Link>
-									<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
-										{activity.date}
-									</p>
-									<Separator />
-								</div>
-							);
-						})}
+						{sortedEvents &&
+							sortedEvents.map((activity: EventMetadata) => {
+								return (
+									<div key={activity.title}>
+										<Link href={`/events/${activity.slug}`}>
+											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
+												{activity.title}
+											</h3>
+										</Link>
+										<p className='my-2 text-secondaryTextColor text-xs lg:text-sm'>
+											{activity.date}
+										</p>
+										<Separator />
+									</div>
+								);
+							})}
 					</div>
 				</TabsContent>
 			</Tabs>

@@ -8,12 +8,10 @@ const Download = () => {
 	const settings = {
 		dots: true,
 		arrows: true,
-		// centerMode: true,
 		infinite: true,
 		pauseOnFocus: true,
 		pauseOnHover: true,
 		speed: 200,
-		// autoplay: true,oglo
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [
@@ -62,16 +60,12 @@ const Download = () => {
 									</h2>
 									<p className='text-mainTextColor line-clamp-4'>{kit.desc}</p>
 								</div>
-								<div className='flex gap-2'>
-									{/* <ArrowDownTrayIcon className="w-6 h-6" /> Download */}
-								</div>
+								<div className='flex gap-2'></div>
 							</div>
 						</div>
 					))}
 				</div>
-				<div className='mt-4 md:mt-6 text-center'>
-					{/* <ButtonMgm text="Get the full kit here!" contained /> */}
-				</div>
+				<div className='mt-4 md:mt-6 text-center'></div>
 			</section>
 			{/* Social Media Kit */}
 			<section className='inside my-12'>
@@ -128,12 +122,6 @@ const Download = () => {
 						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
 						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
 					</Slider>
-
-					{/* <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 place-content-center">
-            <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
-            <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
-            <div className="grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer" />
-          </div> */}
 				</div>
 			</section>
 		</div>
