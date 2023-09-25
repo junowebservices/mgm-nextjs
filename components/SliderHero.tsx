@@ -14,15 +14,15 @@ const SliderHero = () => {
 		pauseOnFocus: true,
 		pauseOnHover: true,
 		speed: 200,
-		autoplay: true,
+		autoplay: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
 	return (
-		<section className='full-bleed'>
+		<section className='full-bleed' id='home-slider'>
 			<Slider
 				{...settings}
-				className='overflow-hidden'
+				// className='overflow-hidden'
 				// className="overflow-hidden min-h-[230px] h-[230px] sm:h-[450px] md:h-[580px] widest"
 			>
 				{Sliders.map((slide, index) => (
