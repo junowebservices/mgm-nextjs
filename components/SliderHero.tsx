@@ -3,7 +3,9 @@
 import { Sliders } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MdOpenInNew } from 'react-icons/md';
 import Slider from 'react-slick';
+import { Button } from './ui/button';
 
 const SliderHero = () => {
 	const settings = {
@@ -20,22 +22,25 @@ const SliderHero = () => {
 	};
 	return (
 		<section className='full-bleed' id='home-slider'>
-			<Slider
-				{...settings}
-				// className='overflow-hidden'
-				// className="overflow-hidden min-h-[230px] h-[230px] sm:h-[450px] md:h-[580px] widest"
-			>
+			<Slider {...settings}>
 				{Sliders.map((slide, index) => (
-					<Link href={slide.url} className='w-full' key={index}>
+					<div className='w-full relative group' key={index}>
+						<div className='absolute top-0 right-0 w-full h-full border-2 bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
+						<div className='absolute w-full h-full hidden group-hover:flex items-end md:items-center justify-center md:justify-end md:pr-16'>
+							<Button variant={'link'} className='gap-1'>
+								<MdOpenInNew /> Visit Link
+							</Button>
+						</div>
+
 						<Image
 							priority
 							src={`/images/${slide.imageLink}`}
 							alt='Hero'
 							width={1600}
 							height={600}
-							className='object-contain aspect-[16/6]'
+							className='object-cover aspect-[16/6]'
 						/>
-					</Link>
+					</div>
 				))}
 			</Slider>
 		</section>
