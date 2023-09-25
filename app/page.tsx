@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 
-// import getPostMetadata from '@/components/getPostMetadata';
-import PostPreview from '@/components/PostPreview';
+// import PostPreview from '@/components/PostPreview';
 import SliderHero from '@/components/SliderHero';
 import Link from 'next/link';
 import EventsTabs from '@/components/EventsTabs';
