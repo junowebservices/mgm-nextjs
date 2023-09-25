@@ -129,12 +129,7 @@
 	color: #e2620f;
 }
 
-#download .slick-next:before,
-#download .slick-prev:before {
-	color: #fff !important;
-}
-
 .slick-next:before,
 .slick-prev:before {
 	color: #fff !important;
-
+}
