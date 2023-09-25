@@ -25,7 +25,7 @@ const SliderHero = () => {
 			<Slider {...settings}>
 				{Sliders.map((slide, index) => (
 					<div className='w-full relative group' key={index}>
-						<div className='absolute top-0 right-0 w-full h-full border-2 bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
+						<div className='absolute top-0 right-0 w-full h-full bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
 						<div className='absolute w-full h-full hidden group-hover:flex items-end md:items-center justify-center md:justify-end md:pr-16'>
 							<Button variant={'link'} className='gap-1'>
 								<MdOpenInNew /> Visit Link
