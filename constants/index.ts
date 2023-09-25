@@ -281,8 +281,9 @@ export const agencyKits = [
 		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
+	{
 		title: '2023 MGM Branding Fonts',
-		desc: "To have the full experience of MGM 2023, branding fonts can be used to match the official font of this year's theme.",
+		desc: 'To have the full experience of MGM 2023, branding fonts can be used to match the official font of this years theme.',
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
 	{
@@ -290,7 +291,6 @@ export const agencyKits = [
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
 		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
 	},
-
 ];
 
 export const socMedKits = [
