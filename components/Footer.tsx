@@ -7,16 +7,16 @@ const Footer = () => {
 		<footer className='full-bleed mt-12'>
 			<div className='bg-gray-100'>
 				<div className='py-4 flex justify-center gap-2 lg:gap-6 px-4'>
-					{partners.map(partner => (
-						<div>
+					{partners.map((partner, index) => (
+						<Link key={index} href={partner.url} target='_blank'>
 							<Image
 								src={partner?.imageLink}
 								alt={partner?.title}
 								width={75}
 								height={75}
-								className='object-contain grayscale hover:grayscale-0'
+								className='object-contain grayscale hover:grayscale-0 rounded-full'
 							/>
-						</div>
+						</Link>
 					))}
 				</div>
 				<div className='bg-[#f0f0f0] mx-3'>

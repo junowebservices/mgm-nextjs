@@ -117,10 +117,10 @@ export const headerLink = [
 		title: 'About',
 		url: '/about',
 	},
-	{
-		title: 'Articles',
-		url: '/articles',
-	},
+	// {
+	// 	title: 'Articles',
+	// 	url: '/articles',
+	// },
 	{
 		title: 'Events',
 		url: '/events',
@@ -167,26 +167,32 @@ export const partners = [
 	{
 		title: 'ManilArt',
 		imageLink: '/images/partners/manilart.png',
+		url: 'https://www.facebook.com/manilart',
 	},
 	{
 		title: 'Luzon Art Fair',
 		imageLink: '/images/partners/luzon.png',
+		url: 'https://www.facebook.com/luzonartfair',
 	},
 	{
 		title: 'Visayas Art Fair',
 		imageLink: '/images/partners/visayas.png',
+		url: 'https://www.facebook.com/visayasartfair',
 	},
 	{
 		title: 'Mindanao Art Fair',
 		imageLink: '/images/partners/mindanao.png',
+		url: 'https://www.facebook.com/MindanaoArt',
 	},
 	{
-		title: 'Philippine Museums Summit',
-		imageLink: '/images/partners/museum.png',
+		title: 'Tam-Awan IAF.',
+		imageLink: '/images/partners/tam-awan.jpg',
+		url: 'https://www.facebook.com/TamawanOfficial',
 	},
 	{
 		title: 'NCCA Gallery',
 		imageLink: '/images/partners/ncca.png',
+		url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery/',
 	},
 ];
 
