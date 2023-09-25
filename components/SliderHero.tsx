@@ -7,6 +7,7 @@ import { MdOpenInNew } from 'react-icons/md';
 import Slider from 'react-slick';
 import { Button, buttonVariants } from './ui/button';
 
+
 const SliderHero = () => {
 	const settings = {
 		dots: true,

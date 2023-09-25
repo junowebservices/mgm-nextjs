@@ -281,12 +281,6 @@ export const agencyKits = [
 		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
-	// {
-	// 	title: '2023 MGM Banner and Banner Specs',
-	// 	desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
-	// 	link: '#',
-	// },
-	{
 		title: '2023 MGM Branding Fonts',
 		desc: "To have the full experience of MGM 2023, branding fonts can be used to match the official font of this year's theme.",
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
@@ -296,11 +290,7 @@ export const agencyKits = [
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
 		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
 	},
-	// {
-	// 	title: '2023 MGM Sticker Pack',
-	// 	desc: 'Awesome MGM 2023 stickers can be used for promoting your MGM-related content postings on Viber! The following sticker pack can be downloaded here.',
-	// 	link: '#',
-	// },
+
 ];
 
 export const socMedKits = [

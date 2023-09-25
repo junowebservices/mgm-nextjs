@@ -2,11 +2,11 @@ import { Button } from '@/components/ui/button';
 import { memos, partners } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import ReactPlayer from 'react-player';
 
 const About = () => {
 	return (
 		<>
+
 			<section className='full-bleed'>
 				<Image
 					priority
@@ -17,17 +17,8 @@ const About = () => {
 					className='object-cover'
 				/>
 			</section>
-			{/* <section className='full-bleed bg-mainBlue aspect-square md:aspect-[3/1]'>
-				<div className='grid lg:grid-cols-2 gap-4 place-content-center h-full inside text-white'>
-					<div className='space-y-3'>
-						<h2 className='text-2xl lg:text-4xl'>
-							<strong>"Exhibits and Reflections:</strong> Creating Opportunities
-							for the New World"
-						</h2>
-					</div>
-				</div>
-			</section> */}
-			<section className='inside my-8 lg:my-16'>
+			
+			<section className='inside my-16'>
 				<div className='grid place-content-center'>
 					<div className='space-y-3'>
 						<h2 className='text-3xl'>About Museums and Galleries Month</h2>
@@ -63,7 +54,6 @@ const About = () => {
 						className='object-cover'
 					/>
 				</div>
-				<div className='grid place-content-center md:col-span-2 md:ml-12'>
 					<div className='space-y-3'>
 						<h2 className='text-3xl'>About the MGM 2023 Theme </h2>
 						<p>
@@ -183,6 +173,7 @@ const About = () => {
 					<h2 className='text-3xl text-center'>Partner Programs</h2>
 					<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4'>
 						{partners.map(partner => (
+
 							<Link
 								key={partner.title}
 								className='text-center grid place-items-center'
@@ -197,11 +188,14 @@ const About = () => {
 									className='object-contain'
 								/>
 								<p className='mt-2 font-semibold'>{partner?.title}</p>
+
 							</Link>
+
 						))}
 					</div>
 				</div>
 			</section>
+
 			{/* <section className='inside'>
 				<video controls width='1500' height='360' className='w-full'>
 					<source src='/videos/video1.mp4' type='video/mp4' />
