@@ -1,14 +1,37 @@
-import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import {
 	BsFacebook,
-	BsFillEnvelopeAtFill,
 	BsFillEnvelopeFill,
 	BsGlobeAsiaAustralia,
 	BsInstagram,
 	BsTwitter,
 } from 'react-icons/bs';
-import { FaGlobeAsia } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+
+export const Sliders = [
+	{
+		imageLink: 'HP0.jpg',
+		url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery',
+	},
+	{
+		imageLink: 'HP9.jpg',
+		url: 'https://www.facebook.com/luzonartfair',
+	},
+	{
+		imageLink: 'HP1.jpg',
+		url: 'https://www.facebook.com/manilart',
+	},
+	{
+		imageLink: 'HP2.jpg',
+		url: 'https://www.facebook.com/visayasartfair',
+	},
+	{
+		imageLink: 'HP3.jpg',
+		url: 'https://www.facebook.com/MindanaoArt',
+	},
+	{
+		imageLink: 'HP11.jpg',
+		url: 'https://www.facebook.com/TamawanOfficial',
+	},
+];
 
 export const activities = [
 	{
