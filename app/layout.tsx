@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import { Suspense } from 'react';
 import Analytics from '@/components/gtag/Analytics';
 export const metadata = {
-	title: 'Museum and Gallery National Month',
-	description: 'Museum and Gallery National Month 2023',
+	title: 'Museum and Gallery Month',
+	description: 'Museum and Gallery Month 2023',
 };
 
 export default function RootLayout({

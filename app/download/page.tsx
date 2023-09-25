@@ -2,7 +2,8 @@
 
 import Slider from 'react-slick';
 import { CgSoftwareDownload } from 'react-icons/cg';
-import { agencyKit } from '@/constants';
+import { agencyKits, socMedKits } from '@/constants';
+import Link from 'next/link';
 
 const Download = () => {
 	const settings = {
@@ -47,22 +48,25 @@ const Download = () => {
 				<div className='text-center mb-4'>
 					<h2 className='text-2xl md:text-3xl font-bold'>Agency Kit</h2>
 				</div>
-				<div className='grid gap-4 sm:grid-cols-2 md:grid-cols-3 place-content-center'>
-					{agencyKit.map((kit, index) => (
-						<div
-							key={index}
-							className='grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-[4/3] hover:opacity-80 cursor-pointer'
-						>
-							<div className='w-[85%] mx-auto space-y-4'>
-								<div>
-									<h2 className='text-xl lg:text-3xl font-medium my-3 text-mainTextColor line-clamp-1'>
-										{kit.title}
-									</h2>
-									<p className='text-mainTextColor line-clamp-4'>{kit.desc}</p>
+				<div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4 place-content-center'>
+					{agencyKits.map((kit, index) => (
+						<Link key={index} href={kit.link} target='_blank'>
+							<div className='grid place-content-center border-2 border-mainTextColor bg-mainYellow aspect-square hover:opacity-80 cursor-pointer'>
+								<div className='w-[85%] mx-auto space-y-4'>
+									<div>
+										<h2 className='text-xl lg:text-3xl font-medium my-3 text-mainTextColor line-clamp-2'>
+											{kit.title}
+										</h2>
+										<p className='text-mainTextColor line-clamp-4'>
+											{kit.desc}
+										</p>
+									</div>
+									<div>
+										<CgSoftwareDownload className='w-8 h-8' />
+									</div>
 								</div>
-								<div className='flex gap-2'></div>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 				<div className='mt-4 md:mt-6 text-center'></div>
@@ -73,40 +77,23 @@ const Download = () => {
 					<h2 className='text-2xl md:text-3xl font-bold'>Social Media Kit</h2>
 				</div>
 				<div className='grid gap-4 sm:grid-cols-2 place-content-center'>
-					<div className='grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square md:aspect-[2/1] hover:opacity-80 cursor-pointer'>
-						<div className='w-[85%] mx-auto space-y-4'>
-							<div>
-								<h2 className='text-xl   font-medium my-3 line-clamp-1'>
-									2023 MGM Banner and Banner Specs
-								</h2>
-								<p className='line-clamp-4'>
-									Like poster pack, the MGM Banner can be used to promote the
-									2023 MGM theme while the banner specs provide complete details
-									and standardized banner posting
-								</p>
+					{socMedKits.map((socMedkit, index) => (
+						<Link href={socMedkit.link} key={index} target='_blank'>
+							<div className='grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square md:aspect-[2/1] hover:opacity-80 cursor-pointer'>
+								<div className='w-[85%] mx-auto space-y-4'>
+									<div>
+										<h2 className='text-xl   font-medium my-3 line-clamp-1'>
+											{socMedkit.title}
+										</h2>
+										<p className='line-clamp-4'>{socMedkit.desc}</p>
+									</div>
+									<div>
+										<CgSoftwareDownload className='w-8 h-8' />
+									</div>
+								</div>
 							</div>
-							<div className='flex gap-2'>
-								<CgSoftwareDownload className='w-8 h-8' />
-							</div>
-						</div>
-					</div>
-					<div className='grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square md:aspect-[2/1] hover:opacity-80 cursor-pointer'>
-						<div className='w-[85%] mx-auto space-y-4'>
-							<div>
-								<h2 className='text-xl   font-medium my-3 line-clamp-1'>
-									2023 MGM Profile Picture Frame
-								</h2>
-								<p className='line-clamp-4'>
-									Celebrate with us by using the official Facebook Profile
-									Picture frame of MGM for this year. Twibbonize your photo
-									here!
-								</p>
-							</div>
-							<div className='flex gap-2'>
-								<CgSoftwareDownload className='w-8 h-8' />
-							</div>
-						</div>
-					</div>
+						</Link>
+					))}
 				</div>
 			</section>
 			{/* Archives */}

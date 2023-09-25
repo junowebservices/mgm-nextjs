@@ -2,11 +2,22 @@ import { Button } from '@/components/ui/button';
 import { memos, partners } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
+import ReactPlayer from 'react-player';
 
 const About = () => {
 	return (
 		<>
-			<section className='full-bleed bg-mainBlue aspect-square md:aspect-[3/1]'>
+			<section className='full-bleed'>
+				<Image
+					priority
+					src='/images/exhibit-banner.jpg'
+					alt='Exhibits and Reflections Banner'
+					width={1600}
+					height={600}
+					className='object-cover'
+				/>
+			</section>
+			{/* <section className='full-bleed bg-mainBlue aspect-square md:aspect-[3/1]'>
 				<div className='grid lg:grid-cols-2 gap-4 place-content-center h-full inside text-white'>
 					<div className='space-y-3'>
 						<h2 className='text-2xl lg:text-4xl'>
@@ -14,17 +25,9 @@ const About = () => {
 							for the New World"
 						</h2>
 					</div>
-					{/* <div className="">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-              amet autem perspiciatis fugiat nam rem, corporis in explicabo
-              molestias culpa vitae eveniet, excepturi nulla eum aliquid quos
-              suscipit dolores odio.
-            </p>
-          </div> */}
 				</div>
-			</section>
-			<section className='inside my-16'>
+			</section> */}
+			<section className='inside my-8 lg:my-16'>
 				<div className='grid place-content-center'>
 					<div className='space-y-3'>
 						<h2 className='text-3xl'>About Museums and Galleries Month</h2>
@@ -49,8 +52,18 @@ const About = () => {
 					</div>
 				</div>
 			</section>
-			<section className='inside my-16'>
-				<div className='grid place-content-center'>
+			<section className='inside my-8 lg:my-16 grid md:grid-cols-3 gap-2'>
+				<div className='w-full'>
+					<Image
+						priority
+						src='/images/mgm-2023-theme.jpg'
+						alt='MGM 2023 Theme'
+						width={700}
+						height={250}
+						className='object-cover'
+					/>
+				</div>
+				<div className='grid place-content-center md:col-span-2 md:ml-12'>
 					<div className='space-y-3'>
 						<h2 className='text-3xl'>About the MGM 2023 Theme </h2>
 						<p>
@@ -149,7 +162,7 @@ const About = () => {
         </div>
       </section> */}
 
-			{/* <section className='inside my-16'>
+			{/* <section className='inside my-8 lg:my-16'>
 				<div className='grid lg:grid-cols-4 gap-4 place-content-center'>
 					<div className='col-span-1'>
 						<h2 className='text-3xl mb-2'>Objectives</h2>
@@ -165,14 +178,16 @@ const About = () => {
 					</div>
 				</div>
 			</section> */}
-			<section className='inside my-16'>
+			<section className='inside my-8 lg:my-16'>
 				<div className='grid gap-12'>
 					<h2 className='text-3xl text-center'>Partner Programs</h2>
 					<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4'>
 						{partners.map(partner => (
-							<div
+							<Link
 								key={partner.title}
 								className='text-center grid place-items-center'
+								href={partner.url}
+								target='_blank'
 							>
 								<Image
 									src={partner?.imageLink}
@@ -182,19 +197,27 @@ const About = () => {
 									className='object-contain'
 								/>
 								<p className='mt-2 font-semibold'>{partner?.title}</p>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>
 			</section>
-			<section className='inside my-16'>
+			{/* <section className='inside'>
+				<video controls width='1500' height='360' className='w-full'>
+					<source src='/videos/video1.mp4' type='video/mp4' />
+					Your browser does not support the video tag.
+				</video>
+			</section> */}
+			<section className='inside my-8 lg:my-16'>
 				<div className='grid gap-12'>
 					<h2 className='text-3xl text-center'>Memorandum Issuances</h2>
-					<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4'>
+					<div className='flex justify-center gap-4'>
 						{memos.map(memo => (
-							<div
+							<Link
+								href={memo.url}
 								key={memo.title}
-								className='text-center grid place-items-center'
+								className='text-center grid place-items-center cursor-pointer'
+								target='_blank'
 							>
 								<Image
 									src={memo?.imageLink}
@@ -203,7 +226,7 @@ const About = () => {
 									height={150}
 									className='object-contain'
 								/>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

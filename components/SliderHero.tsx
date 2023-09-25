@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MdOpenInNew } from 'react-icons/md';
 import Slider from 'react-slick';
+import { Button, buttonVariants } from './ui/button';
 
 const SliderHero = () => {
 	const settings = {
@@ -23,13 +24,19 @@ const SliderHero = () => {
 			<Slider {...settings}>
 				{Sliders.map((slide, index) => (
 					<div className='w-full relative group' key={index}>
-						<div className='absolute top-0 right-0 w-full h-full bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
+						<div className='absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
 						<div className='absolute w-full h-full hidden group-hover:flex items-end md:items-center justify-center md:justify-end md:pr-16'>
 							<Link
 								href={slide.url}
-								className='gap-1 flex items-center mt-2 text-primary text-sm hover:underline'
+								className={
+									(buttonVariants({
+										variant: 'link',
+										size: 'lg',
+									}),
+									'text-white mt-2 hover:underline')
+								}
 							>
-								<MdOpenInNew /> Visit Link
+								VISIT LINK
 							</Link>
 						</div>
 
