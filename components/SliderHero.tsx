@@ -1,68 +1,48 @@
 'use client';
 
+import { Sliders } from '@/constants';
 import Image from 'next/image';
+import Link from 'next/link';
+import { MdOpenInNew } from 'react-icons/md';
 import Slider from 'react-slick';
 
 const SliderHero = () => {
 	const settings = {
 		dots: true,
 		arrows: true,
-		// centerMode: true,
 		infinite: true,
 		pauseOnFocus: true,
 		pauseOnHover: true,
 		speed: 200,
-		autoplay: true,
+		autoplay: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
 	return (
-		<section className='full-bleed'>
-			<Slider
-				{...settings}
-				className='overflow-hidden'
-				// className="overflow-hidden min-h-[230px] h-[230px] sm:h-[450px] md:h-[580px] widest"
-			>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP0-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP1-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP2-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
-				<div className='w-full'>
-					<Image
-						priority
-						src='/images/HP3-1.jpg'
-						alt='Hero'
-						width={1600}
-						height={600}
-						className='object-contain aspect-[16/6]'
-					/>
-				</div>
+		<section className='full-bleed' id='home-slider'>
+			<Slider {...settings}>
+				{Sliders.map((slide, index) => (
+					<div className='w-full relative group' key={index}>
+						<div className='absolute top-0 right-0 w-full h-full bg-gradient-to-b md:bg-gradient-to-r from-transparent to-black group-hover:opacity-80 opacity-0 duration-150'></div>
+						<div className='absolute w-full h-full flex group-hover:flex items-end md:items-center justify-center md:justify-end md:pr-16'>
+							<Link
+								href={slide.url}
+								className='gap-1 flex items-center text-primary text-sm hover:underline'
+							>
+								<MdOpenInNew /> Visit Link
+							</Link>
+						</div>
+
+						<Image
+							priority
+							src={`/images/${slide.imageLink}`}
+							alt='Hero'
+							width={1600}
+							height={600}
+							className='object-cover aspect-[16/6]'
+						/>
+					</div>
+				))}
 			</Slider>
 		</section>
 	);
