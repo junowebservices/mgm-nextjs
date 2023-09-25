@@ -42,17 +42,17 @@ const About = () => {
 				</div>
 			</section>
 			<section className='inside my-8 lg:my-16 grid md:grid-cols-3 gap-2'>
-				<div className='w-full'>
+				<div className='w-full self-center'>
 					<Image
 						priority
 						src='/images/mgm-2023-theme.jpg'
 						alt='MGM 2023 Theme'
-						width={700}
+						width={1000}
 						height={250}
 						className='object-cover'
 					/>
 				</div>
-				<div className='space-y-3'>
+				<div className='space-y-3 md:col-span-2 md:ml-6 lg:ml-16'>
 					<h2 className='text-3xl'>About the MGM 2023 Theme </h2>
 					<p>
 						<strong>
