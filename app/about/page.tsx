@@ -1,15 +1,17 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { memos, partners } from '@/constants';
 import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
+
 import Link from 'next/link';
 
 const About = () => {
 	return (
 		<>
 			<section className='full-bleed'>
-				<Image
-					priority
-					src='/images/exhibit-banner.jpg'
+				<img
+					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1000/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
 					alt='Exhibits and Reflections Banner'
 					width={1600}
 					height={600}
@@ -43,13 +45,12 @@ const About = () => {
 			</section>
 			<section className='inside my-8 lg:my-16 grid md:grid-cols-3 gap-2'>
 				<div className='w-full self-center'>
-					<Image
-						priority
-						src='/images/mgm-2023-theme.jpg'
+					<img
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_400/q_auto/f_auto/v1695788079/MGM/images/mgm-2023-theme_x1wnr5.jpg'
 						alt='MGM 2023 Theme'
-						width={1000}
+						width={400}
 						height={250}
-						className='object-cover'
+						className='object-cover w-full'
 					/>
 				</div>
 				<div className='space-y-3 md:col-span-2 md:ml-6 lg:ml-16'>
@@ -93,7 +94,7 @@ const About = () => {
 								href={partner.url}
 								target='_blank'
 							>
-								<Image
+								<img
 									src={partner?.imageLink}
 									alt={partner?.title}
 									width={150}
@@ -124,7 +125,7 @@ const About = () => {
 								className='text-center grid place-items-center cursor-pointer'
 								target='_blank'
 							>
-								<Image
+								<img
 									src={memo?.imageLink}
 									alt={memo?.title}
 									width={150}

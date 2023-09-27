@@ -8,27 +8,33 @@ import {
 
 export const Sliders = [
 	{
-		imageLink: 'HP0.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788074/MGM/images/ncca-gallery.jpg',
 		url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery',
 	},
 	{
-		imageLink: 'HP9.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788066/MGM/images/luzonartfair.jpg',
 		url: 'https://www.facebook.com/luzonartfair',
 	},
 	{
-		imageLink: 'HP1.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/manilart.jpg',
 		url: 'https://www.facebook.com/manilart',
 	},
 	{
-		imageLink: 'HP2.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788068/MGM/images/visayasartfair.jpg',
 		url: 'https://www.facebook.com/visayasartfair',
 	},
 	{
-		imageLink: 'HP3.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788073/MGM/images/MindanaoArt.jpg',
 		url: 'https://www.facebook.com/MindanaoArt',
 	},
 	{
-		imageLink: 'HP11.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788065/MGM/images/TamawanOfficial.jpg',
 		url: 'https://www.facebook.com/TamawanOfficial',
 	},
 ];
@@ -166,32 +172,38 @@ export const socialmedia = [
 export const partners = [
 	{
 		title: 'ManilArt',
-		imageLink: '/images/partners/manilart.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788069/MGM/images/partners/manilart_futkua.png',
 		url: 'https://www.facebook.com/manilart',
 	},
 	{
 		title: 'Luzon Art Fair',
-		imageLink: '/images/partners/luzon.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788070/MGM/images/partners/luzon_sr0p5b.png',
 		url: 'https://www.facebook.com/luzonartfair',
 	},
 	{
 		title: 'Visayas Art Fair',
-		imageLink: '/images/partners/visayas.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/partners/visayas_zz7q7c.png',
 		url: 'https://www.facebook.com/visayasartfair',
 	},
 	{
 		title: 'Mindanao Art Fair',
-		imageLink: '/images/partners/mindanao.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/partners/mindanao_gj9k25.png',
 		url: 'https://www.facebook.com/MindanaoArt',
 	},
 	{
 		title: 'Tam-Awan IAF.',
-		imageLink: '/images/partners/tam-awan.jpg',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788070/MGM/images/partners/tam-awan_z1rpma.jpg',
 		url: 'https://www.facebook.com/TamawanOfficial',
 	},
 	{
 		title: 'NCCA Gallery',
-		imageLink: '/images/partners/ncca.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788067/MGM/images/partners/ncca_aghbyn.png',
 		url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery/',
 	},
 ];
@@ -199,7 +211,8 @@ export const partners = [
 export const memos = [
 	{
 		title: 'Commission on Higher Education',
-		imageLink: '/images/memo/ched.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/ched_zarsrk.png',
 		url: '/docs/CHED.pdf',
 	},
 	// {
@@ -220,7 +233,8 @@ export const memos = [
 	// },
 	{
 		title: 'Pambansang Aklatan ng Pilipinas',
-		imageLink: '/images/memo/aklatan.png',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/aklatan_aljtxq.png',
 		url: '/docs/NLP.pdf',
 	},
 ];

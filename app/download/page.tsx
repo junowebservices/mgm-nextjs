@@ -97,7 +97,7 @@ const Download = () => {
 				</div>
 			</section>
 			{/* Archives */}
-			<section className='bg-mainBlue text-white mt-6 widest'>
+			<section className='bg-mainBlue text-white mt-6 widest hidden'>
 				<div className='inside py-24 px-8 lg:px-16' id='download'>
 					<div className='text-center mb-4'>
 						<h2 className='text-2xl md:text-3xl font-bold'>Archives</h2>

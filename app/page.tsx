@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button, buttonVariants } from '@/components/ui/button';
-
+import { CldImage } from 'next-cloudinary';
 // import getPostMetadata from '@/components/getPostMetadata';
 // import PostPreview from '@/components/PostPreview';
 import SliderHero from '@/components/SliderHero';
@@ -18,13 +18,12 @@ export default function Home() {
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full '>
-						<Image
-							priority
-							src='/images/HP4.jpg'
+						<img
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788065/MGM/images/HP4_rhbpjw.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-video'
+							className='w-full object-cover aspect-video'
 						/>
 					</div>
 					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
@@ -52,13 +51,12 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='w-full grid place-content-center md:order-4'>
-						<Image
-							priority
-							src='/images/HP5.jpg'
+						<img
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788064/MGM/images/HP5_tppic7.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-video'
+							className='w-full object-cover aspect-video'
 						/>
 					</div>
 				</div>
@@ -124,12 +122,11 @@ export default function Home() {
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full'>
 						<Image
-							priority
-							src='/images/HP6.jpg'
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-video'
+							className='w-full object-cover aspect-video'
 						/>
 					</div>
 					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
@@ -177,12 +174,11 @@ export default function Home() {
 					</div>
 					<div className='w-full md:order-4'>
 						<Image
-							priority
-							src='/images/HP7.jpg'
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP7_hvbjge.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='object-cover aspect-video'
+							className='w-full object-cover aspect-video'
 						/>
 					</div>
 				</div>

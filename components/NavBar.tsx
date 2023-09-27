@@ -19,19 +19,13 @@ import {
 import {
 	Sheet,
 	SheetContent,
-	SheetDescription,
 	SheetFooter,
-	SheetHeader,
-	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { Input } from '@/components/ui/input';
 
 import { headerLink, socialmedia } from '@/constants';
-import Image from 'next/image';
 
 import Link from 'next/link';
-import { Separator } from './ui/separator';
 import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
@@ -41,8 +35,8 @@ const NavBar = () => {
 		<header className='full-bleed'>
 			<div className='bg-gray-100 fixed z-10 w-full top-0 inside'>
 				<div className='flex justify-between items-center font-Arial'>
-					<p className='text-xs md:text-sm'>GOV.PH</p>
-					<NavigationMenu className='z-20'>
+					<p className='text-xs md:text-sm py-2'>GOV.PH</p>
+					{/* <NavigationMenu className='z-20'>
 						<NavigationMenuList>
 							<NavigationMenuItem>
 								<NavigationMenuTrigger className='text-xs md:text-sm bg-transparent !pr-0'>
@@ -80,26 +74,17 @@ const NavBar = () => {
 								</Link>
 							</NavigationMenuItem>
 						</NavigationMenuList>
-					</NavigationMenu>
+					</NavigationMenu> */}
 				</div>
 			</div>
-			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-10'>
-				<Link href='/'>
-					<Image
-						priority
-						src='/logo.png'
+			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-8'>
+				<Link href='/' className='w-[125px]'>
+					<img
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_500/q_auto/f_auto/v1695796290/MGM/images/logo_ayzaey.png'
 						alt='logo'
-						width={125}
+						width={800}
 						height={50}
-						className='object-contain md:hidden'
-					/>
-					<Image
-						priority
-						src='/logo.png'
-						alt='logo'
-						width={150}
-						height={50}
-						className='object-contain hidden md:block'
+						className='object-contain w-full'
 					/>
 				</Link>
 				{/* Mobile Only */}

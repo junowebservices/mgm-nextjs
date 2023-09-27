@@ -27,9 +27,9 @@ const EventPage = (props: any) => {
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
-				<Image
+				<img
 					src={event.data.featuredImage}
-					width={1500}
+					width={1000}
 					height={500}
 					className='object-cover w-full lg:h-[500px]'
 					alt='image'

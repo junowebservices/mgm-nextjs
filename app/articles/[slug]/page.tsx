@@ -29,7 +29,7 @@ const PostPage = (props: any) => {
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
-				<Image
+				<img
 					src={post.data.featuredImage}
 					width={1500}
 					height={200}

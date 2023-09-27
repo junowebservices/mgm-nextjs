@@ -1,20 +1,18 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import Image from 'next/image';
 
 const Contact = () => {
 	return (
 		<section className='full-bleed'>
 			<div className='grid lg:grid-cols-2'>
 				<div className='w-full'>
-					<Image
-						className='object-cover aspect-square sm:aspect-video md:aspect-square'
-						src='/images/HP8.jpeg'
+					<img
+						className='object-cover w-full aspect-square sm:aspect-video md:aspect-square'
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_1000/q_auto/f_auto/v1695796292/MGM/images/ncaa_unpode.png'
 						width={1000}
 						height={1000}
 						alt='Address Map'
-						priority
 					/>
 				</div>
 				<div className='w-full aspect-square sm:aspect-video md:aspect-square mx-auto grid lg:place-content-center bg-primary py-8 lg:py-4'>

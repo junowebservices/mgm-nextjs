@@ -9,7 +9,7 @@ const Footer = () => {
 				<div className='py-4 flex justify-center gap-2 lg:gap-6 px-4'>
 					{partners.map((partner, index) => (
 						<Link key={index} href={partner.url} target='_blank'>
-							<Image
+							<img
 								src={partner?.imageLink}
 								alt={partner?.title}
 								width={75}
@@ -24,8 +24,8 @@ const Footer = () => {
 						{/* Show only on Mobile */}
 						<div className='w-full col-span-2 flex lg:hidden'>
 							<div className='w-20'>
-								<Image
-									src='/govph-seal.png'
+								<img
+									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796259/MGM/images/Footer/govph-seal_ajbmoj.png'
 									alt='Government Seal'
 									width={100}
 									height={100}
@@ -33,8 +33,8 @@ const Footer = () => {
 								/>
 							</div>
 							<div className='w-20'>
-								<Image
-									src='/govph-seal-mono.jpg'
+								<img
+									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796257/MGM/images/Footer/govph-seal-mono_adwrqc.jpg'
 									alt='Government Seal'
 									width={100}
 									height={100}
@@ -44,8 +44,8 @@ const Footer = () => {
 						</div>
 						<div className='w-full col-span-3 hidden lg:block'>
 							<div className='w-44'>
-								<Image
-									src='/govph-seal-mono.jpg'
+								<img
+									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796257/MGM/images/Footer/govph-seal-mono_adwrqc.jpg'
 									alt='Government Seal'
 									width={180}
 									height={180}
@@ -87,8 +87,8 @@ const Footer = () => {
 						</div>
 						<div className='w-full col-span-3 justify-self-end hidden lg:block'>
 							<div className='w-44'>
-								<Image
-									src='/govph-seal.png'
+								<img
+									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796259/MGM/images/Footer/govph-seal_ajbmoj.png'
 									alt='Government Seal'
 									width={180}
 									height={180}
