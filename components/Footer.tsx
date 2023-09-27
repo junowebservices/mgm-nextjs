@@ -110,7 +110,8 @@ const Footer = () => {
 						className='hover:text-primary underline'
 					>
 						Juno
-					</Link>
+					</Link>{' '}
+					- preprod
 				</p>
 			</div>
 		</footer>
