@@ -3,6 +3,7 @@ import { Separator } from './ui/separator';
 import Link from 'next/link';
 import getEventMetadata from './getEventMetadata';
 import { EventMetadata } from '@/constants/types';
+import { getSortedEvents } from '@/lib/utils';
 
 const EventsTabs = () => {
 	// Call the getEventMetadata function
@@ -12,9 +13,9 @@ const EventsTabs = () => {
 	const happeningNowEvents = categorized.happeningNowEvents;
 	const futureEvents = categorized.futureEvents;
 
-	const sortedEvents = futureEvents
-		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-		.slice(0, 5);
+	const sortedPastEvents = getSortedEvents(pastEvents);
+	const sortedHappeningNowEvents = getSortedEvents(happeningNowEvents);
+	const sortedFutureEvents = getSortedEvents(futureEvents);
 
 	return (
 		<div className='full-bleed'>
@@ -29,8 +30,8 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{pastEvents &&
-							pastEvents.map((activity: EventMetadata) => {
+						{sortedPastEvents &&
+							sortedPastEvents.map((activity: EventMetadata) => {
 								return (
 									<div key={activity.title}>
 										<Link href={`/events/${activity.slug}`}>
@@ -52,8 +53,8 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{happeningNowEvents &&
-							happeningNowEvents.map((activity: EventMetadata) => {
+						{sortedHappeningNowEvents &&
+							sortedHappeningNowEvents.map((activity: EventMetadata) => {
 								return (
 									<div key={activity.title}>
 										<Link href={`/events/${activity.slug}`}>
@@ -75,8 +76,8 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{sortedEvents &&
-							sortedEvents.map((activity: EventMetadata) => {
+						{sortedFutureEvents &&
+							sortedFutureEvents.map((activity: EventMetadata) => {
 								return (
 									<div key={activity.title}>
 										<Link href={`/events/${activity.slug}`}>
