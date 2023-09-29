@@ -11,8 +11,7 @@ import { PostMetadata } from '@/constants/types';
 const PostPreview = (props: PostMetadata) => {
 	return (
 		<Card>
-			<Image
-				priority
+			<img
 				src={props.featuredImage}
 				alt='card-image'
 				width={500}

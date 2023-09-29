@@ -7,6 +7,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export function getSortedEvents(futureEvents: any) {
 	return futureEvents
-		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+		.sort(
+			(a: any, b: any) =>
+				new Date(a.date).getTime() - new Date(b.date).getTime(),
+		)
 		.slice(0, 5);
 }

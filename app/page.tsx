@@ -121,7 +121,7 @@ export default function Home() {
 			<section className='-mt-44 inside'>
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full'>
-						<Image
+						<img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
 							alt='Featured Image'
 							width={800}
@@ -173,7 +173,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='w-full md:order-4'>
-						<Image
+						<img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP7_hvbjge.jpg'
 							alt='Featured Image'
 							width={800}
