@@ -1,8 +1,5 @@
 'use client';
-import { Button } from '@/components/ui/button';
 import { memos, partners } from '@/constants';
-import Image from 'next/image';
-import { CldImage } from 'next-cloudinary';
 
 import Link from 'next/link';
 
@@ -11,7 +8,7 @@ const About = () => {
 		<>
 			<section className='full-bleed'>
 				<img
-					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1000/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
+					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
 					alt='Exhibits and Reflections Banner'
 					width={1600}
 					height={600}

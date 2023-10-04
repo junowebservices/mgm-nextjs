@@ -2,7 +2,7 @@ import { EventMetadata, CategorizedEvents } from '@/constants/types';
 import fs from 'fs';
 import matter from 'gray-matter';
 
-const getEventMetadata = (): {
+const getEventsMetadata = (): {
 	categorized: CategorizedEvents;
 	all: EventMetadata[];
 } => {
@@ -22,6 +22,13 @@ const getEventMetadata = (): {
 			featuredImage: matterResult.data.featuredImage,
 			slug: fileName.replace('.md', ''),
 		};
+	});
+
+	// Sort events by date
+	events.sort((a: any, b: any) => {
+		const dateA = new Date(a.date);
+		const dateB = new Date(b.date);
+		return dateA.getTime() - dateB.getTime(); // Compare dates using getTime()
 	});
 
 	// Categorize events
@@ -56,14 +63,10 @@ const getEventMetadata = (): {
 		futureEvents,
 	};
 
-	events.sort(
-		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-	);
-
 	return {
 		categorized,
 		all: events,
 	};
 };
 
-export default getEventMetadata;
+export default getEventsMetadata;

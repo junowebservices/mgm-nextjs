@@ -1,21 +1,22 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from './ui/separator';
 import Link from 'next/link';
-import getEventMetadata from './getEventMetadata';
+// import getEventMetadata from './getEventsMetadata';
 import { EventMetadata } from '@/constants/types';
-import { getSortedEvents } from '@/lib/utils';
+// import { getSortedEvents } from '@/lib/utils';
+import { Button, buttonVariants } from './ui/button';
 
-const EventsTabs = () => {
-	// Call the getEventMetadata function
-	const { categorized } = getEventMetadata();
-	// Access categorized events
-	const pastEvents = categorized.pastEvents;
-	const happeningNowEvents = categorized.happeningNowEvents;
-	const futureEvents = categorized.futureEvents;
+const EventsTabs = ({ categorized, allEvents = false }: any) => {
+	let pastEvents = categorized.pastEvents;
+	let happeningNowEvents = categorized.happeningNowEvents;
+	let futureEvents = categorized.futureEvents;
 
-	const sortedPastEvents = getSortedEvents(pastEvents);
-	const sortedHappeningNowEvents = getSortedEvents(happeningNowEvents);
-	const sortedFutureEvents = getSortedEvents(futureEvents);
+	// Check if allevent prop is false, and trim to 5 if needed
+	if (!allEvents) {
+		pastEvents = pastEvents.slice(0, 5);
+		happeningNowEvents = happeningNowEvents.slice(0, 5);
+		futureEvents = futureEvents.slice(0, 5);
+	}
 
 	return (
 		<div className='full-bleed'>
@@ -30,10 +31,10 @@ const EventsTabs = () => {
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{sortedPastEvents &&
-							sortedPastEvents.map((activity: EventMetadata) => {
+						{pastEvents &&
+							pastEvents.map((activity: EventMetadata, i: number) => {
 								return (
-									<div key={activity.title}>
+									<div key={i}>
 										<Link href={`/events/${activity.slug}`}>
 											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
 												{activity.title}
@@ -47,16 +48,28 @@ const EventsTabs = () => {
 								);
 							})}
 					</div>
+					{!allEvents && (
+						<div className='mt-4'>
+							<Link
+								href='/events'
+								className={buttonVariants({
+									size: 'lg',
+								})}
+							>
+								View Events
+							</Link>
+						</div>
+					)}
 				</TabsContent>
 				<TabsContent value='happeningNow'>
 					<h2 className='text-xl lg:text-3xl font-semibold mb-4 lg:mb-8'>
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{sortedHappeningNowEvents &&
-							sortedHappeningNowEvents.map((activity: EventMetadata) => {
+						{happeningNowEvents &&
+							happeningNowEvents.map((activity: EventMetadata, i: number) => {
 								return (
-									<div key={activity.title}>
+									<div key={i}>
 										<Link href={`/events/${activity.slug}`}>
 											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
 												{activity.title}
@@ -70,16 +83,28 @@ const EventsTabs = () => {
 								);
 							})}
 					</div>
+					{!allEvents && (
+						<div className='mt-4'>
+							<Link
+								href='/events'
+								className={buttonVariants({
+									size: 'lg',
+								})}
+							>
+								View Events
+							</Link>
+						</div>
+					)}
 				</TabsContent>
 				<TabsContent value='futureEvents'>
 					<h2 className='text-xl lg:text-3xl font-semibold mb-4 lg:mb-8'>
 						Calendar of Activities
 					</h2>
 					<div className='space-y-5'>
-						{sortedFutureEvents &&
-							sortedFutureEvents.map((activity: EventMetadata) => {
+						{futureEvents &&
+							futureEvents.map((activity: EventMetadata, i: number) => {
 								return (
-									<div key={activity.title}>
+									<div key={i}>
 										<Link href={`/events/${activity.slug}`}>
 											<h3 className='text-lg   hover:underline underline-offset-2 hover:text-primary'>
 												{activity.title}
@@ -93,6 +118,18 @@ const EventsTabs = () => {
 								);
 							})}
 					</div>
+					{!allEvents && (
+						<div className='mt-4'>
+							<Link
+								href='/events'
+								className={buttonVariants({
+									size: 'lg',
+								})}
+							>
+								View Events
+							</Link>
+						</div>
+					)}
 				</TabsContent>
 			</Tabs>
 		</div>

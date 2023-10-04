@@ -6,10 +6,12 @@ import { CldImage } from 'next-cloudinary';
 import SliderHero from '@/components/SliderHero';
 import Link from 'next/link';
 import EventsTabs from '@/components/EventsTabs';
+import getEventsMetadata from '@/components/getEventsMetadata';
 // import BlogSlider from '@/components/BlogSlider';
 
 export default function Home() {
-	// const postMetadata = getPostMetadata();
+	const { categorized } = getEventsMetadata();
+
 	return (
 		<>
 			<SliderHero />
@@ -87,7 +89,7 @@ export default function Home() {
         </div>
       </section> */}
 
-			<EventsTabs />
+			<EventsTabs categorized={categorized} />
 
 			<section className='bg-primary text-white full-bleed'>
 				<div className='grid md:grid-cols-5 pt-24 pb-56 md:pb-72 inside'>

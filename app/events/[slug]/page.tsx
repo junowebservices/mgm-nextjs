@@ -2,7 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import Image from 'next/image';
-import getEventMetadata from '@/components/getEventMetadata';
+import getEventMetadata from '@/components/getEventsMetadata';
 
 const getEventContent = (slug: string) => {
 	const folder = 'events/';
