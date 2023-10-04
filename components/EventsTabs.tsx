@@ -1,10 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from './ui/separator';
 import Link from 'next/link';
-// import getEventMetadata from './getEventsMetadata';
 import { EventMetadata } from '@/constants/types';
-// import { getSortedEvents } from '@/lib/utils';
-import { Button, buttonVariants } from './ui/button';
+import { buttonVariants } from './ui/button';
 
 const EventsTabs = ({ categorized, allEvents = false }: any) => {
 	let pastEvents = categorized.pastEvents;
@@ -20,7 +18,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 
 	return (
 		<div className='full-bleed'>
-			<Tabs defaultValue='futureEvents' className='w-full'>
+			<Tabs defaultValue='happeningNow' className='w-full'>
 				<TabsList>
 					<TabsTrigger value='pastEvents'>Past Events</TabsTrigger>
 					<TabsTrigger value='happeningNow'>Happening Now</TabsTrigger>
