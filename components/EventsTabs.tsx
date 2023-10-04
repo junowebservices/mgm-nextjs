@@ -54,7 +54,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 									size: 'lg',
 								})}
 							>
-								View Events
+								View All Events
 							</Link>
 						</div>
 					)}
@@ -89,7 +89,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 									size: 'lg',
 								})}
 							>
-								View Events
+								View All Events
 							</Link>
 						</div>
 					)}
@@ -124,7 +124,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 									size: 'lg',
 								})}
 							>
-								View Events
+								View All Events
 							</Link>
 						</div>
 					)}
