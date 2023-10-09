@@ -1,18 +1,23 @@
 ---
 featuredImage: /uploads/hp6.jpg
-title: UP Manila Salinlahi Digital Mural Art Competition
-subtitle: "UP Manila Salinlahi aims to organize a digital mural art contest
-  anchored with the theme, “Exhibits and Reflections: Crafting Opportunities for
-  the New World.” To ignite discussions about how individuals may control the
-  course of their lives, this will urge participants to examine the idea of
-  constructing possibilities in all facets of life and how these opportunities
-  can be crafted. We want to foster an atmosphere that promotes discussion,
-  introspection, and constructive social change through this competition."
+title: "MUSEUM MANIA: Unraveling Hidden Treasures"
+subtitle: In line with the celebration of Museums and Galleries Month (MGM)
+  2023, UP Manila Salinlahi aims to organize a series of Museum Tours,
+  showcasing the rich cultural heritage and various aspects of art history of
+  the existing museums and galleries around Manila. This will highlight the
+  influence that history, culture, and the arts have on how we live now. This
+  event encourages attendees to consider their place in the constantly changing
+  world while admiring the beauty of human creation throughout history by fusing
+  ancient treasures with contemporary interpretations of the arts.
 date: October 28, 2023 9:00 AM
 ---
-**Objectives:** To serve as a platform for student artists to exhibit their artistic abilities while showcasing their capacity for development and advancement in the direction of building a more dynamic community; To promote and raise awareness of the daily socio-personal issues that Filipinos confront, while also offering solutions for how to act to eliminate the stigmas associated with them; To promote diversity in artistic expressions as a way to weave a colorful tapestry that represents the diversity of our student body.
+**Objectives:** 
 
-**V﻿enue:** UP Manila College of Arts and Sciences
+* To inspire Filipinos to navigate an ever-changing world while simultaneously fostering greater understanding, sense of pride, and appreciation for the cultural and historical treasures in a variety of aspects that the museums hold;
+* To address and raise awareness regarding socio-personal issues in light of museums’ cultural and historical significance while taking into account how previous encounters can influence contemporary conduct;
+* To cultivate diversity and inclusivity, encourage student introspection, and promote creativity and innovation.
+
+**V﻿enue:** Intramuros
 
 **E﻿vent Coordinator**\
 Lady Shanelle M. Ebora\
