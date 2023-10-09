@@ -17,7 +17,7 @@ date: October 28, 2023 9:00 AM
 * To address and raise awareness regarding socio-personal issues in light of museums’ cultural and historical significance while taking into account how previous encounters can influence contemporary conduct;
 * To cultivate diversity and inclusivity, encourage student introspection, and promote creativity and innovation.
 
-**V﻿enue:** Film Development Council of the Philippines (FDCP)
+**V﻿enue:** Intramuros
 
 **E﻿vent Coordinator**\
 Lady Shanelle M. Ebora\
