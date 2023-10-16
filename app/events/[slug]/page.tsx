@@ -24,6 +24,9 @@ export const generateStaticParams = async () => {
 const EventPage = (props: any) => {
 	const slug = props.params.slug;
 	const event = getEventContent(slug);
+	const formattedMarkdown = event.content
+		.replace(/\s\s$/gm, '<br/>') // Replace double spaces at end of line
+		.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
@@ -38,12 +41,15 @@ const EventPage = (props: any) => {
 					<h1 className='text-3xl lg:text-3xl text-black mt-8'>
 						{event.data.title}
 					</h1>
-					<p className='text-slate-800 mt-2 lg:mt-4'>{event.data.date}</p>
+					<p className='text-slate-800 mt-2 lg:mt-4'>
+						{event.data.date}
+						{event.data.endDate && ` - ${event.data.endDate}`}
+					</p>
 				</div>
 			</div>
 
 			<article className='text-lg max-w-[800px] mx-auto'>
-				<Markdown>{event.content}</Markdown>
+				<Markdown>{formattedMarkdown}</Markdown>
 			</article>
 		</div>
 	);

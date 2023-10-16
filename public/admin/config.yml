@@ -56,4 +56,13 @@ collections:
           time_format: 'HH:mm',
           format: 'LLL',
         }
+      - {
+          label: 'End Date',
+          name: 'endDate',
+          widget: 'datetime',
+          date_format: 'DD.MM.YYYY',
+          time_format: 'HH:mm',
+          format: 'LLL',
+          required: false,
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
