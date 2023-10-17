@@ -9,7 +9,8 @@ subtitle: In line with the celebration of Museums and Galleries Month (MGM)
   event encourages attendees to consider their place in the constantly changing
   world while admiring the beauty of human creation throughout history by fusing
   ancient treasures with contemporary interpretations of the arts.
-date: October 11, 2023 8:00 AM
+date: October 21, 2023 8:00 AM
+endDate: October 17, 2023 8:08 PM
 ---
 **Objectives:** 
 
