@@ -41,7 +41,7 @@ export default function Home() {
 							<h2 className='font-bold text-2xl '>
 								Museums and Galleries Month (MGM)
 							</h2>
-							<p className='text-secondaryTextColor'>
+							<p>
 								MGM is an annual national observation to arouse the national
 								consciousness and pride in the Philippines' rich culture and
 								national identity.
@@ -51,7 +51,7 @@ export default function Home() {
 					<div className='bg-white w-full lg:aspect-video grid place-items-center text-center order-last md:order-3'>
 						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl  '>Lead Agencies</h2>
-							<p className='text-secondaryTextColor'>
+							<p>
 								The National Commission for Culture and the Arts (NCCA) and the
 								National Museum of the Philippines (NMP) stands as the leading
 								agency responsible for preserving and promoting the country's

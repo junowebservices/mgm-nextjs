@@ -33,7 +33,7 @@ module.exports = {
 			},
 			colors: {
 				mainTextColor: '#000000',
-				secondaryTextColor: '#858585',
+				secondaryTextColor: '#000000',
 				mainYellow: {
 					DEFAULT: '#f3b52e',
 					dark: '#c98d0c',

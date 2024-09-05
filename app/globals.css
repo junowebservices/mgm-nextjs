@@ -115,21 +115,3 @@
 		@apply my-4;
 	}
 }
-#home-slider .slick-next {
-	right: 10px !important;
-	z-index: 1;
-}
-#home-slider .slick-prev {
-	left: 10px !important;
-	z-index: 1;
-}
-
-#home-slider .slick-dots li button:before {
-	font-size: 12px;
-	color: #e2620f;
-}
-
-.slick-next:before,
-.slick-prev:before {
-	color: #fff !important;
-}

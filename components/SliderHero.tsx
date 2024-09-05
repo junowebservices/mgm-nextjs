@@ -12,6 +12,7 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel"
+import { CldImage } from 'next-cloudinary';
 
 const SliderHero = () => {
 	return (
@@ -21,13 +22,24 @@ const SliderHero = () => {
 					{Sliders.map((slide, i) => {
 						return (
 							<CarouselItem key={i}>
+								<CldImage
+									src={slide.imageLink}
+									alt='Hero'
+									width={1600}
+									height={600}
+									className='object-cover aspect-[16/6]'
+									loading='lazy'
+								/>
+								{/* 
 								<Image src={slide.imageLink}
 									alt='Featured Image'
 									width={1800}
 									height={200}
 									className='w-full object-cover'
 									priority
-								/></CarouselItem>
+								/> */}
+
+							</CarouselItem>
 						)
 					})}
 				</CarouselContent>
