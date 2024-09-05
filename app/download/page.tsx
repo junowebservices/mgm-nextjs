@@ -1,47 +1,18 @@
 'use client';
 
-import Slider from 'react-slick';
 import { CgSoftwareDownload } from 'react-icons/cg';
 import { agencyKits, socMedKits } from '@/constants';
 import Link from 'next/link';
 
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel"
+
 const Download = () => {
-	const settings = {
-		dots: true,
-		arrows: true,
-		infinite: true,
-		pauseOnFocus: true,
-		pauseOnHover: true,
-		speed: 200,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true,
-				},
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					initialSlide: 2,
-				},
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
-			},
-		],
-	};
 	return (
 		<div>
 			<section className='inside mb-12'>
@@ -102,13 +73,16 @@ const Download = () => {
 					<div className='text-center mb-4'>
 						<h2 className='text-2xl md:text-3xl font-bold'>Archives</h2>
 					</div>
-					<Slider {...settings}>
-						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
-						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
-						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
-						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
-						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
-					</Slider>
+					<Carousel>
+						<CarouselContent>
+							<CarouselItem><div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' /></CarouselItem>
+							<CarouselItem><div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' /></CarouselItem>
+							<CarouselItem><div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' /></CarouselItem>
+							<CarouselItem><div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' /></CarouselItem>
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
 				</div>
 			</section>
 		</div>

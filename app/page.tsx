@@ -25,7 +25,7 @@ export default function Home() {
 							alt='Featured Image'
 							width={400}
 							height={300}
-							className='w-full object-cover aspect-video'
+							className='w-full object-cover lg:aspect-video'
 							priority
 						/>
 						{/* <img
@@ -36,7 +36,7 @@ export default function Home() {
 							className='w-full object-cover aspect-video'
 						/> */}
 					</div>
-					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white w-full lg:aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl '>
 								Museums and Galleries Month (MGM)
@@ -48,7 +48,7 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className='bg-white w-full aspect-video grid place-items-center text-center order-last md:order-3'>
+					<div className='bg-white w-full lg:aspect-video grid place-items-center text-center order-last md:order-3'>
 						<div className='p-4 space-y-2'>
 							<h2 className='font-bold text-2xl  '>Lead Agencies</h2>
 							<p className='text-secondaryTextColor'>
@@ -66,7 +66,7 @@ export default function Home() {
 							alt='Featured Image'
 							width={400}
 							height={300}
-							className='w-full object-cover aspect-video'
+							className='w-full object-cover lg:aspect-video'
 							priority
 						/>
 						{/* <img
@@ -79,31 +79,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{/* Blogs */}
-			{/* <BlogSlider {...postMetadata} /> */}
-
-			{/* <section className="py-12 lg:py-32 inside">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {postPreviews}
-        </div>
-        <Link href="/blogs" className="w-full text-center block mt-8">
-          <Button size={"lg"}>View All</Button>
-        </Link>
-      </section> */}
-
-			{/* <section className="mt-6 widest">
-        <div className="inside py-24 px-8 lg:px-16">
-          <div className="mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold">Blogs</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {postPreviews}
-          </div>
-          <Link href="/blogs" className="w-full text-center block mt-8">
-            <Button size={"lg"}>View All</Button>
-          </Link>
-        </div>
-      </section> */}
 
 			<EventsTabs categorized={categorized} />
 
@@ -138,24 +113,17 @@ export default function Home() {
 			</section>
 			<section className='-mt-44 inside'>
 				<div className='grid md:grid-cols-2'>
-					<div className='w-full'>
+					<div className=''>
 						<Image
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
 							alt='Featured Image'
 							width={400}
 							height={300}
-							className='w-full object-cover aspect-video'
+							className='object-cover w-full'
 							priority
 						/>
-						{/* <img
-							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
-							alt='Featured Image'
-							width={800}
-							height={800}
-							className='w-full object-cover aspect-video'
-						/> */}
 					</div>
-					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
+					<div className='bg-white lg:aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-5'>
 							<h2 className='font-bold text-2xl  '>About 2024 Theme</h2>
 							<p className=''>
@@ -177,7 +145,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='bg-white w-full aspect-video grid place-items-center text-center order-last md:order-3'>
+					<div className='bg-white lg:aspect-video grid place-items-center text-center order-last md:order-3'>
 						<div className='p-4 space-y-5'>
 							<div className='space-y-3'>
 								<p className=''>
@@ -198,13 +166,13 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='w-full md:order-4'>
+					<div className=' md:order-4'>
 						<Image
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP7_hvbjge.jpg'
 							alt='Featured Image'
-							width={40}
+							width={400}
 							height={300}
-							className='w-full object-cover aspect-video'
+							className='object-cover w-full'
 							priority
 						/>
 						{/* <img
@@ -212,7 +180,7 @@ export default function Home() {
 							alt='Featured Image'
 							width={800}
 							height={800}
-							className='w-full object-cover aspect-video'
+							className='w-full object-cover lg:aspect-video'
 						/> */}
 					</div>
 				</div>

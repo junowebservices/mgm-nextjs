@@ -43,7 +43,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 					<div className='space-y-5'>
 						{pastEvents &&
 							pastEvents.map((activity: EventMetadata, i: number) => {
-								console.log(activity, 'activity')
+								(activity, 'activity')
 								const formattedMarkdown = activity.content
 									.replace(/\s\s$/gm, '<br/>') // Replace double spaces at end of line
 									.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
@@ -65,6 +65,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 													width={500}
 													height={200}
 													alt="Featured Image"
+													priority
 												/>
 												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
 													<Markdown >{formattedMarkdown}</Markdown>

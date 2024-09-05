@@ -5,7 +5,6 @@ import MonthCalendar from '@/components/MonthCalendar';
 const Events = () => {
 	const { all, categorized } = getEventsMetadata();
 	const allEvents = all;
-	console.log(allEvents, 'allEvents')
 	return (
 		<section>
 			<h1 className='font-bold text-2xl lg:text-3xl my-6 text-center'>
