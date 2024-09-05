@@ -41,7 +41,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 									height={200}
 									alt="Featured Image"
 								/>
-								<ScrollArea className='!mt-6 max-h-[300px]'>
+								<ScrollArea className='!mt-6 max-h-[300px] pb-8'>
 									<Markdown >{formattedMarkdown}</Markdown>
 								</ScrollArea>
 								<DialogDescription className='hidden'>{event.subtitle}
