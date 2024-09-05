@@ -43,7 +43,6 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 					<div className='space-y-5'>
 						{pastEvents &&
 							pastEvents.map((activity: EventMetadata, i: number) => {
-								(activity, 'activity')
 								const formattedMarkdown = activity.content
 									.replace(/\s\s$/gm, '<br/>') // Replace double spaces at end of line
 									.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
