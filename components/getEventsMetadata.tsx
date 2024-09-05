@@ -21,6 +21,7 @@ const getEventsMetadata = (): {
 			subtitle: matterResult.data.subtitle,
 			featuredImage: matterResult.data.featuredImage,
 			slug: fileName.replace('.md', ''),
+			content: matterResult.content
 		};
 	});
 
@@ -45,11 +46,11 @@ const getEventsMetadata = (): {
 		} else if (
 			eventDate >= currentDate &&
 			eventDate <=
-				new Date(
-					currentDate.getFullYear(),
-					currentDate.getMonth(),
-					currentDate.getDate() + 6,
-				)
+			new Date(
+				currentDate.getFullYear(),
+				currentDate.getMonth(),
+				currentDate.getDate() + 6,
+			)
 		) {
 			happeningNowEvents.push({ ...event, category: 'Happening Now' });
 		} else {

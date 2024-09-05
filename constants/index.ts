@@ -3,7 +3,7 @@ import {
 	BsFillEnvelopeFill,
 	BsGlobeAsiaAustralia,
 	BsInstagram,
-	BsTwitter,
+	BsTwitterX
 } from 'react-icons/bs';
 
 export const Sliders = [
@@ -148,9 +148,9 @@ export const socialmedia = [
 		icon: BsFacebook,
 	},
 	{
-		title: 'Twitter',
-		url: 'https://www.twitter.com/nccaofficial',
-		icon: BsTwitter,
+		title: 'X',
+		url: 'https://www.x.com/nccaofficial',
+		icon: BsTwitterX,
 	},
 	{
 		title: 'Instagram',
@@ -286,22 +286,22 @@ export const footerLinks = [
 
 export const agencyKits = [
 	{
-		title: '2023 MGM Logo Variations',
+		title: '2024 MGM Logo Variations',
 		desc: "MGM Logo Variations represent the diverse visual adaptations of the official logo to celebrate this year's awesome theme.",
 		link: 'https://drive.google.com/drive/folders/18Q_BHiqZlWFlZwIX6DxZEtwMYI7OGLhI?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Poster Pack',
-		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
+		title: '2024 MGM Poster Pack',
+		desc: "MGM 2024 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Branding Fonts',
-		desc: 'To have the full experience of MGM 2023, branding fonts can be used to match the official font of this years theme.',
+		title: '2024 MGM Branding Fonts',
+		desc: 'To have the full experience of MGM 2024, branding fonts can be used to match the official font of this years theme.',
 		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Digital Briefer',
+		title: '2024 MGM Digital Briefer',
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
 		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
 	},
@@ -309,12 +309,12 @@ export const agencyKits = [
 
 export const socMedKits = [
 	{
-		title: '2023 MGM Banner and Banner Specs',
-		desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
+		title: '2024 MGM Banner and Banner Specs',
+		desc: 'Like poster pack, the MGM Banner can be used to promote the 2024 MGM theme while the banner specs provide complete details and standardized banner posting.',
 		link: 'https://drive.google.com/drive/folders/1r9WiZrKB-40q7ueyuDKOKPjePNAv0TTj?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Profile Picture Frame',
+		title: '2024 MGM Profile Picture Frame',
 		desc: 'Celebrate with us by using the official Facebook Profile Picture frame of MGM for this year. Twibbonize your photo here!',
 		link: 'https://www.twibbonize.com/mgm-exhibits-and-reflections',
 	},

@@ -27,6 +27,7 @@ import { headerLink, socialmedia } from '@/constants';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const NavBar = () => {
 	const pathname = usePathname();
@@ -35,7 +36,7 @@ const NavBar = () => {
 		<header className='full-bleed'>
 			<div className='bg-gray-100 fixed z-10 w-full top-0 inside'>
 				<div className='flex justify-between items-center font-Arial'>
-					<p className='text-xs md:text-sm py-2'>GOV.PH</p>
+					<a href="https://www.gov.ph/" target='_bank' className='text-xs md:text-sm py-2'>GOV.PH</a>
 					{/* <NavigationMenu className='z-20'>
 						<NavigationMenuList>
 							<NavigationMenuItem>
@@ -79,13 +80,21 @@ const NavBar = () => {
 			</div>
 			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-8'>
 				<Link href='/' className='w-[125px]'>
-					<img
+					<Image
 						src='https://res.cloudinary.com/junoconsulting/image/upload/w_500/q_auto/f_auto/v1695796290/MGM/images/logo_ayzaey.png'
 						alt='logo'
 						width={800}
 						height={50}
 						className='object-contain w-full'
+						priority
 					/>
+					{/* <img
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_500/q_auto/f_auto/v1695796290/MGM/images/logo_ayzaey.png'
+						alt='logo'
+						width={800}
+						height={50}
+						className='object-contain w-full'
+					/> */}
 				</Link>
 				{/* Mobile Only */}
 				<div className='flex md:hidden'>
@@ -110,10 +119,9 @@ const NavBar = () => {
 								<div className='space-y-4' key={index}>
 									<div
 										key={item.title}
-										className={`p-4 text-white ${
-											pathname.includes(item.url) &&
+										className={`p-4 text-white ${pathname.includes(item.url) &&
 											'font-bold underline underline-white underline-offset-2'
-										}`}
+											}`}
 									>
 										<Link href={item.url} legacyBehavior passHref className=''>
 											<h2 className=''>{item.title}</h2>

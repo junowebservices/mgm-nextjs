@@ -25,6 +25,7 @@ export interface EventMetadata {
 	subtitle: string;
 	slug: string;
 	featuredImage: string;
+	content: string;
 }
 
 export interface MonthCalendarProps {

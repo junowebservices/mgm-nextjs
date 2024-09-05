@@ -6,13 +6,20 @@ const Blogs = () => {
   const postMetadata = getPostMetadata();
   const recentBlog = postMetadata.slice(0, 1).map((post) => (
     <div className="grid lg:grid-cols-2">
-    <img
+      <Image
         src={post.featuredImage}
         alt="Featured Image"
         width={150}
         height={150}
         className="object-contain"
       />
+      {/* <img
+        src={post.featuredImage}
+        alt="Featured Image"
+        width={150}
+        height={150}
+        className="object-contain"
+      /> */}
       <div key={post.slug}>
         <h1>{post.title}</h1>
         <p>{post.subtitle}</p>

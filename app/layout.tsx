@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 import Analytics from '@/components/gtag/Analytics';
 export const metadata = {
 	title: 'Museums and Galleries Month',
-	description: 'Museums and Galleries Month 2023',
+	description: 'Museums and Galleries Month 2024',
 };
 
 export default function RootLayout({

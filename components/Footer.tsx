@@ -100,18 +100,16 @@ const Footer = () => {
 				</div>
 
 				<p className='bg-mainBg text-center block py-3 font-Roboto text-xs text-secondaryTextColor'>
-					&copy; 2023 Musems and Galleries Month. All rights reserved.{' '}
+					&copy; 2024 Musems and Galleries Month. All rights reserved.{' '}
 					<span className='hidden md:inline'>|</span>{' '}
 					<br className='block md:hidden' />
 					Developed by{' '}
 					<Link
-						href='https://junowebservices.com/'
-						target='_blank'
+						href='mailto:mariaherbola@gmail.com'
 						className='hover:text-primary underline'
 					>
-						Juno
-					</Link>{' '}
-					- preprod
+						Escultura
+					</Link>
 				</p>
 			</div>
 		</footer>

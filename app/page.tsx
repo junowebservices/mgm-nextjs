@@ -20,13 +20,21 @@ export default function Home() {
 				<h2 className='font-bold text-2xl lg:text-3xl my-6'>Latest Update</h2>
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full '>
-						<img
+						<Image
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788065/MGM/images/HP4_rhbpjw.jpg'
+							alt='Featured Image'
+							width={400}
+							height={300}
+							className='w-full object-cover aspect-video'
+							priority
+						/>
+						{/* <img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788065/MGM/images/HP4_rhbpjw.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
 							className='w-full object-cover aspect-video'
-						/>
+						/> */}
 					</div>
 					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-2'>
@@ -53,13 +61,21 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='w-full grid place-content-center md:order-4'>
-						<img
+						<Image
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788064/MGM/images/HP5_tppic7.jpg'
+							alt='Featured Image'
+							width={400}
+							height={300}
+							className='w-full object-cover aspect-video'
+							priority
+						/>
+						{/* <img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788064/MGM/images/HP5_tppic7.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
 							className='w-full object-cover aspect-video'
-						/>
+						/> */}
 					</div>
 				</div>
 			</section>
@@ -123,17 +139,25 @@ export default function Home() {
 			<section className='-mt-44 inside'>
 				<div className='grid md:grid-cols-2'>
 					<div className='w-full'>
-						<img
+						<Image
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
+							alt='Featured Image'
+							width={400}
+							height={300}
+							className='w-full object-cover aspect-video'
+							priority
+						/>
+						{/* <img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP6_fihrcw.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
 							className='w-full object-cover aspect-video'
-						/>
+						/> */}
 					</div>
 					<div className='bg-white w-full aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-5'>
-							<h2 className='font-bold text-2xl  '>About 2023 Theme</h2>
+							<h2 className='font-bold text-2xl  '>About 2024 Theme</h2>
 							<p className=''>
 								“Exhibits and Reflections: Creating Opportunities for the New
 								World” encompasses the role of museums and galleries in
@@ -175,13 +199,21 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='w-full md:order-4'>
-						<img
+						<Image
+							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP7_hvbjge.jpg'
+							alt='Featured Image'
+							width={40}
+							height={300}
+							className='w-full object-cover aspect-video'
+							priority
+						/>
+						{/* <img
 							src='https://res.cloudinary.com/junoconsulting/image/upload/w_800/q_auto/f_auto/v1695788070/MGM/images/HP7_hvbjge.jpg'
 							alt='Featured Image'
 							width={800}
 							height={800}
 							className='w-full object-cover aspect-video'
-						/>
+						/> */}
 					</div>
 				</div>
 			</section>

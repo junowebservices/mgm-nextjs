@@ -29,13 +29,20 @@ const PostPage = (props: any) => {
 	return (
 		<div className='inside'>
 			<div className='mb-12'>
-				<img
+				<Image
 					src={post.data.featuredImage}
 					width={1500}
 					height={200}
 					className='object-cover w-full lg:h-[500px]'
 					alt='image'
 				/>
+				{/* <img
+					src={post.data.featuredImage}
+					width={1500}
+					height={200}
+					className='object-cover w-full lg:h-[500px]'
+					alt='image'
+				/> */}
 				<div className='mx-auto'>
 					<h1 className='text-3xl lg:text-5xl text-black mt-8 !font-Playfair'>
 						{post.data.title}

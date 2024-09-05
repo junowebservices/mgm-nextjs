@@ -4,52 +4,56 @@ import Link from 'next/link';
 import { Popover, PopoverTrigger, PopoverContent } from './ui/popover';
 import { Button, buttonVariants } from './ui/button';
 
+import {
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "./ui/dialog"
+import Markdown from 'markdown-to-jsx';
+import Image from 'next/image';
+import { ScrollArea } from "@/components/ui/scroll-area"
+
+
 const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 	const hasEvents = events.length > 0;
 	const dayClasses = `border p-2 min-h-[120px] ${hasEvents && ' '}`;
 	return (
 		<div className={dayClasses}>
 			<div className={`${!hasEvents && 'text-gray-400'} mb-1`}>{day}</div>
-			{events.map((event, index) => (
-				<div key={index} className='mb-1'>
-					<Popover>
-						<PopoverTrigger asChild>
-							<p className='line-clamp-1 text-sm bg-mainYellow-light rounded-sm px-1 py-[2px] cursor-pointer hover:bg-mainYellow '>
-								{event.title}
-							</p>
-						</PopoverTrigger>
-						<PopoverContent className='w-80'>
-							<div className='grid gap-4'>
-								<div className='space-y-2'>
-									<Link href={`/events/${event.slug}`}>
-										<h4 className='font-medium leading-none cursor-pointer hover:underline'>
-											{event.title}
-										</h4>
-									</Link>
-									<p className='text-sm text-muted-foreground'>{event.date}</p>
-								</div>
-								<div className='space-y-3'>
-									<p className='text-sm line-clamp-4 mb-3'>{event.subtitle}</p>
-									<Link
-										href={`/events/${event.slug}`}
-										className='text-sm text-mainYellow-dark'
-									>
-										<Button
-											className={buttonVariants({
-												variant: 'secondary',
-												size: 'sm',
-											})}
-										>
-											See more
-										</Button>
-									</Link>
-								</div>
-							</div>
-						</PopoverContent>
-					</Popover>
-				</div>
-			))}
-		</div>
+			{events.map((event, index) => {
+				const formattedMarkdown = event.content
+					.replace(/\s\s$/gm, '<br/>') // Replace double spaces at end of line
+					.replace(/\s*(\/\/|\\)\s*/g, '<br/>');
+				return (
+					<Dialog key={index}>
+						<DialogTrigger className='line-clamp-2 text-sm bg-mainYellow-light rounded-sm px-1 py-[2px] text-left mb-1 font-serif w-full'>
+							{event.title}
+						</DialogTrigger>
+						<DialogContent>
+							<DialogHeader>
+								<DialogTitle className='font-medium text-xl cursor-pointer mb-6 pr-4 font-serif'>{event.title}</DialogTitle>
+								<Image
+									src={event.featuredImage}
+									width={500}
+									height={200}
+									alt="Featured Image"
+								/>
+								<ScrollArea className='!mt-6 max-h-[300px]'>
+									<Markdown >{formattedMarkdown}</Markdown>
+								</ScrollArea>
+								<DialogDescription className='hidden'>{event.subtitle}
+								</DialogDescription>
+							</DialogHeader>
+						</DialogContent>
+					</Dialog>
+				)
+
+			})}
+
+		</div >
 	);
 };
 
