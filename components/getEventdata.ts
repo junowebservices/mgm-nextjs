@@ -18,6 +18,7 @@ const getEventMetadata = (): EventMetadata[] => {
 			subtitle: matterResult.data.subtitle,
 			featuredImage: matterResult.data.featuredImage,
 			slug: fileName.replace('.md', ''),
+			content: matterResult.content
 		};
 	});
 	posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
