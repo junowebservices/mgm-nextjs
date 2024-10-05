@@ -184,7 +184,7 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full flex h-[200px] md:h-[350px] lg:h-[480px]",
+        "min-w-0 shrink-0 grow-0 basis-full flex h-[200px] md:h-[350px] lg:h-[600px]",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
@@ -206,9 +206,9 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "hidden lg:flex absolute h-8 w-8 xl:h-20 xl:w-20 rounded-full",
+        "hidden lg:flex absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "left-0 2xl:-left-18 top-1/2 -translate-y-1/2"
+          ? "left-2 2xl:-left-18 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="w-4 h-4 xl:h-8 xl:w-8" />
+      <ArrowLeft className="w-4 h-4" />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -235,9 +235,9 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "hidden lg:flex absolute h-8 w-8 xl:h-20 xl:w-20 rounded-full",
+        "hidden lg:flex absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "right-0 2xl:-right-18 top-1/2 -translate-y-1/2"
+          ? "right-2 2xl:-right-18 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -245,7 +245,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className="w-4 h-4 xl:h-8 xl:w-8" />
+      <ArrowRight className="w-4 h-4" />
       <span className="sr-only">Next slide</span>
     </Button>
   )

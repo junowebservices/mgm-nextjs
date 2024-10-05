@@ -20,7 +20,7 @@ export default function RootLayout({
 					<Analytics />
 				</Suspense>
 				<NavBar />
-				<main className='flex flex-col w-full mt-28 lg:mt-32 xl:mt-36'>
+				<main className='flex flex-col w-full mt-32'>
 					{children}
 				</main>
 				<Footer />

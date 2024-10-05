@@ -305,6 +305,16 @@ export const agencyKits = [
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
 		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
 	},
+	{
+		title: '2024 MGM Banner and Banner Specs',
+		desc: 'Like poster pack, the MGM Banner can be used to promote the 2024 MGM theme while the banner specs provide complete details and standardized banner posting.',
+		link: 'https://drive.google.com/drive/folders/1r9WiZrKB-40q7ueyuDKOKPjePNAv0TTj?usp=drive_link',
+	},
+	{
+		title: '2024 MGM Profile Picture Frame',
+		desc: 'Celebrate with us by using the official Facebook Profile Picture frame of MGM for this year. Twibbonize your photo here!',
+		link: 'https://www.twibbonize.com/mgm-exhibits-and-reflections',
+	},
 ];
 
 export const socMedKits = [

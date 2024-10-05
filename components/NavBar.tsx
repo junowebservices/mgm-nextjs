@@ -1,4 +1,6 @@
 'use client';
+import * as React from "react"
+import { cn } from "@/lib/utils"
 
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { FaGlobeAsia } from 'react-icons/fa';
@@ -23,7 +25,7 @@ import {
 	SheetTrigger,
 } from '@/components/ui/sheet';
 
-import { headerLink, socialmedia } from '@/constants';
+import { agencyKits, headerLink, socialmedia } from '@/constants';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -78,7 +80,7 @@ const NavBar = () => {
 					</NavigationMenu> */}
 				</div>
 			</div>
-			<div className='flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-white top-8'>
+			<div className='bg-white flex justify-between md:pt-4 items-center py-2 inside fixed z-[2] bg-transparent top-8'>
 				<Link href='/' className='w-[125px]'>
 					<Image
 						src='https://res.cloudinary.com/junoconsulting/image/upload/w_500/q_auto/f_auto/v1695796290/MGM/images/logo_ayzaey.png'
@@ -100,7 +102,7 @@ const NavBar = () => {
 				<div className='flex md:hidden'>
 					<Sheet>
 						<SheetTrigger name='menu'>
-							<HiOutlineMenuAlt3 className='w-8 h-8' name='menu' />
+							<HiOutlineMenuAlt3 className='w-8 h-8 text-white bg-primary' name='menu' />
 						</SheetTrigger>
 						<SheetContent className='pt-12 bg-primary'>
 							{/* <div className='space-y-4'>
@@ -143,7 +145,8 @@ const NavBar = () => {
 						</SheetContent>
 					</Sheet>
 				</div>
-				<div className='md:flex flex-col items-end hidden'>
+				{/* Desktop */}
+				<div className='md:flex gap-4 flex-col items-end hidden'>
 					<ul className='grid grid-cols-5 gap-4 place-content-center text-center'>
 						{socialmedia.map((social, index) => (
 							<li key={index}>
@@ -153,7 +156,73 @@ const NavBar = () => {
 							</li>
 						))}
 					</ul>
-					<NavigationMenu className='z-1 mt-4'>
+					<NavigationMenu>
+						<NavigationMenuList>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger>About</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+										<li className="row-span-3">
+											<NavigationMenuLink asChild>
+												<a
+													className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none"
+													href="/about"
+												>
+													<Image
+														src='https://res.cloudinary.com/junoconsulting/image/upload/w_500/q_auto/f_auto/v1695796290/MGM/images/logo_ayzaey.png'
+														alt='logo'
+														width={100}
+														height={20}
+														className='object-contain w-full'
+														priority
+													/>
+													<div className="mb-2 mt-4 text-lg font-medium">
+													Museums and Galleries Month
+													</div>
+													<p className="text-sm leading-tight text-muted-foreground">
+													Every October, the MGM offers fresh theme that provides awareness to all regarding the promising heritage of the Philippines.
+
+
+													</p>
+												</a>
+											</NavigationMenuLink>
+										</li>
+										<ListItem target='_blank' href="/https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link" title="2024 MGM Poster Pack">
+										MGM 2024 Poster Pack is a collection of promotional materials that may use to promote this year's theme.
+										</ListItem>
+										<ListItem target='_blank' href="https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link" title="2024 MGM Branding Fonts">
+										To have the full experience of MGM 2024, branding fonts can be used to match the official font of this years theme.
+										</ListItem>
+										<ListItem target='_blank' href="https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link" title="2024 MGM Digital Briefer">
+										The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.
+										</ListItem>
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
+							<NavigationMenuItem>
+								<Link href="/events" legacyBehavior passHref>
+									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+										Events
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
+							<NavigationMenuItem>
+								<Link href="/download" legacyBehavior passHref>
+									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+										Download+
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
+							<NavigationMenuItem>
+								<Link href="/contact" legacyBehavior passHref>
+									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+										Contact
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
+						</NavigationMenuList>
+					</NavigationMenu>
+					{/* <NavigationMenu className='z-1 mt-4'>
 						<NavigationMenuList>
 							<NavigationMenuItem className='space-x-10'>
 								{headerLink.map(item => (
@@ -167,7 +236,7 @@ const NavBar = () => {
 											className={
 												pathname.includes(item.url)
 													? `text-primary hover:text-primary`
-													: `text-secondaryTextColor hover:text-primary hover:underline`
+													: `text-primary hover:text-primary hover:underline drop-shadow-2xl`
 											}
 										>
 											{item.title}
@@ -176,7 +245,7 @@ const NavBar = () => {
 								))}
 							</NavigationMenuItem>
 						</NavigationMenuList>
-					</NavigationMenu>
+					</NavigationMenu> */}
 				</div>
 			</div>
 		</header>
@@ -184,3 +253,29 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+const ListItem = React.forwardRef<
+	React.ElementRef<"a">,
+	React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+	return (
+		<li>
+			<NavigationMenuLink asChild>
+				<a
+					ref={ref}
+					className={cn(
+						"block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+						className
+					)}
+					{...props}
+				>
+					<div className="text-sm font-medium leading-none">{title}</div>
+					<p className="line-clamp-2 text-sm leading-snug">
+						{children}
+					</p>
+				</a>
+			</NavigationMenuLink>
+		</li>
+	)
+})
+ListItem.displayName = "ListItem"

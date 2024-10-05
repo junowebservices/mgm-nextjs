@@ -33,40 +33,44 @@ const getEventsMetadata = (): {
 	});
 
 	// Categorize events
-	const currentDate = new Date();
-	const pastEvents = [];
-	const happeningNowEvents = [];
-	const futureEvents = [];
+	const categorizeEvents = () => {
+		const currentDate = new Date(); // Ensure fresh current date
+		const pastEvents = [];
+		const happeningNowEvents = [];
+		const futureEvents = [];
 
-	for (const event of events) {
-		const eventDate = new Date(event.date);
+		for (const event of events) {
+			const eventDate = new Date(event.date);
 
-		if (eventDate < currentDate) {
-			pastEvents.push({ ...event, category: 'Past Events' });
-		} else if (
-			eventDate >= currentDate &&
-			eventDate <=
-			new Date(
-				currentDate.getFullYear(),
-				currentDate.getMonth(),
-				currentDate.getDate() + 6,
-			)
-		) {
-			happeningNowEvents.push({ ...event, category: 'Happening Now' });
-		} else {
-			futureEvents.push({ ...event, category: 'Future Events' });
+			if (eventDate < currentDate) {
+				pastEvents.push({ ...event, category: 'Past Events' });
+			} else if (
+				eventDate >= currentDate &&
+				eventDate <= new Date(
+					currentDate.getFullYear(),
+					currentDate.getMonth(),
+					currentDate.getDate() + 6
+				)
+			) {
+				happeningNowEvents.push({ ...event, category: 'Happening Now' });
+			} else {
+				futureEvents.push({ ...event, category: 'Future Events' });
+			}
 		}
-	}
 
-	const categorized = {
-		pastEvents,
-		happeningNowEvents,
-		futureEvents,
+		return {
+			pastEvents,
+			happeningNowEvents,
+			futureEvents
+		};
 	};
+
+	// Call categorizeEvents every time the function is executed to avoid stale data
+	const categorized = categorizeEvents();
 
 	return {
 		categorized,
-		all: events,
+		all: events
 	};
 };
 
