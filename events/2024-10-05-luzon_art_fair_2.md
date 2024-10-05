@@ -1,4 +1,5 @@
 ---
+featuredImage: /uploads/hp6.jpg
 title: LUZON ART FAIR
 subtitle: Diwa ng Tarlac & Bulwagang Kanlahi
 date: October 5, 2024 10:00 AM
@@ -9,8 +10,8 @@ VIP Reception October 5, 2024
 **Activities**
 
 1. Art Workshop 5
-   10:00-1:00 PM
-   Folklore Pilipinas
+10:00-1:00 PM test
+Folklore Pilipinas
 
 
 2. OPENING RECEPTION & CULTURAL PERFORMANCE

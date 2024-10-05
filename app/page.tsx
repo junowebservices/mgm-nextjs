@@ -10,7 +10,7 @@ import getEventsMetadata from '@/components/getEventsMetadata';
 // import BlogSlider from '@/components/BlogSlider';
 
 export default function Home() {
-	const { categorized } = getEventsMetadata();
+	const { categorized } = getEventsMetadata(2024);
 
 	return (
 		<>

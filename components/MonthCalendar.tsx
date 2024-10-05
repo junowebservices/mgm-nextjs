@@ -12,7 +12,7 @@ const MonthCalendar: React.FC<MonthCalendarProps> = ({ events }) => {
 	
 		// Render the days starting from the 3rd column
 		for (let i = 1; i <= daysInMonth; i++) {
-			const currentDate = new Date(`2023-10-${i}`);
+			const currentDate = new Date(`2024-10-${i}`);
 			const dayEvents = events.filter(event => {
 				const eventDate = new Date(event.date);
 				return (

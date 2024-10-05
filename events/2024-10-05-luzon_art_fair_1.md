@@ -1,4 +1,5 @@
 ---
+featuredImage: /uploads/hp6.jpg
 title: LUZON ART FAIR
 subtitle: Diwa ng Tarlac & Bulwagang Kanlahi
 date: October 4, 2024 1:30 PM

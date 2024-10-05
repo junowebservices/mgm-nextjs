@@ -41,6 +41,9 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 									height={200}
 									alt="Featured Image"
 								/>
+								<p className='mb-2 text-secondaryTextColor'>
+												{event.date} {event.endDate && <span>- {event.endDate} </span>}
+											</p>
 								<ScrollArea className='!mt-6 max-h-[300px] pb-8'>
 									<Markdown >{formattedMarkdown}</Markdown>
 								</ScrollArea>

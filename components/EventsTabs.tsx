@@ -66,6 +66,9 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 													alt="Featured Image"
 													priority
 												/>
+												<p className='mb-2 text-secondaryTextColor'>
+													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
+												</p>
 												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
@@ -121,6 +124,9 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 													alt="Featured Image"
 													priority
 												/>
+												<p className='mb-2 text-secondaryTextColor'>
+													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
+												</p>
 												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
@@ -174,7 +180,9 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 													height={200}
 													alt="Featured Image"
 													priority
-												/>
+												/><p className='mb-2 text-secondaryTextColor'>
+													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
+												</p>
 												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>

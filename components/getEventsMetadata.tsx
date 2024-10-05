@@ -2,72 +2,90 @@ import { EventMetadata, CategorizedEvents } from '@/constants/types';
 import fs from 'fs';
 import matter from 'gray-matter';
 
-const getEventsMetadata = (): {
+// Function to check if the event is from the specified year
+const isEventFromYear = (eventDate: Date, year: number) => {
+	return eventDate.getFullYear() === year;
+};
+
+// Cache data and last update time
+let cachedData: {
+	categorized: CategorizedEvents;
+	all: EventMetadata[];
+} | null = null;
+let lastCheckedDate = new Date().toDateString(); // Keep track of the last checked day
+
+const getEventsMetadata = (year: number): {
 	categorized: CategorizedEvents;
 	all: EventMetadata[];
 } => {
-	// Your existing code to read markdown files and extract data
-	const folder = 'events/';
-	const files = fs.readdirSync(folder);
-	const markdownPosts = files.filter(file => file.endsWith('.md'));
+	const currentDate = new Date().toDateString();
+	const today = new Date(new Date().toDateString()); // Today's date without time
 
-	// Get gray-matter data from each file.
-	const events = markdownPosts.map(fileName => {
-		const fileContents = fs.readFileSync(`events/${fileName}`, 'utf8');
-		const matterResult = matter(fileContents);
-		return {
-			title: matterResult.data.title,
-			date: matterResult.data.date,
-			subtitle: matterResult.data.subtitle,
-			featuredImage: matterResult.data.featuredImage,
-			slug: fileName.replace('.md', ''),
-			content: matterResult.content
-		};
-	});
+	// Refresh data if the day has changed or cache is null
+	if (!cachedData || lastCheckedDate !== currentDate) {
+		const folder = 'events/';
+		const files = fs.readdirSync(folder);
+		const markdownPosts = files.filter(file => file.endsWith('.md'));
 
-	// Sort events by date
-	events.sort((a: any, b: any) => {
-		const dateA = new Date(a.date);
-		const dateB = new Date(b.date);
-		return dateA.getTime() - dateB.getTime(); // Compare dates using getTime()
-	});
+		// Get gray-matter data from each file
+		const events = markdownPosts.map(fileName => {
+			const fileContents = fs.readFileSync(`events/${fileName}`, 'utf8');
+			const matterResult = matter(fileContents);
+			return {
+				title: matterResult.data.title,
+				date: matterResult.data.date,
+				endDate: matterResult.data.endDate || matterResult.data.date, // Use endDate if provided
+				subtitle: matterResult.data.subtitle,
+				featuredImage: matterResult.data.featuredImage,
+				slug: fileName.replace('.md', ''),
+				content: matterResult.content,
+			};
+		}).filter(event => isEventFromYear(new Date(event.date), year));
 
-	// Categorize events
-	const currentDate = new Date();
-	const pastEvents = [];
-	const happeningNowEvents = [];
-	const futureEvents = [];
+		// Sort events by date
+		events.sort((a: any, b: any) => {
+			const dateA = new Date(a.date);
+			const dateB = new Date(b.date);
+			return dateA.getTime() - dateB.getTime(); // Compare dates using getTime()
+		});
 
-	for (const event of events) {
-		const eventDate = new Date(event.date);
+		// Categorize events
+		const pastEvents = [];
+		const happeningNowEvents = [];
+		const futureEvents = [];
 
-		if (eventDate < currentDate) {
-			pastEvents.push({ ...event, category: 'Past Events' });
-		} else if (
-			eventDate >= currentDate &&
-			eventDate <=
-				new Date(
-					currentDate.getFullYear(),
-					currentDate.getMonth(),
-					currentDate.getDate() + 6,
-				)
-		) {
-			happeningNowEvents.push({ ...event, category: 'Happening Now' });
-		} else {
-			futureEvents.push({ ...event, category: 'Future Events' });
+		for (const event of events) {
+			const eventStartDate = new Date(new Date(event.date).toDateString());
+			const eventEndDate = new Date(new Date(event.endDate).toDateString());
+
+			if (eventEndDate < today) {
+				// Event has already ended
+				pastEvents.push({ ...event, category: 'Past Events' });
+			} else if (eventStartDate <= today && eventEndDate >= today) {
+				// Event is happening today (or ongoing)
+				happeningNowEvents.push({ ...event, category: 'Happening Now' });
+			} else if (eventStartDate > today) {
+				// Event will happen in the future
+				futureEvents.push({ ...event, category: 'Future Events' });
+			}
 		}
+
+		const categorized = {
+			pastEvents,
+			happeningNowEvents,
+			futureEvents,
+		};
+
+		// Update cache and last checked date
+		cachedData = {
+			categorized,
+			all: events,
+		};
+		lastCheckedDate = currentDate;
 	}
 
-	const categorized = {
-		pastEvents,
-		happeningNowEvents,
-		futureEvents,
-	};
-
-	return {
-		categorized,
-		all: events,
-	};
+	// Return cached data
+	return cachedData!;
 };
 
 export default getEventsMetadata;

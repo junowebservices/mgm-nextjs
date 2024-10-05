@@ -22,6 +22,7 @@ export interface PostMetadata {
 export interface EventMetadata {
 	title: string;
 	date: string;
+	endDate: string;
 	subtitle: string;
 	slug: string;
 	featuredImage: string;
