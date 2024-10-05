@@ -12,11 +12,14 @@ endDate: October 6, 2024 6:00 PM
    September 30 1:00-5:00 PM
    Davao City National High School
    Multi-Purpose Hall
-   	
+
+
 2. Brass Sculpture Masterclass with jikko Villanueva
    September 29-29
    Balai Kalipay
    Malagos Baguio District, Davao City
+
+
 3. Metal Sculpture Masterclass with Ombok Villamor
    September 28-29
    Balai Kalipay
@@ -27,6 +30,8 @@ endDate: October 6, 2024 6:00 PM
    Davao City National High School
    Conference Room
    9:00-5:00 PM
+
+
 5. Courage for Dreamers
    From Hobbyist to Lourve Artist
    September 30
