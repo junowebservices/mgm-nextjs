@@ -107,19 +107,12 @@ const NavBar = () => {
 								</div>
 							</div> */}
 							{headerLink.map((item, index) => (
-								<div className='space-y-4' key={index}>
-									<div
-										key={item.title}
-										className={`p-4 text-white ${
-											pathname.includes(item.url) &&
-											'font-bold underline underline-white underline-offset-2'
-										}`}
-									>
-										<Link href={item.url} legacyBehavior passHref className=''>
-											<h2 className=''>{item.title}</h2>
-										</Link>
-									</div>
-								</div>
+								<Link href={item.url} legacyBehavior passHref  key={index}>
+									<h2 className={`p-4 text-white hover:cursor-pointer ${
+									pathname.includes(item.url) &&
+									'font-bold underline underline-white underline-offset-2'
+								}`}>{item.title}</h2>
+								</Link>
 							))}
 							<SheetFooter className='absolute left-10 bottom-8'>
 								<ul className='grid grid-cols-5 gap-4 place-content-center text-center'>

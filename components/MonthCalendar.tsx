@@ -6,6 +6,11 @@ const MonthCalendar: React.FC<MonthCalendarProps> = ({ events }) => {
 
 	const renderDays = () => {
 		const days = [];
+		// Add two empty divs as placeholders for the first and second columns
+		days.push(<div key="empty-1"></div>);
+		days.push(<div key="empty-2"></div>);
+	
+		// Render the days starting from the 3rd column
 		for (let i = 1; i <= daysInMonth; i++) {
 			const currentDate = new Date(`2023-10-${i}`);
 			const dayEvents = events.filter(event => {
@@ -15,16 +20,14 @@ const MonthCalendar: React.FC<MonthCalendarProps> = ({ events }) => {
 					eventDate.getMonth() === currentDate.getMonth()
 				);
 			});
-
+	
 			days.push(<CalendarDay key={i} day={i} events={dayEvents} />);
 		}
+	
 		return days;
 	};
 	return (
 		<div className='grid grid-cols-7 gap-2'>
-			{/* {Array.from({ length: 31 }).map((_, index) => (
-				<div key={`empty-${index}`} />
-			))} */}
 			{renderDays()}
 		</div>
 	);

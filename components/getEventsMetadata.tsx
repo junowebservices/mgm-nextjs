@@ -21,6 +21,7 @@ const getEventsMetadata = (): {
 			subtitle: matterResult.data.subtitle,
 			featuredImage: matterResult.data.featuredImage,
 			slug: fileName.replace('.md', ''),
+			content: matterResult.content
 		};
 	});
 
