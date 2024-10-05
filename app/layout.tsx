@@ -3,9 +3,12 @@ import './globals.css';
 import Footer from '@/components/Footer';
 import { Suspense } from 'react';
 import Analytics from '@/components/gtag/Analytics';
+
+const currentYear = new Date().getFullYear();
+
 export const metadata = {
 	title: 'Museums and Galleries Month',
-	description: 'Museums and Galleries Month 2023',
+	description: `Museums and Galleries Month ${currentYear}`,
 };
 
 export default function RootLayout({

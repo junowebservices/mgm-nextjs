@@ -1,5 +1,6 @@
 'use client';
 import { memos, partners } from '@/constants';
+import Image from 'next/image';
 
 import Link from 'next/link';
 
@@ -7,13 +8,22 @@ const About = () => {
 	return (
 		<>
 			<section className='full-bleed'>
-				<img
+				<Image
+					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
+					alt='Exhibits and Reflections Banner'
+					width={1800}
+					height={800}
+					className='object-fill m-auto'
+					objectFit='fill'
+					priority
+				/>
+				{/* <img
 					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
 					alt='Exhibits and Reflections Banner'
 					width={1600}
 					height={600}
 					className='object-cover'
-				/>
+				/> */}
 			</section>
 			<section className='inside my-16'>
 				<div className='grid place-content-center'>
@@ -42,16 +52,24 @@ const About = () => {
 			</section>
 			<section className='inside my-8 lg:my-16 grid md:grid-cols-3 gap-2'>
 				<div className='w-full self-center'>
-					<img
+					<Image
 						src='https://res.cloudinary.com/junoconsulting/image/upload/w_400/q_auto/f_auto/v1695788079/MGM/images/mgm-2023-theme_x1wnr5.jpg'
-						alt='MGM 2023 Theme'
+						alt='MGM 2024 Theme'
 						width={400}
 						height={250}
 						className='object-cover w-full'
+						priority
 					/>
+					{/* <img
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_400/q_auto/f_auto/v1695788079/MGM/images/mgm-2023-theme_x1wnr5.jpg'
+						alt='MGM 2024 Theme'
+						width={400}
+						height={250}
+						className='object-cover w-full'
+					/> */}
 				</div>
 				<div className='space-y-3 md:col-span-2 md:ml-6 lg:ml-16'>
-					<h2 className='text-3xl'>About the MGM 2023 Theme </h2>
+					<h2 className='text-3xl'>About the MGM 2024 Theme </h2>
 					<p>
 						<strong>
 							“Exhibits and Reflections: Creating Opportunities for the New
@@ -67,7 +85,7 @@ const About = () => {
 					</p>
 
 					<p>
-						The said theme aligns with the celebration of 2023 International
+						The said theme aligns with the celebration of 2024 International
 						Museum Day: “Museums, Sustainability, and Wellbeing” which aims to
 						achieve the United Nations' (UN) Sustainable Development Goals,
 						focusing on regulating climate, fostering inclusivity, and tackling
@@ -91,13 +109,20 @@ const About = () => {
 								href={partner.url}
 								target='_blank'
 							>
-								<img
+								<Image
 									src={partner?.imageLink}
 									alt={partner?.title}
 									width={150}
 									height={150}
 									className='object-contain'
 								/>
+								{/* <img
+									src={partner?.imageLink}
+									alt={partner?.title}
+									width={150}
+									height={150}
+									className='object-contain'
+								/> */}
 								<p className='mt-2 font-semibold'>{partner?.title}</p>
 							</Link>
 						))}
@@ -122,13 +147,20 @@ const About = () => {
 								className='text-center grid place-items-center cursor-pointer'
 								target='_blank'
 							>
-								<img
+								<Image
 									src={memo?.imageLink}
 									alt={memo?.title}
 									width={150}
 									height={150}
 									className='object-contain'
 								/>
+								{/* <img
+									src={memo?.imageLink}
+									alt={memo?.title}
+									width={150}
+									height={150}
+									className='object-contain'
+								/> */}
 							</Link>
 						))}
 					</div>

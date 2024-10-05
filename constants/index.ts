@@ -3,7 +3,7 @@ import {
 	BsFillEnvelopeFill,
 	BsGlobeAsiaAustralia,
 	BsInstagram,
-	BsTwitter,
+	BsTwitterX,
 } from 'react-icons/bs';
 
 export const Sliders = [
@@ -150,7 +150,7 @@ export const socialmedia = [
 	{
 		title: 'Twitter',
 		url: 'https://www.twitter.com/nccaofficial',
-		icon: BsTwitter,
+		icon: BsTwitterX,
 	},
 	{
 		title: 'Instagram',

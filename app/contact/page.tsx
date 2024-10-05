@@ -1,17 +1,25 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import Image from 'next/image';
 
 const Contact = () => {
 	return (
 		<section className='full-bleed'>
 			<div className='grid lg:grid-cols-2'>
 				<div className='w-full'>
-					<img
+					{/* <img
 						className='object-cover w-full aspect-square sm:aspect-video md:aspect-square'
 						src='https://res.cloudinary.com/junoconsulting/image/upload/w_1000/q_auto/f_auto/v1695796292/MGM/images/ncaa_unpode.png'
 						width={1000}
 						height={1000}
+						alt='Address Map'
+					/> */}
+					<Image
+						className='object-cover w-full aspect-square sm:aspect-video md:aspect-square'
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_1000/q_auto/f_auto/v1695796292/MGM/images/ncaa_unpode.png'
+						width={500}
+						height={600}
 						alt='Address Map'
 					/>
 				</div>
@@ -78,7 +86,7 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className='border-t-2 border-secondaryTextColor mt-8 full-bleed'>
-				<div className='flex flex-col lg:flex-row justify-between inside text-mainTextColor py-6 gap-6 gap-y-6'>
+				<div className='flex flex-col lg:flex-row justify-evenly inside text-mainTextColor py-6 gap-6 gap-y-6'>
 					<div className='space-y-3'>
 						<h3 className='text-base font-bold'>Telephone</h3>
 						<div>
@@ -106,7 +114,7 @@ const Contact = () => {
 							Luna St., Intramuros, Manila
 						</a>
 					</div>
-					<div className=' space-y-3 order-first md:order-last'>
+					{/* <div className=' space-y-3 order-first md:order-last'>
 						<h3 className='text-base font-bold'>Search MGM</h3>
 						<div className='relative'>
 							<Input
@@ -117,7 +125,7 @@ const Contact = () => {
 								required={true}
 							/>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
