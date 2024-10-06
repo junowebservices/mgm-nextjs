@@ -61,7 +61,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<DialogTitle className='font-medium text-xl cursor-pointer mb-6 pr-4 font-serif'>{activity.title}</DialogTitle>
 												<Image
 													src={activity.featuredImage}
-													width={500}
+													width={800}
 													height={200}
 													alt="Featured Image"
 													priority
@@ -69,7 +69,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}
@@ -119,7 +119,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<DialogTitle className='font-medium text-xl cursor-pointer mb-6 pr-4 font-serif'>{activity.title}</DialogTitle>
 												<Image
 													src={activity.featuredImage}
-													width={500}
+													width={800}
 													height={200}
 													alt="Featured Image"
 													priority
@@ -127,7 +127,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}
@@ -176,14 +176,14 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<DialogTitle className='font-medium text-xl cursor-pointer mb-6 pr-4 font-serif'>{activity.title}</DialogTitle>
 												<Image
 													src={activity.featuredImage}
-													width={500}
+													width={800}
 													height={200}
 													alt="Featured Image"
 													priority
 												/><p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}

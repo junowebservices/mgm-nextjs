@@ -5,4 +5,4 @@ subtitle: ManilART Satellite Show – International
 date: October 7, 2024 8:00 AM
 endDate: October 10, 2024 6:00 PM
 ---
-Human Connections Haagdijk37, 4811 tn breda, the Netherlands
+**Location**: Human Connections Haagdijk37, 4811 tn breda, the Netherlands

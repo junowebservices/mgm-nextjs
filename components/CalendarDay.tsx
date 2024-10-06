@@ -37,14 +37,14 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day, events }) => {
 								<DialogTitle className='font-medium text-xl cursor-pointer mb-6 pr-4 font-serif'>{event.title}</DialogTitle>
 								<Image
 									src={event.featuredImage}
-									width={500}
+									width={800}
 									height={200}
 									alt="Featured Image"
 								/>
 								<p className='mb-2 text-secondaryTextColor'>
-												{event.date} {event.endDate && <span>- {event.endDate} </span>}
-											</p>
-								<ScrollArea className='!mt-6 max-h-[300px] pb-8'>
+									{event.date} {event.endDate && <span>- {event.endDate} </span>}
+								</p>
+								<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
 									<Markdown >{formattedMarkdown}</Markdown>
 								</ScrollArea>
 								<DialogDescription className='hidden'>{event.subtitle}

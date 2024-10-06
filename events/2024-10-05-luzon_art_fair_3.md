@@ -8,8 +8,18 @@ endDate: ""
 **Activities**
 
 1. Art Workshop 6
-   Carve and Print by Marz 
-   Venue : Diwa ng Tarlac Conference Room
-   Participants:
-   Batch 1 & 2 – DSWD Home for Girls
-   Batch 3 & 4 – Indigenous People Youth
+
+
+Carve and Print by Marz 
+
+
+**Venue** : Diwa ng Tarlac Conference Room
+
+
+Participants:
+
+
+Batch 1 & 2 – DSWD Home for Girls
+
+
+Batch 3 & 4 – Indigenous People Youth

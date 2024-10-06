@@ -215,22 +215,12 @@ export const memos = [
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/ched_zarsrk.png',
 		url: '/docs/CHED.pdf',
 	},
-	// {
-	// 	title: 'Civil Service Commission',
-	// 	imageLink: '/images/memo/csc.png',
-	// },
-	// {
-	// 	title: 'Department of Education',
-	// 	imageLink: '/images/memo/deped.png',
-	// },
-	// {
-	// 	title: 'Department of Foreign Affairs',
-	// 	imageLink: '/images/memo/dfa.png',
-	// },
-	// {
-	// 	title: 'Department of the Interior and Local Government',
-	// 	imageLink: '/images/memo/dilg.png',
-	// },
+	{
+		title: 'National Historical Commission of the Philippines',
+		imageLink: 'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1728180575/MGM/images/memo/National_Historical_Commission_of_the_Philippines__NHCP_am3kvm.svg',
+		url: '#',
+
+	},
 	{
 		title: 'Pambansang Aklatan ng Pilipinas',
 		imageLink:

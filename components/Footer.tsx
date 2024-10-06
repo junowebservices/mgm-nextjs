@@ -64,7 +64,7 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='w-full col-span-3 hidden lg:block'>
-							<div className='w-44'>
+							<div className='w-44 mx-auto'>
 								<Image
 									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796257/MGM/images/Footer/govph-seal-mono_adwrqc.jpg'
 									alt='Government Seal'
@@ -114,7 +114,7 @@ const Footer = () => {
 							))}
 						</div>
 						<div className='w-full col-span-3 justify-self-end hidden lg:block'>
-							<div className='w-44'>
+							<div className='w-44 mx-auto'>
 								<Image
 									src='https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695796259/MGM/images/Footer/govph-seal_ajbmoj.png'
 									alt='Government Seal'
