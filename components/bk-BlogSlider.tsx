@@ -3,7 +3,6 @@
 import { PostMetadata } from '@/constants/types';
 import React from 'react';
 import PostPreview from './PostPreview';
-import Slider from 'react-slick';
 
 const BlogSlider: React.FC<PostMetadata[]> = postMetadata => {
 	const settings = {
@@ -50,11 +49,11 @@ const BlogSlider: React.FC<PostMetadata[]> = postMetadata => {
 				<div className='mb-4'>
 					<h2 className='text-xl md:text-3xl font-bold'>Articles</h2>
 				</div>
-				<Slider {...settings}>
+				{/* <Slider {...settings}>
 					{Object.values(postMetadata).map(blog => (
 						<PostPreview key={blog.slug} {...blog} />
 					))}
-				</Slider>
+				</Slider> */}
 			</div>
 		</section>
 	);

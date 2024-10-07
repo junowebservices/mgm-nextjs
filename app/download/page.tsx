@@ -1,6 +1,5 @@
 'use client';
 
-import Slider from 'react-slick';
 import { CgSoftwareDownload } from 'react-icons/cg';
 import { agencyKits, socMedKits } from '@/constants';
 import Link from 'next/link';
@@ -97,7 +96,7 @@ const Download = () => {
 				</div>
 			</section>
 			{/* Archives */}
-			<section className='bg-mainBlue text-white mt-6 widest hidden'>
+			{/* <section className='bg-mainBlue text-white mt-6 widest hidden'>
 				<div className='inside py-24 px-8 lg:px-16' id='download'>
 					<div className='text-center mb-4'>
 						<h2 className='text-2xl md:text-3xl font-bold'>Archives</h2>
@@ -110,7 +109,7 @@ const Download = () => {
 						<div className='border-2 border-mainTextColor bg-mainYellow aspect-[3/4] hover:opacity-80 cursor-pointer' />
 					</Slider>
 				</div>
-			</section>
+			</section> */}
 		</div>
 	);
 };
