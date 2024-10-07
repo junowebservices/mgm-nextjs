@@ -213,7 +213,7 @@ export const memos = [
 		title: 'Commission on Higher Education',
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/ched_zarsrk.png',
-		url: '/docs/CHED.pdf',
+		url: 'https://drive.google.com/file/d/1nivVMwyimd97t608v5r8nopR9M_Tr9q7/view?usp=drive_link',
 	},
 	{
 		title: 'Department of Education',

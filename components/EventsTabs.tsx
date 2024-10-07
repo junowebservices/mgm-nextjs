@@ -69,7 +69,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose lg:min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}
@@ -127,7 +127,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												<p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose lg:min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}
@@ -183,7 +183,7 @@ const EventsTabs = ({ categorized, allEvents = false }: any) => {
 												/><p className='mb-2 text-secondaryTextColor'>
 													{activity.date} {activity.endDate && <span>- {activity.endDate} </span>}
 												</p>
-												<ScrollArea className='!mt-6 max-h-[350px] text-left prose min-w-[622px]'>
+												<ScrollArea className='!mt-6 max-h-[350px] text-left prose lg:min-w-[622px]'>
 													<Markdown >{formattedMarkdown}</Markdown>
 												</ScrollArea>
 												<DialogDescription className='hidden'>{activity.subtitle}

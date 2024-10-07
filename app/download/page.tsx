@@ -79,7 +79,7 @@ const Download = () => {
 				<div className='grid gap-4 sm:grid-cols-2 place-content-center'>
 					{socMedKits.map((socMedkit, index) => (
 						<Link href={socMedkit.link} key={index} target='_blank'>
-							<div className='grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square md:aspect-[2/1] hover:opacity-80 cursor-pointer'>
+							<div className='grid place-content-center border-2 text-white border-mainTextColor bg-mainBlue aspect-square lg:aspect-[2/1] hover:opacity-80 cursor-pointer'>
 								<div className='w-[85%] mx-auto space-y-4'>
 									<div>
 										<h2 className='text-xl   font-medium my-3 line-clamp-1'>
