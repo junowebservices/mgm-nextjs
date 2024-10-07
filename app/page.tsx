@@ -126,12 +126,7 @@ export default function Home() {
 					<div className='bg-white lg:aspect-video grid place-items-center text-center'>
 						<div className='p-4 space-y-5'>
 							<h2 className='font-bold text-2xl  '>About 2024 Theme</h2>
-							<p className=''>
-								“Exhibits and Reflections: Creating Opportunities for the New
-								World” encompasses the role of museums and galleries in
-								showcasing art forms as an avenue to interpret various facets of
-								humanity that have always been discussed for years.
-							</p>
+							<p>The theme, <em>“Honoring Traditions, Fostering Innovation,”</em> encapsulates the delicate balance between preserving the past and shaping the future. It invites the public to explore how traditional knowledge, practices, and values can be reinterpreted and applied to address contemporary challenges.</p>
 							<div>
 								<Link
 									href='/about'

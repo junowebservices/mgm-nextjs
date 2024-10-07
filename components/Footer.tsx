@@ -140,8 +140,9 @@ const Footer = () => {
 					<br className='block md:hidden' />
 					Developed by{' '}
 					<Link
-						href='mailto:mariaherbola@gmail.com'
+						href='https://jescultura.com/'
 						className='hover:text-primary underline'
+						target='_blank'
 					>
 						Escultura
 					</Link>

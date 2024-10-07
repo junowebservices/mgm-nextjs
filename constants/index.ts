@@ -10,32 +10,32 @@ export const Sliders = [
 	{
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788074/MGM/images/ncca-gallery.jpg',
-		url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery',
+		// url: 'https://ncca.gov.ph/about-ncca-3/ncca-gallery',
 	},
 	{
 		imageLink:
-			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788066/MGM/images/luzonartfair.jpg',
-		url: 'https://www.facebook.com/luzonartfair',
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1728267233/MGM/images/2024-Official_Banner_Public_b78cfy.png',
+		// url: 'https://www.facebook.com/luzonartfair',
 	},
 	{
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/manilart.jpg',
-		url: 'https://www.facebook.com/manilart',
+		// url: 'https://www.facebook.com/manilart',
 	},
 	{
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788068/MGM/images/visayasartfair.jpg',
-		url: 'https://www.facebook.com/visayasartfair',
+		// url: 'https://www.facebook.com/visayasartfair',
 	},
 	{
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788073/MGM/images/MindanaoArt.jpg',
-		url: 'https://www.facebook.com/MindanaoArt',
+		// url: 'https://www.facebook.com/MindanaoArt',
 	},
 	{
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788065/MGM/images/TamawanOfficial.jpg',
-		url: 'https://www.facebook.com/TamawanOfficial',
+		// url: 'https://www.facebook.com/TamawanOfficial',
 	},
 ];
 
@@ -216,17 +216,36 @@ export const memos = [
 		url: '/docs/CHED.pdf',
 	},
 	{
-		title: 'National Historical Commission of the Philippines',
-		imageLink: 'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1728180575/MGM/images/memo/National_Historical_Commission_of_the_Philippines__NHCP_am3kvm.svg',
-		url: '#',
-
+		title: 'Department of Education',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/deped_xgwajk.png',
+		url: 'https://drive.google.com/file/d/1nivVMwyimd97t608v5r8nopR9M_Tr9q7/view?usp=drive_link',
 	},
 	{
-		title: 'Pambansang Aklatan ng Pilipinas',
+		title: 'Department of the Interior and Local Government',
+		imageLink:
+			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788073/MGM/images/memo/dilg_imvtyr.png',
+		url: 'https://drive.google.com/file/d/1-klTyTcdciPWuX8zgpOCc-XvPkDkY0_j/view?usp=drive_link',
+	},
+	{
+		title: 'National Library of the Philippines',
 		imageLink:
 			'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/aklatan_aljtxq.png',
-		url: '/docs/NLP.pdf',
+		url: 'https://drive.google.com/file/d/15hvKpRuunWp_eBvug7O5tdOrYt6FaJuI/view?usp=drive_link',
 	},
+	
+	// {
+	// 	title: 'National Historical Commission of the Philippines',
+	// 	imageLink: 'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1728180575/MGM/images/memo/National_Historical_Commission_of_the_Philippines__NHCP_am3kvm.svg',
+	// 	url: '#',
+
+	// },
+	// {
+	// 	title: 'Pambansang Aklatan ng Pilipinas',
+	// 	imageLink:
+	// 		'https://res.cloudinary.com/junoconsulting/image/upload/w_200/q_auto/f_auto/v1695788071/MGM/images/memo/aklatan_aljtxq.png',
+	// 	url: '/docs/NLP.pdf',
+	// },
 ];
 
 export const fuels = [
@@ -276,36 +295,36 @@ export const footerLinks = [
 
 export const agencyKits = [
 	{
-		title: '2023 MGM Logo Variations',
+		title: '2024 MGM Logo Variations',
 		desc: "MGM Logo Variations represent the diverse visual adaptations of the official logo to celebrate this year's awesome theme.",
-		link: 'https://drive.google.com/drive/folders/18Q_BHiqZlWFlZwIX6DxZEtwMYI7OGLhI?usp=drive_link',
+		link: 'https://drive.google.com/drive/folders/1ayoB1DiqppZ0Ak356pJp-SUCvXcOI5Wo?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Poster Pack',
-		desc: "MGM 2023 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
-		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
+		title: '2024 MGM Poster Pack',
+		desc: "MGM 2024 Poster Pack is a collection of promotional materials that may use to promote this year's theme.",
+		link: 'https://drive.google.com/drive/folders/14SZdwdCiCNw69JhJ1w2hcXzdw63eZTGu?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Branding Fonts',
-		desc: 'To have the full experience of MGM 2023, branding fonts can be used to match the official font of this years theme.',
-		link: 'https://drive.google.com/drive/folders/1kVuS18k21WEd9TB-sVfWBE1FkThQVPG3?usp=drive_link',
+		title: '2024 MGM Branding Fonts',
+		desc: 'To have the full experience of MGM 2024, branding fonts can be used to match the official font of this years theme.',
+		link: 'https://drive.google.com/drive/folders/1ayoB1DiqppZ0Ak356pJp-SUCvXcOI5Wo?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Digital Briefer',
+		title: '2024 MGM Digital Briefer',
 		desc: 'The digital briefer provides detailed explanation of the whole MGM celebration this year, including the Agency Kit and their uses.',
-		link: 'https://drive.google.com/file/d/1DF-CGoiCShqRzmMAD72xNU4jvtxO8n4w/view?usp=drive_link',
+		link: 'https://drive.google.com/file/d/1XQK9dWhbQBjVewzR7nc5Hm0kl0kDBjZH/view?usp=drive_link',
 	},
 ];
 
 export const socMedKits = [
 	{
-		title: '2023 MGM Banner and Banner Specs',
-		desc: 'Like poster pack, the MGM Banner can be used to promote the 2023 MGM theme while the banner specs provide complete details and standardized banner posting.',
-		link: 'https://drive.google.com/drive/folders/1r9WiZrKB-40q7ueyuDKOKPjePNAv0TTj?usp=drive_link',
+		title: '2024 MGM Banner and Banner Specs',
+		desc: 'Like poster pack, the MGM Banner can be used to promote the 2024 MGM theme while the banner specs provide complete details and standardized banner posting.',
+		link: 'https://drive.google.com/drive/folders/17K2rl3sOsNvvmibg5fQB-qeuENH8nI2r?usp=drive_link',
 	},
 	{
-		title: '2023 MGM Profile Picture Frame',
+		title: '2024 MGM Profile Picture Frame',
 		desc: 'Celebrate with us by using the official Facebook Profile Picture frame of MGM for this year. Twibbonize your photo here!',
-		link: 'https://www.twibbonize.com/mgm-exhibits-and-reflections',
+		link: 'https://drive.google.com/drive/folders/18c8GHHnBRtgSVaU4svuz36HIC5VYtUC-?usp=drive_link',
 	},
 ];

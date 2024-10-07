@@ -9,7 +9,7 @@ const About = () => {
 		<>
 			<section className='full-bleed'>
 				<Image
-					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1695788078/MGM/images/exhibit-banner_l8yqha.jpg'
+					src='https://res.cloudinary.com/junoconsulting/image/upload/w_1600/q_auto/f_auto/v1728267233/MGM/images/2024-Official_Banner_Public_b78cfy.png'
 					alt='Exhibits and Reflections Banner'
 					width={1800}
 					height={800}
@@ -26,26 +26,11 @@ const About = () => {
 				/> */}
 			</section>
 			<section className='inside my-16'>
-				<div className='grid place-content-center'>
-					<div className='space-y-3'>
+				<div className='grid'>
+					<div className='space-y-3 max-w-3xl'>
 						<h2 className='text-3xl'>About Museums and Galleries Month</h2>
 						<p>
-							The Museums and Galleries Month (MGM) of the National Commission
-							for Culture and the Arts (NCCA) annually celebrates the rich
-							culture and heritage of the Philippines. Based on the Proclamation
-							No. 798 s.1991 signed by the late former President Corazon Aquino,
-							MGM acts an innovative instrument to arouse the national
-							consciousness and pride in the Philippines' rich culture and
-							national identity, embracing all forms of art and culture,
-							historical and religious artifacts.
-						</p>
-						<p>
-							Every October, the MGM offers fresh theme that provides awareness
-							to all regarding the promising heritage of the Philippines.
-						</p>
-						<p>
-							MGM is committed to promote and celebrate the diversed culture of
-							the country.
+							The Museums and Galleries Month (MGM) is observed every October by virtue of Presidential Proclamation No. 798, s. 1991. It underscores the importance of fostering national consciousness and pride in our well-preserved Filipino culture and heritage, which embody the nation's aspirations. These aspirations are expressed through various media of art, as well as historical and religious artifacts. The rich Filipino cultural heritage symbolizes the nation's aspirations, and the observance recognizes that these cultural and artistic forms are essential for nation-building and shaping national destiny.
 						</p>
 					</div>
 				</div>
@@ -53,7 +38,7 @@ const About = () => {
 			<section className='inside my-8 lg:my-16 grid md:grid-cols-3 gap-2'>
 				<div className='w-full self-center'>
 					<Image
-						src='https://res.cloudinary.com/junoconsulting/image/upload/w_400/q_auto/f_auto/v1695788079/MGM/images/mgm-2023-theme_x1wnr5.jpg'
+						src='https://res.cloudinary.com/junoconsulting/image/upload/w_400/q_auto/f_auto/v1728267521/MGM/images/2024-MGM-Poster_Large_haelu4.png'
 						alt='MGM 2024 Theme'
 						width={400}
 						height={250}
@@ -68,9 +53,14 @@ const About = () => {
 						className='object-cover w-full'
 					/> */}
 				</div>
-				<div className='space-y-3 md:col-span-2 md:ml-6 lg:ml-16'>
+				<div className='space-y-3 md:col-span-2 md:ml-6 lg:ml-16 max-w-2xl'>
 					<h2 className='text-3xl'>About the MGM 2024 Theme </h2>
-					<p>
+
+					<p>In an era marked by rapid technological advancement and globalization, the importance of preserving cultural heritage has never been more critical. Yet, it is equally important to recognize that tradition is not a static concept but a dynamic force that evolves and adapts.</p>
+
+					<p>The theme, <em>“Honoring Traditions, Fostering Innovation,”</em> encapsulates the delicate balance between preserving the past and shaping the future. It invites the public to explore how traditional knowledge, practices, and values can be reinterpreted and applied to address contemporary challenges. By honoring traditions, we pay homage to the wisdom and experiences of our ancestors. These cultural touchstones provide a foundation for identity, community, and resilience. However, to ensure the continued relevance and vitality of these traditions, we must foster an environment of innovation.</p>
+
+					{/* <p>
 						<strong>
 							“Exhibits and Reflections: Creating Opportunities for the New
 							World”
@@ -95,7 +85,7 @@ const About = () => {
 						made by our ancestors to attain the freedom we achieve right now,
 						and how shall the present preserve and pass it on for more
 						generations to come.
-					</p>
+					</p> */}
 				</div>
 			</section>
 			<section className='inside my-8 lg:my-16'>
@@ -139,13 +129,14 @@ const About = () => {
 			<section className='inside my-8 lg:my-16'>
 				<div className='grid gap-12'>
 					<h2 className='text-3xl text-center'>Memorandum Issuances</h2>
-					<div className='flex justify-center gap-4'>
+					<div className='flex justify-center gap-4 lg:gap-12'>
 						{memos.map(memo => (
 							<Link
 								href={memo.url}
 								key={memo.title}
 								className='text-center grid place-items-center cursor-pointer'
 								target='_blank'
+								aria-label={memo.title}
 							>
 								<Image
 									src={memo?.imageLink}
