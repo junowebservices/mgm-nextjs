@@ -16,10 +16,4 @@ subtitle: "𝗔𝗶𝟯𝟲𝟬 is a pop-up exhibit that will spotlight the sign
 date: October 18, 2024 10:24 AM
 endDate: November 30, 2024 10:24 AM
 ---
-T﻿he NHCP involved in the activity are:
-
-<!--StartFragment-->
-
-Museo ng Republika ng 1899, Malolos City, Bulacan with the Museo ni Marcelo H. Del Pilar, Museo ni Mariano Ponce, Museo ng Kasaysayang Pampolitka ng Pilipinas, Museo nina Leon at Galicano Apacible, Museo ni Marcela Mariño at Felipe Agoncillo, Museum of Philippine Maritime History, and Museo ni Emilio Aguinaldo 
-
-<!--EndFragment-->
+T﻿he NHCP Museums involved in the project are Museo ng Republika ng 1899, Malolos City, Bulacan with the Museo ni Marcelo H. Del Pilar, Museo ni Mariano Ponce, Museo ng Kasaysayang Pampolitka ng Pilipinas, Museo nina Leon at Galicano Apacible, Museo ni Marcela Mariño at Felipe Agoncillo, Museum of Philippine Maritime History, and Museo ni Emilio Aguinaldo.
