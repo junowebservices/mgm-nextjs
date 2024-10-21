@@ -14,7 +14,7 @@ subtitle: "𝗔𝗶𝟯𝟲𝟬 is a pop-up exhibit that will spotlight the sign
   in Malolos, Bulacan with former Department of Science and Technology Secretary
   Fortunato T. De La Peňa as Guest of Honor. "
 date: October 18, 2024 10:24 AM
-endDate: October 31, 2024 10:24 AM
+endDate: October 30, 2024 10:24 AM
 ---
 I﻿nvolved NHCP Museums:
 
