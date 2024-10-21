@@ -16,7 +16,7 @@ subtitle: "𝗔𝗶𝟯𝟲𝟬 is a pop-up exhibit that will spotlight the sign
 date: October 18, 2024 10:24 AM
 endDate: October 30, 2024 10:24 AM
 ---
-I﻿nvolved NHCP Museums:
+T﻿he NHCP involved in the activity are:
 
 <!--StartFragment-->
 
