@@ -20,8 +20,6 @@ I﻿nvolved NHCP Museums:
 
 <!--StartFragment-->
 
-Museo ng Republika ng 1899, Malolos City, Bulacan with the 
-
-Museo ni Marcelo H. Del Pilar, Museo ni Mariano Ponce, Museo ng Kasaysayang Pampolitka ng Pilipinas, Museo nina Leon at Galicano Apacible, Museo ni Marcela Mariño at Felipe Agoncillo, Museum of Philippine Maritime History, and Museo ni Emilio Aguinaldo 
+Museo ng Republika ng 1899, Malolos City, Bulacan with the Museo ni Marcelo H. Del Pilar, Museo ni Mariano Ponce, Museo ng Kasaysayang Pampolitka ng Pilipinas, Museo nina Leon at Galicano Apacible, Museo ni Marcela Mariño at Felipe Agoncillo, Museum of Philippine Maritime History, and Museo ni Emilio Aguinaldo 
 
 <!--EndFragment-->
